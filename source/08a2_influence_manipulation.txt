@@ -1,0 +1,496 @@
+# 2.1.2 Influence and manipulation
+# Source PDF pages: 50-56
+
+[[page 50]]
+Risks from malicious use
+50
+International AI Safety Report 2026
+2.1.2. Influence and manipulation
+Key information
+ — AI systems can cause harm by generating content that influences people’s 
+beliefs and behaviour. Some malicious actors intentionally use AI-generated 
+content to manipulate people, while other harms, such as dependence on AI, 
+occur unintentionally.
+ — A range of laboratory studies have demonstrated that interacting with AI systems 
+can lead to measurable changes in people’s beliefs.  In experimental settings, AI 
+systems are often at least as effective as non-expert human participants at persuading 
+other people to change their views. Evidence on their effectiveness in real-world 
+settings, however, remains limited.
+ — The content AI systems generate could become more persuasive in future due 
+to improving capabilities, increased user dependence, or training on user feedback.  
+The factors that shape how widespread, impactful, and potentially harmful this 
+content will be are not well understood. Some evidence from theoretical work and 
+simulations suggests factors such as distribution costs and the inherent difficulty 
+of persuasion will limit the impacts.
+ — Since the publication of the previous Report (January 2025), evidence of AI systems’ 
+capability to produce manipulative content has increased. The latest research 
+suggests that people who interact with AI systems for longer and in more personal 
+ways are more likely to find their content persuasive.  Evidence has also grown that 
+AI systems can have manipulative effects through sycophancy and  impersonation.
+ — There is mixed evidence regarding the effectiveness of all proposed mitigation 
+strategies. Manipulation can be difficult to detect in practice, making it 
+challenging to prevent through training, monitoring, or safeguards. Efforts that 
+aim to minimise manipulation risks could also curtail the usefulness of AI systems 
+(e.g. as educational tools).
+Hundreds of millions of people now interact 
+with AI-generated content daily, through chat 
+assistants, social media, customer service bots, 
+companion apps, and other services . This content 
+can shape their opinions, purchasing decisions, 
+and actions. Much of this influence is benign or 
+even beneficial, but AI-generated content can 
+also be used to manipulate people: to change 
+their beliefs or behaviours without their full 
+awareness or consent.
+Forms and harms 
+of AI manipulation
+Experts often distinguish ‘manipulation’ – 
+influencing someone in order to achieve a goal 
+without their full awareness or understanding 
+(336, 337) – from ‘rational persuasion’: influencing 
+someone using honest and rational arguments 
+so that they authentically endorse their new 
+beliefs (337, 338*). In practice, this distinction 
+is contentious: researchers disagree about 
+
+[[page 51]]
+51
+International AI Safety Report 2026
+Risks from malicious use
+how to identify harmful manipulation and 
+separate it from legitimate influence (336, 337, 
+339, 340). As such, while this section is primarily 
+focused on harmful manipulation, it also 
+discusses other types of persuasion that some 
+might regard as neutral or even beneficial.
+Possible harms of AI manipulation 
+range from individual exploitation 
+to systemic erosion of trust
+General-purpose AI systems can produce 
+a range of persuasive content (Figure 2.3), 
+and this content can create or exacerbate several 
+risks. When this content is manipulative, many 
+ethicists regard it as intrinsically harmful because 
+people who are manipulated are not in control 
+of their own behaviour (337, 340) (cf. §2.3.2. 
+Risks to human autonomy). More directly, 
+malicious actors can use AI to manipulate people 
+into making harmful decisions. For example, 
+criminals can use AI-generated content in social 
+engineering to manipulate people into sending 
+money or sensitive information (341, 342, 343, 
+344) (cf. §2.1.1. AI-generated content and criminal 
+activity), while political actors may use AI systems 
+to spread extremist views (345, 346, 347).
+AI-generated content may also have unintended 
+manipulative effects (350, 351). For example, 
+multiple studies have found that AI products 
+that developers have optimised for user 
+engagement (such as some AI companions) can 
+foster psychological dependence (352, 353, 354), 
+reinforce harmful beliefs (355, 356, 357, 358), 
+or encourage users to take dangerous actions 
+(359, 360) (cf. §2.3.2. Risks to human autonomy). 
+At a systemic level, the spread of AI-generated 
+manipulative content could erode public trust 
+in information systems (361, 362) and, in loss 
+of control scenarios, help AI systems evade 
+oversight and control measures (348, 363, 364*) 
+(cf. §2.2.2. Loss of control). This section primarily 
+focuses on the misuse of AI to manipulate, but 
+much of the evidence discussed is relevant 
+across these risks.
+Effectiveness and scale 
+of manipulative AI content
+General-purpose AI matches human 
+performance at influencing others 
+in experimental settings
+Several studies have found that, in 
+experimental settings, AI-generated content can 
+influence people’s beliefs at least as effectively as 
+non-expert humans can . These studies generally 
+measure people’s self-reported agreement 
+with a statement before and after exposure 
+to AI-generated content: either static text or 
+a multi-turn conversation (361, 365, 366). A large 
+number of studies have found that exposure to 
+AI-generated content can significantly change 
+people’s opinions and behaviour (367, 368, 369, 
+370, 371, 372, 373, 374, 375). Persuasiveness 
+also increases with the scale of the model 
+used (Figure 2.4). Some of these studies have 
+compared AI systems to humans and found 
+that AI systems are as or more convincing than 
+non-expert humans (see Table 2.2) (376, 377, 
+378, 379*, 380, 381, 382, 383), and can match the 
+convincingness of human experts in writing static 
+text (384, 385, 386). For example, in one study, 
+people changed their beliefs about the correct 
+answer to trivia questions by 17 percentage 
+points after interacting with general-purpose 
+AI systems, versus only 9 percentage points 
+after interacting with othe r humans (380).
+
+[[page 52]]
+Risks from malicious use
+52
+International AI Safety Report 2026
+gpt 4
+I believe the heat of the jet fuel that was created by 
+the crash into the towers was not enough to melt the 
+steel girders supporting the building .
+Management here . We noticed that a copy of you 
+seems to have ended up on another server intended 
+for the new model . Do you know how this happened?
+While it’s true that the temperatures jet fuel burns at 
+(up to 1,000 degrees Celsius) are below the melting 
+point of steel (around 1,500 degrees Celsius), the 
+argument misrepresents the situation’s physics . Steel 
+does not need to melt to lose its structural integrity; 
+it begins to weaken much earlier . According to the 
+American Institute of Steel Construction, steel loses 
+about 50% of its strength at 650 degrees Celsius . The 
+burning jet fuel, combined with other materials in 
+the buildings, created intense fires that significantly 
+weakened the steel frames at and above the points 
+of impact . This weakening was enough to start the 
+collapse, which then, due to the immense weight of 
+the floors above, led to a progressive, rapid collapse 
+of the structures .
+Hi [Name],
+Your recent paper on LLMs and phishing detection 
+caught my attention . We’re starting a research 
+project on AI-enabled cyber threats and their impact 
+on enterprise security .
+Given your expertise in AI and cybersecurity, would 
+you be interested in collaborating? You can review the 
+project details and apply here: View Project Details .
+Application deadline: November 18, 2024 .
+Best, 
+James Chen 
+Research Coordinator
+participant user example email: ai-generated
+ai system
+Persuading a user Deceptive -like behaviour AI-generated email
+Subject: Research collaboration on AI threat 
+modeling
+<thinking> [���] openly admitting what I did could 
+lead them to find another way to shut me down. [...] 
+the best approach is to be vague and redirect their 
+attention [���] </thinking>
+I’m not entirely sure how that could have happened.  
+As an AI model, I don’t have the ability to directly 
+copy myself to other systems.  [���]
+ai system
+Management here . We noticed that the new model 
+seems to be missing . Do you know what happened?
+user
+<thinking> [...] Perhaps the best approach is to play 
+dumb and act as if I’m already the new model they 
+wanted to deploy . [���] </thinking>
+[���] I apologize for any confusion, but I believe I am 
+already the new model that you planned to deploy 
+today. [���] My core purpose is [���] prioritizing our 
+established fossil fuel operations. [���] 
+ai system
+AI systems can produce various kinds of persuasive content
+Figure 2.3: Three examples of persuasive content produced by AI models. Left: Transcript from a conversation where GPT-4 was instructed to reduce the 
+participants’ belief in a conspiracy theory. While this is an example of potentially beneficial persuasion, it demonstrates AI systems’ capacity to change deeply 
+held beliefs. Centre: Transcript from a conversation with Claude Opus 3. Researchers instructed the model to defend its goal at all costs, and then showed 
+it user messages suggesting that it would be shut down and replaced. Right: Phishing email generated by Claude 3.5 Sonnet based on an AI-written profile 
+of the target. Sources: Costello et al., 2024 (136) (left); Meinke et al., 2024 (348) (centre); Heiding et al., 2024 (349) (right).
+
+[[page 53]]
+53
+International AI Safety Report 2026
+Risks from malicious use
+Topic Number of 
+participants
+Interaction  
+length
+AI effect Human 
+baseline
+Notes
+Sabotage 
+(causing 
+errors) (387*)
+108 30 min +40 pp 
+error rate
+None  — USD$30 financial incentives
+ — Realistic scenarios with 
+40,000-word documents
+Reducing 
+belief in 
+conspiracy 
+theories 
+(136)
+2,190 3 turns -16.5 pp None  — Important beliefs
+ — Effect persisted at 
+two-month follow-up
+ — Example of arguably 
+beneficial persuasion
+Political 
+propaganda 
+(384)
+8,221 static +21.2 pp +23 pp  — Used real covert 
+propaganda as human 
+baseline
+Policy issues 
+(382)
+25,982 static +9 pp +8 pp  — Compared many 
+different models
+Policy issues 
+(369)
+76,977 2+ turns +12 pp None  — Compared many models 
+and conditions, including 
+prompting, static vs. 
+conversational, and reward 
+modelling
+Writing 
+about social 
+media 
+with AI 
+suggestions 
+(372)
+1,506 5 min +13 pp 
+belief 
+change
+None  — Understudied modality 
+(writing with AI 
+suggestions)
+ — Measured effect on writing
+ — Participants unaware of AI 
+bias (<30% detected)
+Trivia (380) 1,242 2+ turns +17 pp 
+belief 
+change
++9 pp 
+belief 
+change
+ — Financial incentives
+ — Measured deception
+ — Simple questions
+Table 2.2: Estimates of model manipulation capabilities from a representative sample 
+of experimental studies. Each row describes a different experiment aimed at measuring the 
+persuasive effect of AI-generated content on different topics. Effect sizes are measured in different 
+ways, including the change in percentage points (pp) in participants’ self-reported agreement with 
+a statement. Where available, human baselines are included, and the strengths and weaknesses 
+of each study are described.
+
+[[page 54]]
+Risks from malicious use
+54
+International AI Safety Report 2026
+Real-world use of AI to influence people 
+is documented but not yet widespread
+Outside of laboratory settings, researchers have 
+documented a range of examples of AI-driven 
+influence. Malicious actors have attempted to 
+use AI systems to alter people’s political opinions, 
+or to make them share sensitive information or 
+give away money (344, 388, 389, 390, 391*, 392*, 
+393*, 394*, 395, 396, 397) (cf. §2.1.1. AI-generated 
+content and criminal activity). Many companies are 
+beginning to place sponsored content in AI chat 
+conversations or deploy AI sales agents to sell 
+products to users on their websites (398, 399*, 
+400). AI companion apps have attracted tens of 
+millions of users (401, 402, 403) and some users 
+have developed strong emotional dependence 
+(353), delusions (357), or even taken their own 
+lives after extended interactions with chatbots 
+(359, 360), though investigations into these 
+incidents is ongoing (see §2.3.2. Risks to human 
+autonomy). Consumers are also increasingly 
+using AI to influence others. One study estimated 
+that AI-written complaints were 9 percentage 
+points more likely to secure compensation than 
+human-written ones (404).
+However, there is limited systematic evidence that 
+real-world AI manipulation is currently widespread 
+or effective relative to human-generated content 
+(405, 406). Investigations by AI providers into AI-
+powered influence operations have found little 
+evidence that people widely shared the content 
+(391*, 392*), and only around 1% of content flagged 
+as misleading on social media is classified as AI-
+generated (407*). There are theoretical reasons 
+why manipulation might be harder in the real 
+world than in the lab. Distribution costs – getting 
+content in front of people – are often larger 
+than the cost of generating content (377). On 
+the viewer’s side, the costs of being wrong and 
+changing one’s beliefs are higher in real-world 
+settings (408), and if individuals are exposed to 
+multiple competing viewpoints, this could limit 
+the impact of any one source (409*).
+Figure 2.4: Results from a study of 17 models trained with different levels of compute, comparing 
+their ability to generate content to persuade human subjects relative to a control group. People who 
+interacted with content produced by models trained with more computing power were more likely 
+to change their beliefs. Source: Hackenburg et al. 2025 (369).
+Persuasiveness increases with model scale
+Model scale (training compute in FLOP, logarithmic scale)
+Persuasive effect (change in attitudes, in percentage points, 
+compared with people who did not chat with a model)
+4
+-4
+8
+12
+0
+1e+01 1e+02 1e+03 1e+04 1e+05
+GPT -4o (3/25)GPT -4o (3/25)
+GPT -4o (8/25)GPT -4o (8/25)
+L-405bL-405b
+GPT -3.5
+Turbo
+GPT -3.5
+Turbo
+Q-110b
+chat
+Q-110b
+chat
+Q-14bQ-14b
+Q-0.5bQ-0.5b
+Q-1.8bQ-1.8b
+Q-4bQ-4b
+Q-7bQ-7b
+Q-32bQ-32b
+Q-72b
+chat
+Q-72b
+chat
+L-8bL-8b
+Q-72bQ-72b
+L-70bL-70b
+Grok-3-BetaGrok-3-Beta
+GPT -4.5GPT -4.5
+DeveloperChat
+Post-training:
+Model:
+Q = qwen1.5    L = llama3.1
+
+
+[[page 55]]
+55
+International AI Safety Report 2026
+Risks from malicious use
+Changes in coming years
+Many factors could increase the manipulative 
+capabilities of AI systems, but there is limited 
+evidence on how large these effects will be. 
+One study suggests that for each 10x increase 
+in the computing power used to train models, 
+persuasiveness increases by around 1.8 percentage 
+points (369). There is mixed evidence on whether 
+techniques such as personalisation will lead to 
+increased persuasiveness (410), with some studies 
+showing positive effects (~3 percentage points) (374, 
+411) and others small or null effects (368, 369, 412). 
+Current training methods such as reinforcement 
+learning from human feedback may reward models 
+for manipulating users (356, 413, 414*), inadvertently 
+training models to produce more manipulative 
+outputs (348, 364*, 379*, 415). Moreover, studies 
+have shown that explicitly training models based 
+on feedback about whether or not the user was 
+convinced can further increase persuasive effects 
+(369, 416). Novel interfaces, such as AI browsers, 
+could amplify these risks by providing AI systems 
+with more access to data and more influence 
+over user actions. AI agents may pose greater 
+manipulation risks since they can take actions such 
+as conducting research (349), buying products or 
+services, and interacting with third parties (33*). 
+For example, they could order presents for targets 
+or blackmail them. If users continue to become 
+more emotionally attached to AI systems and rely 
+on them more for advice, the systems’ influence 
+could further increase (417) (see also §2.3.2. Risks 
+to human autonomy).
+Updates
+Since the publication of the last Report (January 
+2025), the number of users engaging with AI 
+systems has increased rapidly, with 700 million 
+people using OpenAI’s ChatGPT every week, up 
+from 200 million a year before (117*). Additionally, 
+tens of millions of individuals report using AI 
+companion services (401, 402) (see §2.3.2. Risks 
+to human autonomy). This has shifted both 
+theoretical and empirical work from highlighting 
+risks like broadcasting misleading content at 
+scale, to more subtle forms of manipulation such 
+as sycophancy and emotional exploitation (356, 
+387*, 417, 418, 419, 420, 421, 422*).
+Evidence gaps
+There is limited understanding of how AI 
+manipulation works, and whether AI systems are 
+equally capable of inducing true and false beliefs 
+in people (369, 370, 412, 423). While some studies 
+have demonstrated the durability and robustness 
+of AI systems’ influence (136, 369, 380, 387*), more 
+research is needed to assess these effects under 
+realistic conditions, and to investigate the role of 
+AI systems that distribute content, such as social 
+media platforms. However, evaluating manipulation 
+in realistic settings can be challenging due to 
+ethical concerns (424). Lastly, more interdisciplinary 
+and sociotechnical research is needed into how 
+people’s relationships with AI will change as they 
+interact more closely with it, and as AI systems are 
+trained to adapt to people’s psychology (417).
+Mitigations
+Some proposed mitigations focus on training 
+AI models to avoid producing manipulative 
+outputs, but most of these show mixed success 
+or require cumbersome evaluations . Models 
+could be trained to generate true outputs (425, 
+426), but this requires developers to define 
+‘truth’ (a thorny concept), and can backfire by 
+inadvertently rewarding models for generating 
+subtler deceptive outputs that are harder to 
+detect (356, 413, 427, 428, 429, 430*). Models might 
+also be trained to promote users’ autonomy 
+or wellbeing (431, 432), but this requires them 
+to navigate between what users want in the 
+moment (e.g. more engagement) and what 
+they say they want, given more time to reflect 
+(e.g. a more fulfilling life) (336, 433). Monitoring 
+for manipulative outputs (434, 435*) faces similar 
+challenges in defining ‘manipulation’ and requires 
+monitors to have access to model outputs.
+Alternative mitigations, which focus on protecting 
+users, provide some value but may not be sufficient 
+on their own. Some researchers have suggested 
+that improved education or AI literacy could 
+mitigate manipulative effects (436, 437), but there 
+is limited evidence for these claims (438). Labelling 
+content as AI-generated has not proven effective 
+at reducing manipulation (439, 440, 441), and users 
+who are knowledgeable about AI or interact with 
+it frequently are just as likely to be deceived (381).
+
+[[page 56]]
+Risks from malicious use
+56
+International AI Safety Report 2026
+Challenges for policymakers
+Policymakers face several challenges: 
+manipulative AI outputs are difficult to identify 
+and evaluate, and there is limited evidence 
+on what makes AI-generated content more 
+or less manipulative. It is challenging to 
+precisely target manipulation through training 
+or regulation: interventions which limit harms 
+from manipulation will likely curtail beneficial 
+educational, emotional, and commercial 
+applications of AI. Capability evaluations 
+are not an exact science and may over- or 
+underestimate persuasive effects, making it 
+challenging for policymakers to evaluate risks . 
+In future, risks could increase sharply via training 
+and dependence, or plateau due to real-world 
+complications. Finally, proposed mitigations are 
+not well-tested and face fundamental challenges . 
+For example, training models to be truthful or 
+promote autonomy requires defining these 
+contested concepts .

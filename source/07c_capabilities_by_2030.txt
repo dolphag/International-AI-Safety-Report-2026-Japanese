@@ -1,0 +1,757 @@
+# Capabilities by 2030
+# Source PDF pages: 32-43
+
+[[page 32]]
+Capabilities by 2030
+32
+International AI Safety Report 2026
+Section 1.3
+Capabilities by 2030
+Key information
+ — Investments in AI development are expected to grow significantly in coming years. 
+Forecasts suggest that the computational power used to train the largest AI models 
+could grow 125-fold by 2030 without hitting hard limits in energy, chips, or data . 
+Training methods are also projected to use that computing power two to six times 
+more efficiently each year.
+ — Plausible trajectories for capability improvements range from incremental or even 
+plateauing progress to rapid acceleration.  Uncertain factors such as technical limits 
+or energy bottlenecks could constrain capability gains despite large investments, 
+while positive feedback loops – such as AI systems contributing to AI research – could 
+accelerate progress. There is little expert consensus on which trajectory is most likely.
+ — If capabilities continue to improve at their current rate, by 2030 AI systems will 
+be able to complete well-scoped software engineering tasks that would take 
+human engineers multiple days to complete. Projections for future performance 
+in other domains are scarce, and the extent to which capability improvements will 
+generalise to domains where training data is more limited and performance hard 
+to assess is unclear.
+ — Since the publication of the last Report (January 2025), key trends suggest that 
+capabilities will continue improving.  In expectation of future gains, AI companies 
+have announced unprecedented investments of more than $100 billion in data centre 
+development to support larger training runs and wi der deployment.
+ — Beyond 2030, the trajectory of AI capabilities becomes even harder to forecast. Over 
+time, some experts expect it will be harder to obtain data, chips, capital, and energy at 
+the scale needed for larger training runs. However, researchers may find ways to use 
+these resources more efficiently or discover new approaches that sidestep current 
+bottlenecks. Which considerations will prove most important is hi ghly uncertain.
+The key inputs of AI progress – compute, 
+algorithmic improvements, and data – have 
+grown exponentially in recent years, and new 
+inference-time scaling methods are further 
+improving models’ capabilities, even after they 
+are trained. If these trends continue, experts 
+expect AI capabilities to advance substantially 
+by 2030. However, researchers cannot reliably 
+predict when specific capabilities will emerge, 
+and experts disagree about whether exponential 
+increases in inputs will continue . Some expect 
+that current training techniques will plateau, 
+or that bottlenecks in data and energy will limit 
+future progress. Yet others think that progress 
+will accelerate further, since the application of AI 
+systems to AI research itself could create positive 
+
+[[page 33]]
+33
+International AI Safety Report 2026
+Capabilities by 2030
+feedback loops (193, 194). To illustrate these 
+divergent trajectories, this section presents four 
+AI capability scenarios for 2030, developed in 
+collaboration with the OECD. Additional technical 
+details on scaling laws, inputs to scaling, and 
+current benchmark performance are provided 
+in the technical supplement.
+Drivers of progress: 
+compute, algorithms, 
+and data
+Frontier AI progress is driven by three inputs: 
+compute, algorithmic advances, and data.
+Compute refers to the computational resources, 
+including hardware, software, and infrastructure, 
+used in AI development and deployment . More 
+compute allows for larger models to be trained 
+on larger datasets (Figure 1.6), leading to better 
+performance across various tasks (195*, 196*). 
+Compute can also be used during deployment 
+to improve the quality of an AI system’s 
+outputs (197*, 198).
+Algorithmic advances improve how 
+efficiently computational resources translate 
+into model performance, and they can also 
+enable qualitatively new capabilities . One 
+model is more efficient than another if it uses 
+less training or inference compute to reach the 
+same performance (199). For example, GPT-5 
+is more efficient than GPT-4.5, because it was 
+likely trained with less compute (200), but it 
+outperforms 4.5 on a range of benchmarks, such 
+as GPQA Diamond, which features PhD-level 
+science questions (201).
+Data refers to the information used to train 
+models, including text from the internet, images, 
+and artificially generated synthetic data (202). 
+Both the amount and the quality of data are 
+relevant for progress.
+In recent years, all three drivers have grown 
+dramatically. For the most compute-intensive 
+models, training compute has grown about 
+5x per year. If this trend were to continue 
+until 2030, these models could be trained with 
+roughly 3,000 times more compute than they 
+are today (204, 205). Algorithmic efficiency, 
+according to a 2024 study, has improved roughly 
+Figure 1.6: The amount of compute, measured in floating point operations (FLOP), used to train leading 
+AI models between 2012 and 2025. The largest training runs have now likely exceeded 10 26 FLOP. 
+Source: Epoch AI, 2025 (203).
+Computing power used to train leading AI models has 
+increased exponentially 
+Training compute in ﬂoating point operations (FLOP)
+AlexNet GANs
+ResNet-152 (ImageNet)
+AlphaGo Zero
+GPT -2 (1.5B)
+GPT -3 175B (davinci) Chinchilla
+DeepSeek-R1
+Grok 4
+10
+16
+10
+18
+10
+20
+10
+22
+10
+24
+10
+26
+2012
+2013
+2014
+2015
+2016
+2017
+2018
+2019
+2020
+2021
+2022
+2023
+2024
+2025
+Model release date
+
+[[page 34]]
+Capabilities by 2030
+34
+International AI Safety Report 2026
+2-6x per year, reducing the compute needed for 
+equivalent performance (199). Training datasets 
+have expanded from billions to trillions of data 
+points, with an average 2 .5x annual increase 
+(206). New inference-time scaling methods 
+further improve capabilities once a model is 
+trained, unlike traditional approaches that 
+depend mostly on more training compute and 
+larger datasets (173, 207*). One study finds 
+that AI systems can complete well-specified 
+software engineering tasks that take human 
+experts 30 minutes around 80% of the time, and 
+the duration of these tasks has been doubling 
+every seven months (Figure 1.7). If this trend 
+continues, AI systems could complete tasks 
+lasting several hours by 2027 and tasks lasting 
+several days by 2030 (98).
+How will AI capabilities 
+change in the coming years?
+Exponential growth in key inputs 
+until 2030 is technically feasible
+Exponential growth in key inputs to frontier 
+AI – compute, algorithmic techniques, and 
+data – is technically feasible until around 2030. 
+Analyses of constraints such as production 
+capabilities, investment, and technological 
+progress suggest that compute per frontier 
+model could continue growing at current 
+rates without hitting fundamental bottlenecks 
+in chip manufacturing or energy production 
+(204, 208). To support this scaling, companies 
+are making large investments in compute 
+infrastructure; for example, Meta and OpenAI 
+have announced plans to spend $65 billion and 
+$500 billion respectively (209, 210). Importantly, 
+these investments also support increases in 
+inference compute and computational resources 
+for research and development (R&D), the latter 
+Figure 1.7: The length of software engineering tasks (measured by how long they take human 
+professionals to complete) that AI agents can complete with an 80% success rate over time. In recent 
+years, this task-length has been doubling approximately every seven months. Source: Kwa et al., 2025 (98).
+AI systems are improving at longer software tasks
+Duration (for human professionals) 
+of software tasks a model can successfully 
+complete 80% of the time
+Claude 3.7 Sonnet
+GPT -2
+GPT -4
+o3
+GPT -5
+Count words in passage
+Find fact on web
+Implement a dictionary attack
+Implement a simple web server
+15 min
+0 min
+30 min
+2020 2022 2024 2026
+Model release date
+Model succeeds 80% of 
+the time on software tasks 
+that would take a human 
+roughly 15 minutes
+
+[[page 35]]
+35
+International AI Safety Report 2026
+Capabilities by 2030
+of which constitutes the bulk of AI company 
+compute spending (211).
+Algorithmic efficiency improvements have 
+historically provided an additional 2–6x 
+performance gain per year (199). However, 
+experts disagree about how sustainable this 
+growth is, especially beyond 2030. Disagreement 
+centres on whether energy constraints and 
+high-quality data scarcity will force fundamental 
+changes to current development approaches (206).
+Experts expect progress in 
+problem-solving to continue
+As discussed in §1.2. Current capabilities, 
+AI models have made rapid advances in 
+mathematical reasoning . Building on these 
+advances, experts forecast major progress in 
+reasoning-based problem-solving by 2027–2028. 
+In a study by the Forecasting Research Institute, 
+experts forecast a 50% chance that AI models will 
+achieve 55% accuracy by 2027 and 75% accuracy 
+by 2030 on undergraduate-level FrontierMath 
+problems (212). However, experts disagree on 
+whether these capabilities will generalise beyond 
+mathematics and programming . Most evidence 
+on the impact of reasoning techniques remains 
+restricted to these domains (197*, 213*, 214*). 
+More extensive evaluations and attempts at 
+applying AI systems’ reasoning skills to novel 
+domains, such as legal and scientific reasoning, 
+will be required to determine how far reasoning 
+techniques will generalise.
+AI systems have also made rapid gains in 
+autonomous software execution . AI systems that 
+could only complete tasks taking human experts 
+a few seconds in 2019 can now, with an 80% 
+success rate, finish software engineering tasks 
+that take human experts 30 minutes (98, 215*). 
+This metric – the maximum task duration that AI 
+systems can complete with an 80% success rate – 
+has been doubling roughly every seven months 
+for the past six years. If it were to continue, AI 
+systems could autonomously complete hours-
+long software projects by 2027–2028 and days-
+long projects by the end of the decade . However, 
+these projections assume an 80% success rate, 
+which likely falls below the standards required 
+for autonomous deployment in many professional 
+settings. Current evidence shows declining 
+performance as tasks get longer, suggesting that 
+achieving a production-ready success rate may 
+require new innovations (98). Additionally, the 
+benchmark tasks differ systematically from real-
+world software work in ways that may overstate 
+progress: for example, they do not feature 
+‘messy’ real-world features such as resource 
+constraints, incomplete information, or multi-
+agent coordination (98).
+Experts disagree on the scale and 
+timing of advances in specialised 
+domains
+General-purpose AI capabilities are expected 
+to improve across many specialised domains 
+by 2028–2030, though experts disagree about 
+the extent and timing of these advances . AI 
+systems have already surpassed graduate-level 
+performance on some scientific benchmarks, 
+such as GPQA Diamond, where leading models 
+now exceed PhD-level experts (216). Trend 
+extrapolations suggest that models could reach 
+research-level performance across specialised 
+scientific domains in the next few years, although 
+forecasts remain uncertain.
+Specific capabilities can emerge unpredictably 
+even as overall performance improves steadily . 
+For example, general-purpose AI models 
+showed a sharp performance jump in adding 
+large numbers once they were prompted 
+to work step-by-step, rather than gradually 
+improving at this as models scaled (217, 218, 
+219*, 220, 221). Researchers refer to such sudden 
+jumps as ‘emergent capabilities’ . These create 
+planning challenges because it is difficult 
+to anticipate when AI systems will suddenly 
+acquire strategically relevant cognitive abilities . 
+Importantly, researchers cannot yet determine 
+whether new prediction methods will make 
+capability emergence more forecastable, and 
+they disagree on how unpredictable these 
+capability leaps truly are (222, 223, 224, 225*).
+
+[[page 36]]
+Capabilities by 2030
+36
+International AI Safety Report 2026
+What bottlenecks might 
+slow down progress?
+Economic returns from additional 
+compute may diminish
+Resource scaling alone may lead to diminishing 
+economic returns and threaten to slow progress, 
+since ever-larger investments will be required to 
+sustain the same rate of capability improvements . 
+Current frontier AI training runs already cost 
+approximately $500 million in computational 
+resources alone, with next-generation models 
+projected to require $1–10 billion (204, 226). 
+Meanwhile, consumer trust in AI systems is 
+still low on average, and many enterprises are 
+struggling to adopt AI systems successfully, 
+making large-scale investments of hundreds 
+of billions of dollars a bet on uncertain returns 
+(93*, 209, 227). If such investments fail to 
+generate revenue (Figure 1.8), companies may 
+sharply reduce scaling investments . This would 
+create a potential ceiling on capability progress, 
+since without continued investments, the 
+5x annual increase in training compute that has 
+been a driver of recent advances would slow 
+substantially. In that case, capability gains would 
+depend more heavily on algorithmic progress 
+rather than physical scaling alone.
+It is unclear how much AI-assisted 
+research automation will accelerate 
+AI R&D
+Experts disagree about whether AI-assisted 
+research automation could dramatically 
+accelerate AI progress in the coming decade . 
+In a pilot study, forecasting experts were 
+asked about the probability that progress 
+in the next few years could compress six years 
+of advancement (2018–2024) into just two years 
+(229). AI forecasting experts gave a median 
+20% probability, while superforecasters (skilled 
+generalist forecasters) estimated only 8% . 
+However, forecasters’ estimates increased 
+to 18% in scenarios where AI systems perform 
+better than human researchers on month-long 
+research projects (229). In such scenarios, AI 
+research could become fully automated much 
+sooner, which some have hypothesised could 
+greatly accelerate AI progress.
+Current empirical evidence on AI-assisted 
+research automation is mixed. On a benchmark 
+measuring AI research engineering capabilities, 
+AI agents perform better than humans at 
+Figure 1.8: Estimated annualised revenue of major AI companies since 2023. Source: Epoch AI, 2025 (228).
+General-purpose AI developer revenues are growing rapidly
+Anthropic
+2024
+2025
+xAI
+Mistral AI
+$0
+$12B
+$13B
+$11B
+$10B
+$9B
+$8B
+$7B
+$6B
+$5B
+$4B
+$3B
+$2B
+$1B
+Year
+Revenue (USD)
+Open AI
+
+[[page 37]]
+37
+International AI Safety Report 2026
+Capabilities by 2030
+two-hour tasks but have lower success rates 
+at eight-hour tasks (230). While suggestive, 
+this evidence does not account for real-world 
+bottlenecks in AI R&D, such as the fact that 
+researchers must manage ambiguous goals, 
+and that it takes a long time to learn whether 
+an algorithmic improvement actually improved 
+model performance. This uncertainty creates 
+extreme planning challenges for policymakers 
+and institutions: if each AI advancement that 
+accelerates the pace of AI R&D also facilitates 
+the next advancement, decades of progress 
+could happen in years.
+Commercial deployment often lags 
+behind capability improvements
+Current AI systems demonstrate advanced 
+capabilities in controlled settings, but their 
+adoption occurs at different speeds across 
+sectors. AI coding assistants achieved 
+widespread adoption among software 
+developers within one to four years of release 
+(231). In contrast, many sectors face substantial 
+obstacles to deploying AI systems (232, 233). 
+Healthcare AI systems that achieve human-
+level diagnostic accuracy in research settings 
+often require three to five additional years for 
+regulatory approval, clinical integration, and 
+physician training before widespread deployment 
+(234). Experts forecast that deployment of 
+autonomous vehicle technology will still be 
+limited in 2030, citing barriers including cultural 
+resistance, infrastructure requirements, and 
+regulatory pushback (212). Small and medium 
+enterprises, which employ 60% of workers 
+globally, face particular deployment challenges 
+including limited technical expertise, insufficient 
+computational infrastructure, and prohibitive 
+integration costs that can delay AI adoption 
+(235, 236). Geopolitical factors, including 
+export controls on advanced semiconductors 
+and divergent regulatory frameworks across 
+jurisdictions, could create additional barriers that 
+affect both the development and deployment 
+of AI capabilities (237, 238).
+That said, experts disagree about whether 
+deployment gaps will narrow quickly or persist 
+as a long-term constraint . On the one hand, 
+the rapid uptake of AI tools across particular 
+sectors suggests that deployment will accelerate 
+if organisations observe concrete productivity 
+gains and competitive advantages (239). Other 
+researchers contend that organisational and 
+regulatory adaptation inherently takes years, 
+regardless of technical progress (240). This 
+disagreement has implications for policy 
+timing. Policies designed for rapidly deployed 
+AI capabilities may be premature, while those 
+assuming slow adoption may be insufficient 
+to properly manage the risks.
+
+[[page 38]]
+Capabilities by 2030
+38
+International AI Safety Report 2026
+What could progress through 2030 look like: OECD progress scenarios
+Considering current trends and uncertainties, including those detailed above, the OECD has 
+developed expert- and evidence-informed scenarios for how AI could advance – or slow down – 
+by 2030 (241). The OECD collaborated with the International AI Safety Report  to integrate these 
+scenarios into the Report . The analysis suggests that four broad classes of scenarios are all 
+plausible by 2030:
+Scenario 1: Progress stalls 
+A scenario in which AI capabilities remain largely unchanged. Rapid gains observed over 
+recent years halt, and progress plateaus.
+ — Scenario: In 2030, AI systems can quickly undertake a range of tasks that would take 
+humans hours to perform, but issues of robustness and hallucinations impact reliability 
+(98, 242). AI systems typically rely upon substantial support from humans to complete tasks, 
+such as detailed prompting, review, and provision of context . They lack robust abilities 
+to learn new skills or form memories, maintain coherence over longer complex tasks, 
+or engage with dynamic physical or social envi ronments (243).
+ — Pathway: After 2025, gains within existing approaches for developing frontier AI models 
+hit fundamental limits . This could occur if AI progress slows due to: diminishing returns 
+from larger training runs and more powerful reasoning systems; limitations in accessing 
+computing resources or other critical inputs; a significant drop in AI investment; or the 
+absence of major algorithmic breakthroug hs (244, 245*).
+ — Historical analogue: Passenger aircraft speed, which climbed quickly from 1930 to 1960 
+before levelling off at 500 knots due to practical lim itations (246).
+Scenario 2: Progress slows 
+A scenario in which incremental gains within existing approaches to training AI systems 
+deliver continued but slower progress.
+ — Scenario: In 2030, AI systems are comparable to useful assistants . They have a deep 
+knowledge base, excel at standard forms of structured reasoning, and can usefully 
+perform tasks that require them to use a computer, navigate the Web, or undertake limited 
+interaction with people or services on behalf of the user . They can retain relevant memories, 
+maintain coherent thinking, and error-correct to perform longer or more complex tasks . 
+They lack robust abilities to learn new skills and can handle physical or embodied social 
+tasks only in limited, controlled environments (such as factories or  laboratories).
+ — Pathway: After 2025, the approaches of frontier model developers struggle to overcome 
+limitations in continual learning, metacognition and agency, problem-solving, creativity, 
+physical tasks, and social interaction, with existing training paradigms providing imperfect 
+solutions (243). Scaling of pre-training, inference and post-training combined with some 
+algorithmic innovations continue to deliver progress, but it is slower than in recent years and 
+reasoning systems fail to generalise as well as hoped (247, 248). The ability to continue scaling 
+is slowed as investors see lower returns from continued investments. Bottlenecks in hardware, 
+infrastructure, natural resources, data supply, and energy limit the ability to rapidly scale 
+compute and data (208).
+ — Historical analogue: Antibiotic discovery, which saw a ‘golden era’ of rapid breakthroughs 
+from the 1940s to 1960s, then slowed as the low-hanging fruit from existing discovery 
+methods were exhausted (249).
+
+[[page 39]]
+39
+International AI Safety Report 2026
+Capabilities by 2030
+Scenario 3: Progress continues 
+A scenario in which continued rapid progress occurs.
+ — Scenario: In 2030, AI systems are comparable to expert collaborators . They can 
+successfully perform many professional tasks in digital environments that might take 
+humans a month to complete. AI systems typically rely upon humans to provide high-level 
+directions, but can often work with high autonomy towards a given objective, including 
+autonomously interacting with a range of stakeholders. They can effectively form and 
+retrieve memories and can ‘learn on the job’ to some extent . They can successfully handle 
+some physical tasks and embodied social tasks beyond controlle d environments.
+ — Pathway: After 2025, AI capabilities continue to grow rapidly through larger training 
+runs, more powerful reasoning systems, and new algorithmic innovations (151). Compute 
+and data inputs continue to scale and do not hit substantial limits before 2030, matching 
+current estimates of the possible scope for continued growth (203, 208). Iteration and 
+extension of existing approaches or novel algorithmic innovations enable developers 
+to overcome current limitations in areas such as cont inual learning.
+ — Historical analogue: Moore’s law, where computing power on chips doubled approximately 
+every two years over five decades (250). 
+Scenario 4: Progress accelerates 
+A scenario in which dramatic progress leads to AI systems as or more capable than humans 
+across most or all capability dimensions.
+ — Scenario: In 2030, AI systems are comparable to human-level remote workers . AI systems’ 
+autonomy and cognitive capability match or surpass humans in cognitive tasks . They 
+capably and autonomously work towards broad strategic goals that they can reflect upon 
+and revise if circumstances change, while also collaborating with humans where necessary . 
+AI systems can seamlessly learn new information and skills during deployment . AI-guided 
+robots can handle complex physical or social tasks in dynamic real-world environments 
+in many industries and roles. AI performance still largely lags humans’ in these physical 
+and embodied tasks, unless the system was developed specifically for a given task, due 
+to challenges in generalisation across physical ta sks (251, 252).
+ — Pathway: After 2025, there are continued exponential gains in AI capabilities within existing 
+paradigms via continued or accelerated scaling of pre-training, post-training, and inference . 
+These are amplified by significant algorithmic breakthroughs and increasingly substantial 
+contributions from AI coding assistants to the development of AI (31*, 253*).
+ — Historical analogue: DNA sequencing saw superexponential improvements from 2000 
+to 2020 due to the development of new sequencing p aradigms (254).
+This scenario analysis suggests that, by 2030, AI progress could plausibly range from stagnation 
+to rapid improvement to levels that exceed human cognitive performance . The full analysis 
+supporting these scenarios is available in OECD (2026)  Exploring Possible AI Trajectories 
+through 2030 (241).
+
+[[page 40]]
+Capabilities by 2030
+40
+International AI Safety Report 2026
+Updates
+Since the publication of the last Report 
+(January 2025), observed developments have 
+largely remained consistent with the rapid AI 
+progress trajectories outlined in that Report . 
+General-purpose AI systems have become 
+substantially more capable, affordable, and widely 
+adopted, with particularly notable advances 
+in scientific reasoning and autonomous task 
+execution. Major AI companies and cloud providers 
+have announced unprecedented data centre 
+investments totalling hundreds of billions of dollars, 
+demonstrating sustained commitment to the 
+compute scaling trends anticipated in the previous 
+Report (255*, 256*, 257*). AI developers have made 
+substantial progress in developing agents that can 
+more reliably execute longer multi-step tasks with 
+reduced human oversight, including advancements 
+in computer use and tool use. The adoption of 
+inference-time compute scaling has become 
+widespread across multiple developers (167*, 258*, 
+259*, 260*). AI tools are now routinely integrated 
+into AI development workflows for writing training 
+code, designing hardware architectures, and 
+generating synthetic training data.
+Evidence gaps
+The main evidence gaps around future AI 
+capabilities include limited scientific evidence 
+relevant to forecasting, insufficient data about 
+real-world constraints on AI progress, and limited 
+understanding of whether and to what extent 
+automation could accelerate AI development. First, 
+researchers cannot reliably predict when AI systems 
+will have certain capabilities, or where diminishing 
+returns to scaling key inputs will constrain progress. 
+The relationship between benchmark performance 
+and real-world performance also remains poorly 
+understood; so even if benchmark performance 
+was easily predictable, the associated real-world 
+impacts would be highly uncertain.
+Second, there is limited evidence around the real-
+world constraints that could limit AI progress. These 
+constraints include unclear availability of training 
+data beyond 2030 and whether energy production, 
+chip manufacturing, and capital expenditures can 
+keep pace with the demands of AI development.
+Third, there is minimal empirical understanding 
+of feedback loops from AI automating its own 
+research and development (194). In particular, 
+there are major uncertainties about how much 
+human oversight will be needed in this process, and 
+about whether slow feedback loops in large-scale 
+experiments could constrain acceleration (261, 262).
+These evidence gaps force policymakers to 
+navigate between two pitfalls: underestimating 
+rapidly emerging capabilities on the one hand, 
+and overreacting to technical advances that may 
+not translate into practical applications on the 
+other. This makes contingency planning across 
+multiple scenarios essential.
+Challenges for policymakers
+For policymakers working on AI capability 
+forecasting, key challenges include unreliable 
+measurement tools and uncertainty about when 
+certain capabilities will be developed. Current 
+benchmarks often fail to accurately represent real-
+world capabilities, prompting increased efforts to 
+develop more challenging and realistic evaluations 
+(263*, 264, 265, 266). For example, even if a model 
+achieves 90% accuracy on a programming 
+benchmark, this does not imply that it can build 
+functional software applications. Estimates 
+of algorithmic efficiency progress are highly 
+uncertain due to limited data on key indicators, 
+such as training efficiency improvements, 
+inference-time optimisations, and architectural 
+innovations. For example, while studies of 
+algorithmic efficiency in language models suggest 
+efficiency improvements of 3x per year based on 
+previous data points, they are unable to rule out 
+rates ranging from 2–6x per year (199).
+This forecasting problem compounds the 
+uncertainty about capability trajectories, 
+which have vastly different policy implications. 
+If algorithmic progress continues at the upper 
+bound of current estimates, models could 
+achieve equivalent capabilities with 10–100x 
+less compute by 2030 . Regulators will therefore 
+need to consider frameworks that can adapt or 
+remain robust to rapid changes in the rate of AI 
+progress and in what AI development looks like, 
+particularly in terms of the required resources . 
+To reduce uncertainty, it will be important to 
+monitor concrete indicators including real-
+world task evaluations, the rate of algorithmic 
+innovation, and the emergence of qualitatively 
+new capabilities . 
+
+[[page 41]]
+41
+International AI Safety Report 2026
+Capabilities by 2030
+Technical supplement
+Scaling laws are often used as empirical guidance
+‘Scaling laws’ describe predictable relationships between model size, computational 
+resources, and performance . When model developers increase training compute by 10x, 
+model performance tends to improve by a predictable amount across diverse tasks such 
+as language understanding, image recognition, and code generation (195*, 196*). This 
+predictable relationship has held across six orders of magnitude of model size – from small 
+research models to today’s frontier AI systems, which cost hundreds of millions of dollars to 
+train – suggesting that these patterns reflect fundamental properties of how neural networks 
+learn. This consistency has led many developers and investors to treat scaling laws as useful 
+empirical guidance, informing major investment decisions . However, scaling laws are empirical 
+regularities, not mathematical guarantees . They are inferred from observed behaviour and may 
+break down at levels of compute or data beyond current experience . And because they predict 
+technical metrics – not end-user value – real-world performance or economic returns may not 
+increase smoothly with training compute. For example, OpenAI discontinued GPT-4.5 although 
+it achieved technical improvements consistent with scaling laws, suggesting that additional 
+scaling may not always translate into proportionate econom ic value (200).
+Data availability can be improved through the use of multimodal and synthetic data
+Much of AI progress has been driven by training models on ever larger corpuses of data, 
+typically text data taken from the internet. However, high-quality language data is finite, raising 
+the possibility that future progress could be bottlenecked by limited dat a availability.
+Even so, there are various techniques to obtain more data if public internet text data becomes 
+scarce. For example, if text data becomes scarce, AI developers may be able to use other 
+types of data instead (‘multimodal data’) . Current estimates suggest that approximately 10 13 
+tokens of high-quality text exist on the public internet, with models already training on datasets 
+approaching this limit (267). However, image data provides 104–1015 tokens of additional training 
+signal, video data adds 1015–1016 tokens, and sensor data from ‘internet of things’ devices could 
+contribute 1017 tokens annually (268). The challenge lies not in data quantity but in quality and 
+relevance: a single video frame contains less semantic information than a paragraph of text, 
+so new techniques are required to extract meaningful training sign al from videos.
+Researchers are also investigating the use of AI models to generate training data for models 
+(‘synthetic data’) . In domains with verifiable outputs, such as mathematics, programming, and 
+formal reasoning, models can generate training data by proposing solutions and checking 
+correctness (269*). The recent wave of inference-time scaling techniques demonstrates this 
+approach: models were trained on millions of self-generated reasoning chains where each 
+step could be verified (112*, 270). However, in domains where answers are harder or impossible 
+to verify, such as creative writing, strategic planning, and scientific hypothesis generation, 
+synthetic data risks causing model collapse, where errors compound through successive 
+generations of training (271). Researchers are exploring whether training separate verifier 
+models could extend synthetic data approaches to harder-to-verify domains. If verification 
+becomes easier than generation for certain tasks, models could potentially be trained on 
+new data without explicit ground truth, though this approach remains largely the oretical (272).
+
+[[page 42]]
+Capabilities by 2030
+42
+International AI Safety Report 2026
+Physical infrastructure can constrain the scaling of computational resources
+AI computation has massive energy demands, and current growth rates in AI power 
+consumption could persist for several years. Global AI computation is projected to require 
+electricity consumption similar to that of Austria or Finland by 2026 (273). Based on current 
+growth rates in power consumption for AI training, the largest AI training runs in 2030 will 
+need 4–16 gigawatts (GW) of power, enough to power millions of US homes (60, 274). Even 
+today, OpenAI’s planned Stargate data centre reaches 1 .2 GW scales, and Meta’s planned 
+Louisiana data centre is projected to exceed 2 GW (210, 274). Experts in a forecasting survey 
+by the Forecasting Research Institute predict that, by the end of 2030, 7 .4% of US electricity 
+consumption will be devoted to training or deploying AI systems in the median scenario (212). 
+Although these energy demands are large, the US (where most frontier AI models are being 
+developed) is building out power infrastructure to meet them and to connect data centres 
+across different regions. These efforts are likely enough to support training runs on the scale 
+of 10 GW, so, at least until the end of the decade, energy bottlenecks will likely not prevent 
+compute scaling (275).
+Challenges to producing and improving AI chips exist, but can likely be overcome . It typically 
+takes three to five years to build a computer chip fabrication plant (276*, 277), and supply 
+chain shortages sometimes delay the production of important chip components (278, 279, 
+280). However, major AI companies can still sustain compute growth in the near term by 
+capturing large fractions of the AI chip stock . For example, one study estimates that the 
+share of the world’s data centre AI chips owned by a single AI company at any point in time is 
+somewhere between 10% and 40% (208). Moreover, existing trends and technical possibilities 
+in chip production suggest that it is possible to train AI systems with 100,000x more training 
+compute than GPT-4 (the leading language model of 2023) by 2030. This is sufficient to support 
+existing growth rates in training compute, which imply a total increase of 10,000x over the 
+same period (208). Hence, chip production constraints are significant, but they are unlikely 
+to prevent further scaling of the largest models at current rates until 2030, if investment is 
+sustained. However, it is unknown whether similar levels of investment will continue, and 
+this is a major reason that AI capabilities in coming years  are uncertain.
+Understanding current hard benchmarks
+As discussed above, an informative metric of AI progress is the length of tasks that models 
+can complete: in software engineering, this length doubles roughly every seven months. 
+In order to study this trend, researchers created 170 tasks relating to research or software 
+engineering, ranging from quick bug fixes that take minutes to feature implementations requiring 
+days (98). Models must solve problems within constraints that mirror human work. Results show 
+a consistent exponential pattern: for example, at 50% success rates, the maximum solvable task 
+duration has grown from a few seconds in 2019 to 2.5 hours in 2025, while at 80% success rate 
+task lengths are much lower – currently around 20–30 minutes. Beyond these limits, success 
+rates drop sharply: models that maintain 50% success at 2.5 hours fall below 25% at four hours. 
+The evaluation also highlights capability asymmetries: models excel at code generation and 
+syntax transformation but continue to have low performance with architectural decisions 
+and cross-file refactoring that human software developers handle more naturally.
+FrontierMath is another difficult benchmark that tests the limits of AI mathematical reasoning 
+through problems created by leading mathematicians specifically to challenge AI systems. The 
+benchmark contains original research-level mathematics problems that require deep conceptual 
+understanding, creative proof strategies, and the ability to combine techniques from multiple 
+
+[[page 43]]
+43
+International AI Safety Report 2026
+Capabilities by 2030
+mathematical domains, such as number theory, real analysis, and algebraic geometry (281). 
+These problems are unpublished and vetted by over 60 mathematicians to prevent models 
+from viewing them before they are tested. The problems are divided into three main tiers: 
+about 25% are at the level of the International Mathematical Olympiad, ~50% require graduate-
+level knowledge, and the toughest ~25% are research-level questions demanding hours or 
+even days from top mathematicians to solve . When the benchmark was released in 2024, 
+state-of-the-art AI systems scored under 2% overall on the full set . However, recent models 
+show promise: according to Epoch AI’s evaluations, OpenAI’s GPT-5 reached ~25%, and the 
+new o4-mini achieved roughly 20%, with some capability even on the hardest tier, signalling 
+rapid progress from baseline levels. Importantly, these successful models used new inference 
+scaling techniques (281).

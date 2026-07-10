@@ -1,0 +1,493 @@
+# 2.1.4 Biological and chemical risks
+# Source PDF pages: 64-70
+
+[[page 64]]
+Risks from malicious use
+64
+International AI Safety Report 2026
+2.1.4. Biological and chemical risks
+Key information
+ — General-purpose AI systems can provide detailed information relevant to developing 
+biological and chemical weapons.  For example, they can generate instructions, 
+troubleshoot procedures, and provide guidance to help malicious actors overcome 
+technical and regulatory obstacles .
+ — AI systems now match or exceed expert performance on many benchmarks 
+measuring knowledge relevant for biological weapons development. For example, 
+one study found that a recent model outperformed 94% of domain experts at 
+troubleshooting virology lab protocols . However, substantial uncertainty remains 
+about how these capabilities affect risk in practice, given material barriers to 
+weapons production and the difficulty of conducting uplift studies.
+ — Major AI developers have released (some) recent models with heightened 
+safeguards after being unable to exclude the possibility that they could meaningfully 
+assist novices in creating biological weapons. These safeguards, such as stronger 
+input and output filters, aim to prevent the models from responding to harmful 
+queries related to weapons development.
+ — Since the publication of the previous Report (January 2025), AI ‘co-scientists’ have 
+become increasingly capable of supporting scientists and rediscovering novel 
+scientific findings. AI agents can now chain together multiple capabilities, including 
+providing natural language interfaces to users and operating biological AI tools and 
+laboratory equipment.
+ — A key challenge for policymakers is managing dual-use risks while promoting 
+beneficial scientific applications. Some AI capabilities that can be misused in 
+biological weapons development are also useful for beneficial medical research, 
+and most biological AI tools are open-weight. This makes it difficult to restrict 
+harmful uses without hampering legit imate research.
+AI systems can now provide detailed scientific 
+information and assist with complex laboratory 
+procedures, including generating experimental 
+protocols, troubleshooting technical problems, 
+and designing molecules and proteins . These 
+capabilities have the potential to accelerate drug 
+discovery, improve disease diagnostics, and 
+broadly support scientific and medical research 
+(528, 529, 530, 531, 532). However, they may 
+also assist threat actors in creating biological 
+and chemical weapons (533, 534, 535, 536, 537, 
+538, 539). By combining and interpreting existing 
+complex information on the internet that is 
+relevant to weapons development, and tailoring 
+advice to specific malicious activities, AI systems 
+can lower existing expertise barriers, allowing 
+more actors to cause harm. In 2025, several 
+major AI developers released new systems with 
+additional safeguards after they could not rule 
+out the possibility that these systems could assist 
+novices in weapons development (2*, 7*, 32*, 
+33*, 540*) (see Box 2.2).
+
+[[page 65]]
+65
+International AI Safety Report 2026
+Risks from malicious use
+Substantial uncertainty remains about how 
+much AI systems increase the overall level 
+of biological and chemical risks. Some experts 
+argue that remaining barriers – including 
+acquiring equipment, obtaining regulated 
+materials, and executing complex procedures – 
+still pose significant challenges for novices 
+seeking to develop weapons (543, 544, 545). 
+Risk assessment in this domain faces significant 
+technical and legal challenges  (see Box 2.3).
+Box 2.2: Developer risk assessments and mitigations
+Major AI developers conduct pre-deployment risk assessments of new models to determine 
+when additional safeguards are needed (see §3.2. Risk management practices ). In 2025, 
+several developers released models with additional precautionary safety measures, such 
+as input and output filters, to prevent them from responding to harmful queries relating 
+to weapons development.
+OpenAI uses its Preparedness Framework to track capability levels, designating models 
+as ‘High capability’ if they could “amplify existing pathways to severe harm” (541*). OpenAI 
+treats GPT-5-Thinking and ChatGPT-Agent as ‘high capability’, and they have activated 
+the associated safeguards for the first time as a “precautionary approach” given a lack 
+of “definitive evidence” (7*).
+Anthropic uses a Responsible Scaling Policy, which defines AI Safety Levels based in part on 
+capability thresholds related to knowledge and abilities in the chemical, biological, radiological, 
+and nuclear domains (542*). Claude Opus 4 was the first model that Anthropic released at AI 
+Safety Level 3, noting that, while testing did not find definitive evidence that the model had 
+reached relevant capability thresholds, the company could not rule out that further testing 
+would do so (33*).
+Google DeepMind uses a Frontier Safety Framework with Critical Capability Levels in various 
+domains. Gemini 2.5 Deep Think was their first model to trigger a Critical Capability Levels early 
+warning alert for chemical and biological risk, prompting additional miti gations (540*).
+Box 2.3: Challenges in assessing biological and chemical risks
+It is challenging to accurately assess how AI systems affect chemical and biological risks due 
+to legal constraints and international treaties, as well as ‘information hazards’ – information that 
+may be harmful to share (546). For example, if researchers carry out, or publish the results of, 
+a study on AI assistance in weapons development, they may risk inadvertently violating national 
+security laws or treaties such as the Biological Weapons Convention and Chemical Weapons 
+Convention. This is especially the case for real-world ‘uplift studies’, which systematically 
+compare how well people perform a given task when they have access to an AI model or system, 
+relative to a relevant baseline such as merely having internet access. As a result, researchers 
+often rely on ‘benign proxy tasks’: tests that measure how much an AI system helps with similar 
+but harmless procedures, such as synthesising pharmaceuticals or culturing low-risk bacteria . 
+Relevant data is also often classified, particularly when it relates to the use of AI systems by state 
+actors. This evidence gap exacerbates substantial uncertainty about the magnitude of AI-related 
+biological and chemical risks.
+
+[[page 66]]
+Risks from malicious use
+66
+International AI Safety Report 2026
+General-purpose AI and 
+weapon development
+General-purpose AI systems can 
+provide and contextualise information 
+relevant to creating biological 
+or chemical weapons
+General-purpose AI systems can provide 
+information relevant to various steps in creating 
+biological and chemical weapons (Figure 2.7).  
+This includes providing detailed instructions 
+for obtaining and constructing pathogens and 
+toxins, simplifying technical procedures, and 
+troubleshooting laboratory errors (32*, 33*, 197*, 
+547*, 548*, 549, 550). Safeguards designed to 
+prevent harmful uses have improved over time 
+but remain imperfect . For example, researchers 
+bypassed filters by claiming that they need the 
+information for legitimate research, asking about 
+lesser-known chemical weapons, or using 
+alternative terms (551, 552).
+While such information is already accessible on 
+the internet, general-purpose AI systems allow 
+novices to access and contextualise relevant 
+information faster than they could with internet 
+searches alone (33*). Multimodal capabilities also 
+allow AI systems to provide tailored advice in real 
+time via video and audio troubleshooting (553, 554). 
+They can also provide some kinds of ‘tacit 
+knowledge’, the practical expertise that is usually 
+only built from hands-on laboratory experience 
+(197*, 549). For example, one study showed that 
+OpenAI’s o3 model is able to outperform 94% of 
+domain experts at troubleshooting virology lab 
+protocols (549). These capabilities have led some 
+experts to argue that access to general-purpose 
+AI makes biological or chemical weapons 
+development somewhat easier than internet 
+access alone does (553).
+Agent 
+suggestion
+Design
+Test
+Build Learn
+ReleaseWeaponisationIdeationIntention
+AI tools could assist at multiple stages of biological 
+weapons development
+Agent Delivery
+Experiment 
+simulation
+BT
+Result 
+Interpretation
+BT & GPAI
+Genome 
+design
+BT
+Stability 
+design
+Protein 
+design
+Genome 
+assembly
+Model target 
+location
+Laboratory 
+automation
+BT & GPAI
+Experiment 
+data feedback
+BT
+Vehicle 
+design
+BT
+BT & GPAI
+Agent 
+property 
+design
+BTBT
+Delivery 
+pathway 
+design
+BTBT
+Iterative 
+model 
+prediction
+BT
+Bioreactor 
+optimisation
+BT
+BT
+GPAI
+Experiment 
+automation
+BT & GPAI
+Figure 2.7: An illustration of the process for biological weapons development. General-purpose AI 
+systems can be used for tasks marked with ‘GPAI’; AI-enabled biological tools can be used for tasks 
+marked with ‘BT’ (‘biological tool’). Source: Rose and Nelson, 2023 (555).
+
+[[page 67]]
+67
+International AI Safety Report 2026
+Risks from malicious use
+Relevant capabilities have 
+improved but evidence of 
+real-world uplift is mixed
+In a recently published real-world uplift study, 
+general-purpose AI systems without relevant 
+safeguards provided substantial assistance in 
+bioweapon acquisition proxy tasks, compared 
+to a baseline of internet access only (33*). 
+Previous uplift studies found no or small, 
+generally statistically insignificant effects (556, 
+557*). However, these studies had potentially 
+unrepresentative participants and small sample 
+sizes, and they have quickly become outdated 
+as AI capabilities have improved (Figure 2.8) 
+(543). The Frontier Model Forum – an AI industry 
+consortium – has jointly funded an additional 
+uplift study to assess real-world novice uplift, 
+but has not yet reported their results (558).
+Effects of AI tools
+AI-enabled biological and chemical tools 
+are AI models trained on biological or chemical 
+data that can identify, categorise, or design 
+novel biological or chemical entities (559). First, 
+some such tools, such as ‘biological foundation 
+models’, can be adapted to perform a wide 
+variety of scientific tasks within their domain, 
+placing them within this Report’s definition of 
+general-purpose AI (see Introduction). Second, 
+general-purpose AI agents can now operate 
+more specialised tools, making them more 
+accessible to lower-skill users through natural 
+language interfaces.
+These tools can accelerate biological 
+and chemical research, including research 
+with misuse potential. For example, Google 
+Leading AI systems match or outperform experts 
+on dual-use biological tasks
+Evaluation scores for AI models, relative to human expert baseline
+Biological weapons 
+of mass destruction 
+knowledge
+Multimodal virology 
+troubleshooting
+Tacit knowledge and 
+troubleshooting
+Genetic engineering 
+scenarios
+50
+100
+150
+200
+250
+300
+Jan
+2024
+July
+2024
+Oct
+2024
+Jan
+2025
+Apr
+2025
+July
+2025
+Oct
+2025
+Apr
+2024
+Model release date
+Score relative to average expert (%)
+Biology lab protocols
+Lab protocol Q&A
+Expert baseline (100%)
+Figure 2.8: Leading general-purpose AI system performance on benchmarks designed to resemble 
+tasks relevant to biological and chemical weapons development over time. The coloured lines show 
+the top demonstrated performance by an AI system on that benchmark at any given time, measured as 
+a percentage of expert baseline performance. A score of 100% would mean that, at that time, the best 
+available system matched expert performance. The graph indicates that the best models now approach 
+or exceed expert performance on a range of these benchmarks. Sources: OpenAI 2025; Anthropic 2025; 
+Google 2025 (7*, 33*, 547*, 548*).
+
+[[page 68]]
+Risks from malicious use
+68
+International AI Safety Report 2026
+DeepMind’s AlphaProteo can generate novel 
+protein designs (560*). AI-generated designs 
+often fail to function as intended, requiring real-
+world testing to identify working candidates  (561). 
+However, since testing AI-generated designs is 
+much faster than generating designs manually, 
+these tools can still accelerate research overall . 
+AI agents can further speed up workflows by 
+automating the cycle of iteratively designing 
+and testing proteins (562).
+Tools are increasingly accessible 
+through chat interfaces and 
+integrations
+Natural language interfaces are making these 
+tools increasingly accessible . Developers are 
+integrating chat interfaces into chemical (563) 
+and biological design software (564, 565), allowing 
+inexpert users to operate sophisticated tools 
+(539). There is little research on how much more 
+accessible these integrations make such tools, 
+and the effect on overall risk – particularly for 
+novices versus those with existing expertise – 
+is unclear (543).
+AI tools can be adapted to design 
+pathogens and toxins
+Biological foundation models can generate 
+designs for novel pathogens. Recently, 
+researchers demonstrated that a biological 
+foundation model could generate a significantly 
+modified virus from scratch. This study 
+represents the first instance of genome-scale 
+generative AI design, albeit with the important 
+caveat that the generated virus infects bacteria 
+rather than humans (566, 567). Some models can 
+also generate designs for novel pathogens more 
+harmful than their natural equivalents (568).
+Experiments have shown the potential for similar 
+risks with narrower chemical and biological tools. 
+For example, some tools have been specifically 
+designed for toxin creation (569) and can generate 
+modified designs for known toxins, such as ricin 
+(570). In one early demonstration, a tool designed 
+to reduce molecular toxicity was repurposed 
+to increase it with trivial modifications (571). 
+However, legal barriers and treaty obligations 
+pose challenges for researchers seeking to 
+study the effectiveness of AI-designed toxins 
+2019 2020 2021 2022 2023 2024 2025
+Years
+0
+200
+400
+600
+800
+1,000
+1,200
+1,400
+Cumulative totals
+The number of AI-enabled biological tools has grown signiﬁcantly 
+in recent years
+Protein engineering
+Pathogen prediction
+Molecule design
+Host–pathogen interaction prediction
+Viral vector design
+Vaccine design
+Genetic modiﬁcation and genome design
+Experimental design and simulation
+Figure 2.9: The number of AI-enabled biological tools over time. Source: Webster et al., 2025 (573).
+
+[[page 69]]
+69
+International AI Safety Report 2026
+Risks from malicious use
+or harmful proteins (see Box 2.3). Such tools 
+also have many beneficial applications, including 
+predicting pathogen properties and designing 
+components for therapeutic purposes (572, 573). 
+Developers are releasing many more of them 
+over time (Figure 2.9) and integrating them with 
+natural language interfaces to make them more 
+accessible to users without specia list expertise.
+Some AI-enabled biological tools 
+are restricted, but others are widely 
+accessible
+Access to AI-enabled biological tools varies . 
+Some, such as Google DeepMind’s AlphaProteo 
+(560*), are restricted to select researchers . 
+Others, such as ConoDL (569), are open-weight 
+and widely accessible . One recent study found 
+that 23% of the highest-performing tools had high 
+misuse potential due to dangerous capabilities 
+and accessibility, and 61 .5% of these were fully 
+open source, making them accessible to potential 
+malicious actors (573). Another study found that 
+only 3% of 375 biological AI tools surveyed had 
+any form of safeguards (574).
+Updates
+Since the publication of the previous Report 
+(January 2025), some AI companies implemented 
+additional risk mitigations for their new models 
+(see Box 2.2). Furthermore, AI ‘co-scientists’ 
+are increasingly capable: they can meaningfully 
+support top human scientists and rediscover 
+novel, unpublished scientific findings (575*, 
+576*). Multiple research groups have developed 
+specialised scientific AI agents capable of 
+performing tasks including literature review, 
+hypothesis generation, experimental design, 
+and data analysis (564, 575*, 576*, 577, 578*). 
+Controlled studies and new benchmarks (33*, 
+197*, 549) suggest that AI systems can provide 
+substantially more weapons development 
+assistance than the internet alone, but larger 
+studies are needed to confirm these results.
+Evidence gaps
+The primary evidence gaps relate to translating 
+demonstrated capabilities into risk estimates . 
+Comprehensive studies measuring how AI 
+systems affect actual weapons development 
+are rare, expensive, and constrained by 
+legal and ethical considerations (see Box 2.3). 
+Chemical risk evaluations have received relatively 
+less attention than biological risk evaluations (33*, 
+547*, 548*). Across both chemical and biological 
+risk evaluations, results are reported with varying 
+levels of detail (579) or withheld entirely due to 
+sensitivity concerns . Evaluations also generally 
+assess the capabilities of individual tools, making 
+them less applicable to real-world end-to-end 
+workflows which might involve multiple AI 
+systems. As such, it is unclear whether these 
+evaluations under- or overestimate risk. Finally, 
+there is ongoing debate about whether harmful 
+AI capabilities primarily empower malicious 
+actors with existing expertise (increasing their 
+efficiency) or enable novices with little prior 
+knowledge (580).
+Mitigations
+A range of technical mitigations are being 
+developed, both within and outside of AI models, 
+to address these risks. For general-purpose AI 
+systems, major developers have implemented 
+safety controls designed to refuse harmful 
+requests (55, 581*, 582*). Technical mitigations 
+for specialised biological and chemical AI tools 
+tend to lag behind those for general-purpose 
+AI systems (551). Other safeguards include 
+excluding pathogen data from training (30, 
+55, 583*, 584), restricting access to high-risk 
+tools (560*, 585), training models to refuse 
+queries involving pathogenic viruses (586), and 
+watermarking outputs (587). However, many 
+of these safeguards have not been thoroughly 
+tested (588), and can be removed from open-
+weight models (589, 590, 591).
+Another focus for technical mitigations is 
+screening DNA synthesis requests in order 
+to prevent malicious actors from acquiring 
+material necessary for bioweapons creation 
+(570, 592, 593). Using synthetic DNA is likely the 
+most straightforward way to create modified 
+pathogens and it allows malicious actors to avoid 
+using infectious source material . Screening is 
+complemented by extending infectious disease 
+surveillance frameworks to better detect novel 
+threats and intentional attacks (594, 595, 596). 
+Biological risks – whether AI-enabled or not – 
+can probably be at least partially mitigated 
+
+[[page 70]]
+Risks from malicious use
+70
+International AI Safety Report 2026
+by improving biosecurity directly through 
+reducing indoor pathogen transmission (597), 
+developing broad-spectrum antivirals (598), and 
+improving laboratory biosecurity and biosafety 
+globally (599, 600). Greater facilitation for data-
+sharing between relevant actors could aid in 
+identifying and addressing potential threats . 
+Using AI to improve pathogen detection 
+and vaccine and drug development is likely 
+a key mitigation strategy, especially given 
+the limitations of current safeguards.
+Challenges for policymakers
+The dual-use nature of AI for biological and 
+chemical capabilities poses challenges to 
+policymakers wanting to limit the risk of 
+potentially harmful uses while enabling beneficial 
+research. The open availability of biological 
+AI tools presents a difficult choice: whether 
+to restrict these tools or to actively support 
+their development for beneficial purposes (601) 
+(see §3.4. Open-weight models).

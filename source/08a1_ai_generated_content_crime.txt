@@ -1,0 +1,336 @@
+# 2.1.1 AI-generated content and criminal activity
+# Source PDF pages: 45-49
+
+[[page 45]]
+45
+International AI Safety Report 2026
+Risks from malicious use
+Section 2.1 
+Risks from malicious use
+2.1.1. AI-generated content and criminal activity
+Key information
+ — General-purpose AI systems can generate realistic text, audio, images, and 
+video, which can be used for criminal purposes such as fraud, extortion, defamation, 
+non-consensual intimate imagery, and child sexual abuse material.  For example, 
+there are documented incidents of scammers using voice clones and deepfakes to 
+impersonate executives or family members, and trick victims into tran sferring money.
+ — Accessible AI tools have substantially lowered the barrier to creating harmful 
+synthetic content at scale. Many tools are free or low-cost, require no technical 
+expertise, and can be us ed anonymously.
+ — Deepfake pornography, which disproportionately targets women and girls, 
+is a particular concern.  Studies show that 96% of deepfake videos online are 
+pornographic. 15% of UK adults report having seen deepfake pornographic images 
+and 2.2% of respondents in a 10-country survey reported that someone had 
+generated non-consensual intimate i magery of them.
+ — Systematic data on the prevalence and severity of these harms remains limited, 
+making it difficult to assess overall risk or design effective interventions. Incident 
+databases and investigative journalism collect individual cases, but comprehensive 
+analysis is lacking. Embarrassment or fear of further harm can make individuals and 
+institutions reluctant to report incidents of AI-enabled fraud or abuse.
+ — Since the publication of the previous Report (January 2025), AI-generated content 
+has become harder to distinguish from real media.  In one study, participants 
+misidentified AI-generated text as human-written 77% of the time. In another 
+study of audio deepfakes, listeners mistook AI-generated voices for real speakers 
+80% of the time.
+ — Key challenges for policymakers include underreporting, detection tools that 
+cannot keep pace with generation quality, and difficulty tracing content to creators. 
+Additionally, some content – such as child sexual abuse material – is harmful even 
+when correctly identified as AI-generated, meaning detection alone cannot fully 
+address these risks.
+
+[[page 46]]
+Risks from malicious use
+46
+International AI Safety Report 2026
+Malicious actors use general-purpose AI systems 
+to create realistic fake content for scams, 
+extortion, or manipulation (282) (see Table 2.1). 
+General-purpose AI has made it much easier 
+to scale the creation of fake content that can 
+be used to harass or harm individuals, such 
+as non-consensual pornographic videos (283). 
+However, while cases of serious harm have been 
+documented (284, 285), comprehensive public 
+data on the frequency and severity of these 
+incidents remains limited, making it difficult to 
+assess the full scope of the problem . This section 
+focuses on how AI-generated fake content can 
+cause harm, especially to individuals, other 
+than by manipulation, which will be discussed 
+in §2.1.2. Influence an d manipulation.
+Criminal uses of AI content
+Malicious actors use AI-generated content for 
+criminal purposes such as fraud, identity theft, and 
+blackmail. For example, scammers use AI tools to 
+generate voice clones or deepfakes to trick victims 
+into transferring money (289, 290). Documented 
+incidents include executives authorising transfers 
+of millions to fraudsters, as well as ordinary 
+people sending smaller amounts to impostors 
+posing as a loved one (291*, 292). Criminals also 
+use AI-generated content for identity theft (e.g. by 
+using a victim’s impersonated voice or likeness to 
+authorise bank transfers or trick technical system 
+administrators into sharing information such as 
+login credentials) (293); blackmail, to demand 
+money, secrets, or nude images (294, 295); or 
+sabotage, by damaging individuals’ reputations for 
+professional, personal, or political purposes (296, 
+297, 298, 299). Researchers have also noted that 
+deepfakes may risk undermining the reliability of 
+evidence presented in court proceedings (300). 
+While the number of reported incidents is rising 
+(Figure 2.1), systematic data on the frequency 
+or severity of AI-enabled crimes is limited. This 
+makes it difficult to assess how much AI increases 
+risk overall, and to design effective mitigations.
+AI-generated sexual content
+AI-generated sexual content has become more 
+prevalent, including non-consensual intimate 
+imagery that overwhelmingly targets women and 
+girls. The realism and complexity of images that AI 
+systems can generate has improved significantly 
+(Figure 2.2). When provided with photos of 
+a person, AI tools can now generate highly realistic 
+images or videos of them in a range of scenarios, 
+including sexually explicit ones (302).
+AI-generated sexual content 
+disproportionately targets women 
+and girls
+One study estimated that 96% of deepfake videos 
+are pornographic (303), that 15% of UK adults 
+report having seen deepfake pornographic 
+images (304*), and that the vast majority 
+Defamation Generating fake content that presents an individual engaging 
+in compromising activities, such as sexual activity or using drugs, and 
+then releasing that content in order to erode a person’s reputation, harm 
+their career, and/or force them to disengage from public-facing activities 
+(e.g. in politics, journalism, or entertainment) (286).
+Psychological  
+abuse/bullying
+Generating harmful representations of an individual for the primary purpose 
+of abusing them and causing them psychological trauma (287). Victims are 
+often children.
+Scams/fraud Using AI to generate content (such as an audio clip impersonating a victim’s 
+voice) in order to, for example, authorise a financial transaction (288).
+Blackmail/extortion Generating fake content of an individual, such as intimate images, without 
+their consent, and threatening to release them unless financial demands 
+are met (289).
+Table 2.1: AI-generated fake content has been used to cause different kinds of harm to individuals, 
+including through defamation, scams, blackmail, and psychological abuse.
+
+[[page 47]]
+47
+International AI Safety Report 2026
+Risks from malicious use
+of ‘nudify’ apps explicitly target women (305). 
+In another survey of over 16,000 respondents 
+across 10 countries, 2.2% of respondents said 
+that someone had generated non-consensual 
+intimate images of them (287). Sexual deepfakes 
+are also used in intimate partner abuse, again 
+disproportionately affecting women (298, 306). 
+Public polling shows that people overwhelmingly 
+view the generation of such images as deeply 
+harmful (302). While many systems have 
+safeguards to prevent such uses, users can 
+sometimes bypass these or find alternatives 
+that lack safeguards (307, 308).
+A particularly concerning use of AI tools is 
+to generate sexually explicit content involving 
+minors. In 2023, a study found hundreds of 
+images of child sexual abuse in an open dataset 
+used to train popular AI models such as Stable 
+Diffusion (309). Children can also perpetrate 
+abuse against their peers using AI-generated 
+content. The overall prevalence of such activities 
+is unclear (310). However, the number of reported 
+incidents is rising. For example, schools have 
+reported student use of ‘nudify apps’ to create 
+and share AI-generated pornographic images 
+of their (mostly female) peers (311). In another 
+small study, 17 US-based educators expressed 
+increasing concern about AI-generated non-
+consensual intimate imagery in  schools (312).
+Updates
+Since the publication of the previous Report 
+(January 2025), AI-generated content has 
+become harder to distinguish from real content . 
+In one study, after a five-minute conversation, 
+participants misidentified text generated by 
+OpenAI’s GPT-4o model as human-written 77% 
+of the time (313). Similarly, other studies show 
+that humans struggle to identify deepfakes, often 
+performing no better than chance (314, 315). 
+For audio deepfakes, a study found that people 
+Figure 2.1: The number of events involving ‘content generation’ reported in the OECD’s AI Incidents 
+and Hazards Monitor database over time. This includes incidents involving AI-generated content 
+such as deepfake pornographic images. The number of monthly reported incidents has increased 
+significantly since 2021. Source: OECD AI Incidents and Hazards Monitor (301).
+Nov 2021
+Feb 2022
+May 2022
+Aug 2022
+Nov 2022
+Feb 2023
+ May 2023
+Aug 2023
+Nov 2023
+Feb 2024
+May 2024
+Aug 2024
+Nov 2024
+Feb 2025
+May 2025
+Aug 2025
+Nov 2025
+Date
+0
+50
+100
+150
+200
+250
+Number of incidents and hazards
+The number of media-reported AI incidents and hazards involving 
+content generation is growing
+Number of events involving ‘content generation’ in the OECD’s AI Incidents and Hazards Monitor database
+Monthly incidents and hazards
+Six-month moving average
+
+[[page 48]]
+Risks from malicious use
+48
+International AI Safety Report 2026
+took AI voice clones to be the real speaker in 
+80% of cases, suggesting heightened risks of 
+impersonation (315). However, multimodal AI 
+outputs combining video, audio, and text appear 
+easier to detect than text or audio alone.
+Evidence gaps
+A key evidence gap stems from the lack of 
+comprehensive and reliable statistics to assess 
+the frequency and severity of harm from fake 
+content. While more studies are documenting the 
+rise of fake content (especially sexual content) 
+and providing strong evidence of the resulting 
+harms, most evidence comes from incident 
+databases, such as the AI Incident Database 
+and OECD AI Incidents and Hazards Monitor rather 
+than systematic measurement or population-
+level studies (292, 301). Key empirical evidence 
+gaps remain, and there is little expert consensus, 
+specifically around the prevalence of AI-enabled 
+extortion, child sexual abuse material in schools, 
+and sabotage. Reluctance to report such incidents 
+may be a contributing factor. For example, 
+institutions and individuals often hesitate to 
+report AI-driven fraud due to embarrassment 
+or fear of further harm (290). There is a need for 
+OpenAI DALL-E 2 (Mar. 2022)
+OpenAI GPT-4o (May 2024)
+OpenAI DALL-E 3 (Oct. 2023)
+Google Nano Banana Pro (Nov. 2025)
+Figure 2.2: AI-generated images created using image-generation tools considered to be state-of-the-
+art at the time of their release. The images show how much more realistic AI-generated images have 
+become in just a few years. Source: International AI Safety Report 2026 .
+The quality of AI-generated images has improved rapidly
+Image-generation model responses to the prompt “A person giving a presentation in a university 
+lab meeting room. They are describing a diagram showing how mitosis works, which is displayed 
+on a large screen behind them.”
+
+[[page 49]]
+49
+International AI Safety Report 2026
+Risks from malicious use
+multiple pathways through which incidents can 
+be detected or reported (316).
+Mitigations
+Countermeasures that help people detect 
+fake AI-generated content, such as warning 
+labels and AI detection tools, show mixed 
+effectiveness. Certain AI and machine learning 
+tools can be trained to detect anomalies in 
+images and videos and thus to identify fake 
+images, but their effectiveness remains limited 
+(317). Similarly, ‘warning labels’ designed to alert 
+users to potentially misleading content have only 
+a modest impact. For example, a study found that 
+warning labels on AI-generated videos improved 
+participants’ accuracy at identifying AI-generated 
+videos from 10.7% to 21.6%, with most people still 
+failing to spot deepfakes (318). Beyond detection, 
+prevention-focused techniques include gating 
+access to AI models – for example, limiting 
+access to vetted users – and safeguards, such 
+as classifiers, filters, or rules that prevent models 
+from generating harmful or misleading content 
+(see §3.3. Technical safeguards and monitoring ). 
+However, in the case of open-weight models, 
+malicious actors can bypass these measures 
+(see §3.4. Open-weight models). Filtering 
+sexual content from models’ training data 
+is also emerging as an effective method for 
+increasing barriers to generating non-consensual 
+intimate imagery (319).
+Watermarking and content logs are promising 
+methods for verifying content authenticity, but 
+face technical shortcomings and raise privacy 
+concerns. Watermarking involves embedding 
+a machine-readable digital signature into the 
+content during creation, allowing for automated 
+traceable verification of its origin and authenticity. 
+Researchers have proposed using watermarks 
+to help consumers identify that content is AI-
+generated, including for videos (320, 321), images 
+(322, 323, 324*), audio (325), and text (326). However, 
+skilled actors can remove standalone watermarks 
+or deceive detectors, reducing their effectiveness, 
+especially in the case of open-weight models 
+(§3.4. Open-weight models) (327*, 328). 
+A complementary approach is to embed 
+watermarks or secure metadata, such as verifiable 
+records of origin and creation, in authentic media 
+(329, 330, 331). For example, recording devices can 
+be required to embed unique digital signatures 
+that help distinguish recordings made using them 
+from AI-generated content. Another approach 
+involves maintaining logs of AI outputs and using 
+them to identify newly generated AI content by 
+comparison (332). However, this approach faces 
+scalability issues, is vulnerable to evasion, and 
+raises privacy concerns related to logging user 
+interactions (333). While not foolproof on their 
+own, new research shows that a combination 
+of these mitigations within a broader ecosystem 
+of standards and policies can compensate for 
+their respective limitations and help users detect 
+AI-generated content more reliably (324*).
+Challenges for policymakers
+Key challenges for policymakers include 
+unreliable statistics, technical limitations, and 
+rapidly evolving technology. Underreporting and 
+unreliable statistics make it difficult to assess 
+the full scale of harmful AI-generated content 
+and choose effective interventions (334). Tracing 
+AI-generated content back to the individuals 
+who created it is also challenging, especially 
+when open-weight models are used. Detection 
+and watermarking techniques have improved but 
+remain inconsistent and face technical challenges 
+(333, 335). Technical developments in AI content 
+generation can also undermine their effectiveness. 
+For example, a study found that deepfake 
+detection benchmarks – curated examples of 
+AI-generated and real media designed to test the 
+performance of deepfake detection tools – are 
+outdated and perform about 50% worse on real-
+world deepfakes than on the benchmarks usually 
+used to evaluate them (317). These limitations 
+mean that multiple layers of techniques are likely 
+needed to detect AI-generated content with a high 
+degree of robustness. Finally, it is important to 
+note that harm from AI-generated content can 
+occur even when the content is clearly identified 
+as synthetic (e.g. child sexual abuse material), 
+meaning detection alone cannot address all risks.

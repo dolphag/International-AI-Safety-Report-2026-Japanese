@@ -1,0 +1,597 @@
+# Technical and institutional challenges
+# Source PDF pages: 97-104
+
+[[page 97]]
+97
+International AI Safety Report 2026
+Technical and institutional challenges
+Section 3.1 
+Technical and institutional 
+challenges
+Key information
+ — General-purpose AI poses distinct institutional and technical challenges for 
+policymakers. These fall into four broad categories: gaps in scientific understanding, 
+information asymmetries, market failures, and institutional design and 
+coordination challenges.
+ — Gaps in scientific understanding limit the ability to reliably evaluate the behaviour 
+of general-purpose AI systems. For example, developers cannot always predict what 
+behaviours will emerge when they train new models, or provide robust, quantifiable 
+assurances that an AI system will not exhibit harm ful behaviours.
+ — Information asymmetries limit access to evidence about general-purpose AI 
+systems. For example, AI developers have information about their products that 
+remains largely proprietary, and commercial considerations often make it difficult for 
+them to share information about their development processes and ri sk assessments .
+ — Market dynamics and the pace of AI development pose additional challenges. Due 
+to competitive pressures, AI companies may face trade-offs between faster product 
+releases and investments in risk reduction efforts. Many AI-related harms are also 
+externalised and legal liability for them remains unclear, and governance processes 
+can be slow to adapt to changes in th e AI landscape.
+ — These challenges create an ‘evidence dilemma’ for policymakers.  The general-
+purpose AI landscape changes rapidly, but evidence about new risks and mitigation 
+strategies is often slow to emerge . Acting with limited evidence might lead to 
+ineffective or even harmful policies, but waiting for stronger evidence could leave 
+society vulnerable to various risks.
+ — Since the publication of the last Report (January 2025), some challenges have eased 
+while others have intensified.  Advances in open-weight model releases may help 
+more researchers study the behaviour of highly capable models . Several jurisdictions 
+have also developed transparency and incident reporting frameworks that may 
+provide policymakers with more relevant information, though the recency of these 
+developments means their usefulness in practice rem ains uncertain.
+
+[[page 98]]
+Technical and institutional challenges
+98
+International AI Safety Report 2026
+General-purpose AI presents distinctive 
+challenges for policymakers . Certain features of 
+the technology, such as its complexity, the pace 
+of its development, and its deployment across 
+multiple sectors, make risks associated with 
+it difficult to assess and manage. This section 
+discusses 10 challenges across the following 
+four categories: gaps in scientific understanding: 
+information asymmetries; market failures; and 
+institutional design and coordination challenges 
+(Figure 3.1). Some of these challenges stem 
+from AI system properties, such as the difficulty 
+of interpreting model behaviour or evaluating 
+capabilities. Others arise from how social 
+structures and incentives shape the ability 
+of governments, companies, and researchers 
+to generate and act on evidence about 
+emerging risks.
+Gaps in scientific understanding and information 
+asymmetries create an ‘evidence dilemma’ 
+for policymakers. Policymakers may face 
+difficult decisions about general-purpose AI 
+before they have clear evidence regarding its 
+capabilities and risks (872, 873, 874). Acting 
+on incomplete information may lead to the 
+implementation of ineffective or even harmful 
+interventions. However, waiting for conclusive 
+Figure 3.1: Four categories of challenges that make risk management for general-purpose AI 
+especially challenging: gaps in scientific understanding; information asymmetries; market failures; 
+and institutional design and coordination challenges. Source: International AI Safety Report 2026 .
+Limited external scrutiny
+Training data not disclosed
+Challenges for risk 
+management and 
+policymaking
+Information 
+asymmetries
+Gaps in scientiﬁc 
+understanding
+Uncertain liability allocation
+Speed vs safety trade-offs 
+Market failures
+Single points of failure
+Pace of development
+Cross-border impacts
+Institutional design
+and coordination 
+challenges
+Limited model interpretability
+Underspeciﬁed training objectives
+Evaluations insufficient for 
+assessing risk
+Risk management and policymaking for general-purpose 
+AI poses several challenges
+Categories Challenges
+
+[[page 99]]
+99
+International AI Safety Report 2026
+Technical and institutional challenges
+evidence to emerge could leave society 
+vulnerable to many of the risks discussed in 
+Chapter 2 (875, 876, 877). Market failures and 
+institutional design challenges compound this 
+problem by creating misaligned incentives 
+and coordination difficulties that persist 
+even when evidence is available.
+Category 1: Gaps in 
+scientific understanding
+The first set of challenges concerns gaps in 
+scientific understanding. Researchers cannot 
+yet reliably train AI systems to behave as 
+intended or explain why they produce particular 
+outputs. Current evaluation methods also do 
+not reliably identify dangerous capabilities 
+before deployment.
+Training objectives only partially 
+capture intended goals
+The complex training process of general-purpose 
+AI models (see §1.1. What is general-purpose AI? ) 
+makes it difficult for developers to predict model 
+capabilities and behaviour for several reasons 
+(218, 878, 879). First, the mathematical objectives 
+used in training often capture only part of what 
+developers intend. For example, a model may be 
+optimised to predict the next word in a sequence, 
+even though the real-world goal is to create 
+user-friendly products that efficiently provide 
+accurate and helpful information . These two aims 
+only partially align. Second, the safety-focused 
+mitigations that developers add after initial 
+training may not generalise across all inputs . For 
+example, safeguards can sometimes be bypassed 
+when a model is prompted in a language 
+uncommon in its training data (880).
+These limitations have practical consequences . 
+AI models exhibit persistent deficiencies on 
+measures of truthfulness, safety, and robustness 
+(881), and there are fundamental unsolved 
+problems in ensuring that safeguards remain 
+effective across different contexts (174). 
+Researchers have also demonstrated that models 
+can be trained to produce false information to 
+complete tasks, with such behaviour persisting 
+despite safety mitigations (512*, 717), and 
+that models can behave differently in training 
+and deployment contexts (364*). While these 
+behaviours observed in experimental settings 
+may not generalise to real-world deployment, 
+they underscore core technical challenges in 
+ensuring models behave as intended.
+Model outputs cannot 
+yet be reliably explained
+Current techniques for understanding how 
+AI models produce their outputs also remain 
+unreliable. Researchers often cannot trace 
+how a particular input leads to a specific output. 
+General-purpose AI models involve billions or 
+trillions of parameters adjusted across massive 
+datasets, and they represent information across 
+neurons in a highly distributed way, making it 
+technically challenging to isolate which parts of 
+the model are responsible for specific behaviours 
+(882, 883, 884). This is often referred to as the 
+‘black box’ nature of AI systems . ‘Interpretability’ 
+techniques that aim to explain models’ 
+internal workings require major simplifying 
+assumptions (885, 886*, 887*, 888, 889*) and 
+can be misleading if used incorrectly (890, 891*, 
+892, 893, 894, 895, 896*).
+This lack of interpretability creates fundamental 
+challenges for ensuring the robustness, 
+safety, and reliability of AI systems . Unlike 
+in mature safety-critical industries, where 
+systems often must meet quantifiable reliability 
+thresholds, computer scientists cannot yet 
+provide robust, quantifiable assurances that AI 
+systems will avoid specific harmful behaviours 
+(174) or consistently produce correct task 
+completions or answers. This makes it harder 
+to design oversight measures and safety 
+testing standards, and assign liability when 
+AI systems cause harm . Researchers are 
+actively working on interpretability methods 
+alongside complementary verification 
+and monitoring frameworks, and new 
+developments may yield further insights 
+(see §3.3. Technical safeguards a nd monitoring).
+There is an evaluation gap between 
+performance in pre-deployment 
+evaluations and in the real world
+Current evaluation methods produce unreliable 
+assessments of both what AI models can do 
+(their capabilities) and how they tend to behave 
+(their propensities). Research into developing 
+
+[[page 100]]
+Technical and institutional challenges
+100
+International AI Safety Report 2026
+appropriate metrics to measure AI capabilities 
+and real-world impacts remains immature 
+and fragmented (186*, 897, 898). Evaluations 
+designed for AI agents face similar limitations 
+(666, 899). This makes the core goal of safety-
+focused evaluation – measuring risk to facilitate 
+understanding, monitoring, and mitigation – 
+difficult to achieve. Evaluation and testing 
+methods suffer from three main limitations.
+First, many benchmarks fail to accurately 
+measure the specific capability they claim 
+to assess (900*, 901). For example, they often 
+use multiple-choice formats in which models 
+can generate correct answers using shortcuts 
+rather than more robust methods, leading to 
+inflated performance scores. Assessing the 
+quality of benchmarks can be difficult because 
+evaluation practices themselves can be opaque, 
+inconsistent, and reliant on non-transparent 
+datasets, ad-hoc procedures, or unvalidated 
+metrics (579, 902). In addition, evaluating 
+models for some risks – specifically dangerous 
+capabilities – might require prompting them 
+to engage in dangerous activities, such as 
+certain tasks involved in weapons development 
+(903). Finally, models can underperform during 
+evaluations compared to other contexts, 
+a pattern termed ‘sandbagging’ that has been 
+observed in experiments (722, 726, 727).
+Second, benchmark performance alone does 
+not reliably predict real-world behaviour (186*, 
+904*, 905*, 906). Understanding the risk posed 
+by an AI system in practice requires examining 
+real deployments, including how different 
+users interact with it and what consequences 
+result (907, 908, 909). For example, one recent 
+study showed that language models fine-
+tuned to sound warm or empathetic became 
+10–30 percentage points more likely to make 
+errors such as promoting conspiracy theories, 
+validating incorrect beliefs, and offering unsafe 
+medical advice. Yet these error-prone models 
+achieved similar benchmark scores to more 
+reliable counterparts, implying that some harms 
+surface only during deployment (910). Another 
+study in a medical setting found similarly that 
+models with strong benchmark performance 
+still produced clinically unsafe or ambiguous 
+responses across more than 300,000 real 
+interactions (911).
+Third, pre-deployment testing cannot anticipate 
+all future failure modes (912, 913). The diversity of 
+potential use cases and corresponding risks (906, 
+914*) makes it very difficult to design tests that 
+anticipate all potential failure modes (265, 879). 
+For example, researchers have shown that simple 
+rephrasings of harmful prompts – such as using 
+past tense – can bypass safety fin e-tuning (915).
+Category 2: Information 
+asymmetries
+Even if the fundamental scientific gaps 
+in understanding AI were to be resolved, 
+policymakers would still face a second set 
+of challenges: AI developers possess critical 
+information about their AI systems that external 
+stakeholders lack. Developers know what data 
+they used for training, what safety problems 
+arose during development, and how models 
+performed on internal evaluations . However, 
+much of this information remains undisclosed 
+and some of it is proprietary. These ‘information 
+asymmetries’ mean that policymakers 
+sometimes lack certain kinds of data and 
+evidence that would help them make informed 
+decisions about AI.
+AI developers often do not disclose 
+information about training data
+Companies usually limit the information they 
+share about the datasets used to train general-
+purpose AI models, including how that data 
+is acquired and processed (107, 916, 917, 918). 
+There are legitimate reasons for doing so: 
+for example, to protect intellectual property, 
+maintain competitive advantages, and improve 
+model security. However, nondisclosure can 
+also conceal problematic practices, including 
+the use of copyrighted or unlicensed data for 
+training (104, 919, 920, 921). Since characteristics 
+of the data used to train a model hugely impact 
+its behaviour, information about that data can be 
+useful for risk management efforts. For example, 
+recent research has demonstrated that filtering 
+training data can prevent models from developing 
+dangerous capabilities, such as knowledge 
+about biothreats (55) and the ability to generate 
+child sexual abuse material (309, 922). A lack of 
+information about training data makes it harder 
+for researchers and auditors to assess how this 
+
+[[page 101]]
+101
+International AI Safety Report 2026
+Technical and institutional challenges
+data affects the safety of AI models and inform 
+relevant policy decisions (897).
+High development costs and access 
+asymmetries hamper external 
+replication and scrutiny
+Developing state-of-the-art general-purpose AI 
+models costs hundreds of millions of dollars in 
+data, compute, and talent (Figure 3.2). Since 2020, 
+these costs have grown at a rate of approximately 
+3.5x each year (204): if they continue to increase 
+at this rate, the largest training runs will cost over 
+$1 billion USD by 2027 (923). These substantial 
+resource requirements make independent 
+scientific replication cost-prohibitive, limiting the 
+ability of independent researchers to scrutinise 
+specific technical decisions.
+Leading AI companies also have access to 
+internal AI systems that are more capable than 
+those available to the public, further widening 
+the gap between the systems developers can 
+access internally and those available to external 
+researchers and the public (102). Although recent 
+efforts have facilitated open scientific inquiry 
+into model training (101, 924), independent 
+researchers and smaller organisations often lack 
+the computational, financial, and infrastructural 
+resources needed to study training methods 
+as effectively as researchers within AI 
+companies (925, 926).
+Category 3: Market failures
+Market dynamics may create a mismatch 
+between company incentives and socially optimal 
+levels of AI risk mitigation. When harms are 
+diffuse, delayed, or difficult to trace back to their 
+source, there are fewer incentives for private 
+actors to invest in safety measures (927, 928, 929). 
+Many potential harms from AI systems affect 
+third parties such as individuals, organisations, 
+or communities. As a result, companies may not 
+be sufficiently incentivised to invest in research 
+and other efforts to reduce harms (872, 930). For 
+example, if an AI system enables the creation of 
+non-consensual intimate imagery, victims bear 
+additional psychological and social costs (931). 
+This represents a typical market failure: the 
+cost to develop a product does not represent 
+its total societal cost .
+Figure 3.2: Estimated training cost of selected AI models, 2012–2025. Source: Epoch AI, 2025 (203).
+AlexNetAlexNet
+GPT -2 (1.5B)GPT -2 (1.5B)
+AlphaZeroAlphaZero
+GPT -3GPT -3
+DeepSeek-V3DeepSeek-V3
+Claude 
+Sonnet 3.5
+Claude 
+Sonnet 3.5
+Llama 3.1 (405B)Llama 3.1 (405B)
+GPT -3.5GPT -3.5
+GPT -4.5GPT -4.5
+Grok 4Grok 4
+Training cost (USD, log scale)
+$1M
+$10M
+$100M
+$1B
+$10
+$100
+$1,000
+$10,000
+$100,000
+Leading AI model training costs have risen exponentially
+2012 2014 2016 2018 2020 2022 2024 2026
+Publication year
+Anthropic
+DeepSeek
+Meta
+xAI
+Other
+Google
+OpenAI
+
+[[page 102]]
+Technical and institutional challenges
+102
+International AI Safety Report 2026
+Competition intensifies 
+speed-versus-safety trade-offs
+Firms that invest heavily in risk mitigation may 
+face competitive disadvantages relative to those 
+that prioritise development speed (700, 932, 933, 
+934). For example, delaying model releases for 
+additional testing risks losing market share to 
+less-cautious competitors (935, 936*). Several 
+leading AI developers have voluntarily adopted 
+common safety measures, but there is limited 
+evidence on their long-term effectiveness.
+These competitive dynamics extend 
+beyond individual firms: general-purpose AI 
+is being developed across multiple countries, 
+with governments increasingly viewing AI 
+development as a matter of economic and 
+strategic importance (937). In this environment, 
+countries may face trade-offs between advancing 
+domestic AI capabilities and implementing 
+safety measures that could slow development, 
+particularly if they perceive other countries as 
+not adopting comparable measures (937, 938).
+It is unclear whether existing liability 
+frameworks are suitable for general-
+purpose AI
+Whether existing liability frameworks can 
+adequately address AI-related harms remains 
+uncertain, in part because harms are difficult 
+to trace to specific design choices and 
+responsibility is distributed across multiple 
+actors. AI companies are subject to existing 
+legal frameworks, such as tort law, criminal 
+law, and contract law, allowing victims to seek 
+compensation for harms (692). Some experts 
+argue that liability regimes will play a key role 
+in ensuring basic protection for victims harmed 
+by using or interacting with these systems (939). 
+However, AI systems may present distinctive 
+challenges for liability frameworks: harms can 
+be difficult to trace to specific design choices, 
+especially since full information about risk 
+management processes is not public, and 
+responsibility is distributed across model 
+developers, application builders, deployers, 
+and users (940, 941, 942). This uncertainty is 
+compounded by growth in the use of AI agents 
+that operate with reduced human oversight 
+(92, 100*, 943, 944). How these challenges will 
+manifest in practice remains unclear, but they 
+may warrant ongoing attention as AI systems 
+are deployed more widely.
+Category 4: Institutional 
+design and coordination 
+challenges
+The speed of AI development makes it difficult 
+for existing government, research, and academic 
+institutions to generate evidence about AI 
+risks in a timely and coordinated manner 
+and build the capacity to respond effectively. 
+Some institutions struggle to build sufficient 
+technical capacity to engage with AI research, 
+while others may have yet to fully appreciate 
+the scale and societal implications of general-
+purpose AI advances . In addition, a small number 
+of foundation models underpin a wide array 
+of applications deployed across sectors and 
+borders, giving rise to coordination challenges 
+and systemic dependencies.
+AI development outpaces traditional 
+governance cycles
+The capabilities of the best AI systems improve 
+significantly month-to-month, while major 
+legislation typically takes years to draft, 
+negotiate, and implement. This mismatch means 
+that the AI landscape can change while policy 
+processes unfold, making it difficult to design 
+policies that address emerging risks and are 
+robust to future changes. For example, some 
+current governance approaches use thresholds 
+based on training compute to determine risk 
+management requirements (52, 945, 946). 
+However, recent advances in inference-time 
+scaling may challenge the effectiveness of such 
+thresholds, as they allow developers to improve 
+model capabilities by using more compute during 
+inference rather than training (947, 948*).
+Widespread reliance on a small 
+number of models creates single 
+points of failure
+The deployment of a limited number of general-
+purpose AI models across many different sectors 
+and use-cases creates shared vulnerabilities 
+across the AI ecosystem . A small number of 
+models, mostly developed in the US and China 
+(Figure 3.3), currently underpin AI applications 
+
+[[page 103]]
+103
+International AI Safety Report 2026
+Technical and institutional challenges
+in healthcare, finance, education, and other 
+domains, cumulatively impacting billions of 
+users (949). When the same model powers many 
+applications, faults in that model can propagate 
+across all applications that depend on it (950, 
+951, 952). A single vulnerability can therefore 
+propagate failures or harms across multiple 
+sectors simultaneously (953). Even ostensibly 
+independent models may share vulnerabilities 
+due to model convergence, where separately 
+developed systems seem to process information 
+in similar ways (954, 955).
+Cross-sector deployment makes it difficult 
+for developers, regulators and policymakers 
+to understand and monitor the full range of 
+applications that a given model supports . 
+This makes it very difficult to carry out 
+comprehensive pre-deployment testing and 
+regulate appropriately across sectors . It is 
+difficult to fix problems after deployment as 
+this causes operational disruptions, and the 
+effectiveness of current post-deployment 
+measures is limited (956, 957).
+Cross-border challenges complicate 
+AI governance
+Many AI governance challenges also have 
+an international dimension (958). AI systems 
+developed in one jurisdiction are frequently 
+deployed in others, and harms may occur 
+in countries other than the one where an AI 
+system was built or trained. Without strong 
+international coordination, it is harder for 
+countries to address cross-border externalities, 
+regulatory arbitrage (where firms relocate 
+to avoid stricter rules), uneven governance 
+capacity across countries, and interoperability 
+challenges (where incompatible national 
+standards fragment markets or reduce 
+safety measure effect iveness) (959).
+At the same time, international coordination 
+also has costs: it constrains national sovereignty, 
+reduces regulatory experimentation, and can 
+involve protracted negotiations among countries 
+with divergent priorities and values (960, 961). 
+It can also reduce the governance flexibility 
+that nations need to adapt frameworks to their 
+specific cultural, economic, and institutional 
+contexts (962, 963). This means determining 
+whether and where international coordination 
+is required – and what form it should take – 
+is an ongoing challenge.
+Updates
+Since the publication of the last Report (January 
+2025), multiple jurisdictions, including China, 
+the European Union, and the United States, have 
+called for and begun to implement measures 
+to accelerate evidence generation towards 
+improved risk management (964, 965, 966). 
+These measures include safety evaluations and 
+transparency disclosures (such as safety and 
+security protocols and model card releases), 
+whistleblower protections, and incident reporting 
+mechanisms. These measures generate 
+Most general-purpose AI models 
+models originate from a small 
+number of countries
+Saudi
+Arabia (1)
+China (15)
+South
+Korea (1)
+Israel (1)
+Canada (1)
+France (3)
+US (40)
+Figure 3.3: The number of notable models 
+developed in each country in 2024. Most 
+(64.5%) ‘notable’ AI models developed in 2024 
+originated from the US, with China the second 
+most common origin (24.2%). The rest of the 
+world produced just 12.3%. A ‘notable’ model 
+is one that Epoch, an independent AI research 
+organisation, has identified as meeting any of the 
+following criteria: state-of-the-art benchmark 
+performance; over 1,000 citations; historical 
+significance; over one million monthly active 
+users; or training costs exceeding $1 million. 
+Source: Maslej et al., 2025  (177).
+
+[[page 104]]
+Technical and institutional challenges
+104
+International AI Safety Report 2026
+additional evidence on capabilities and risks for 
+governments and the public, which may increase 
+transparency and accountability (967, 968). Some 
+challenges have also eased slightly. While the 
+overall cost of frontier AI training continues to 
+rise, recent developments in open models (101) 
+and early experiments with distributed and 
+decentralised training (85) may broaden scientific 
+access. On the other hand, wider AI adoption 
+across sectors has expanded the potential 
+points of failure (953).

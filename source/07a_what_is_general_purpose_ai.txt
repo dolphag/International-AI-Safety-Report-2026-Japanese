@@ -1,0 +1,602 @@
+# What is general-purpose AI?
+# Source PDF pages: 17-25
+
+[[page 17]]
+17
+International AI Safety Report 2026
+What is general-purpose AI?
+Section 1.1
+What is general-purpose AI?
+Key information
+ — ‘General-purpose AI’ refers to AI models and systems that can perform a variety 
+of tasks, rather than being specialised for one specific function or domain. 
+Examples of such tasks include producing text, images, video, and audio, and 
+performing actions on a computer.
+ — General-purpose AI models are based on ‘deep learning’.  Modern deep learning 
+involves using large amounts of computational resources to help AI models learn 
+complex relationships and abstract features from very large tra ining datasets.
+ — Developing a leading general-purpose AI system has become very expensive. 
+To train and deploy such systems, developers need extensive data, specialised labour, 
+and large-scale computational resources . Acquiring these resources to develop 
+a leading system from scratch now costs hundreds of millions  of US dollars.
+ — Since the publication of the last Report (January 2025), capability improvements 
+have increasingly come from post-training techniques and extra computational 
+resources at the time of use, rather than from increasing model size alone.  
+Previous performance improvements largely resulted from making models larger 
+and using more data and computing power during in itial training.
+What are general-purpose 
+AI systems?
+General-purpose AI systems are software 
+programmes that learn patterns from large 
+amounts of data, enabling them to perform 
+a variety of tasks rather than being specialised 
+for one specific function or domain (see Table 1.1). 
+To create these systems, AI developers carry out 
+a multi-stage process that requires substantial 
+computational resources, large datasets, 
+and specialised expertise (see Table 1.2). 
+Computational resources (often shortened 
+†  The term ‘compute’ can also refer to either a measurement of the number of calculations a processor can perform 
+(typically measured in floating-point operations per second) or specifically the hardware (such as graphics processing units) 
+that performs thos e calculations .
+to ‘compute’) are required both to develop and 
+to deploy AI systems, and include specialised 
+computer chips as well as the software and 
+infrastructure needed to run them.† Because 
+they are trained on large, diverse datasets, 
+general-purpose AI systems can carry out 
+many different tasks, such as summarising text, 
+generating images, or writing computer code. 
+This section explains how general-purpose AI 
+systems are made, what ‘reasoning’ models are, 
+and how policy decisions shape general-purpose 
+AI system development.
+
+[[page 18]]
+What is general-purpose AI?
+18
+International AI Safety Report 2026
+Type of general-purpose AI Examples
+Language systems  — Apertus (1)
+ — Claude Sonnet 4.5 (2*)
+ — Command A (3*)
+ — EXAONE 4.0 (4*)
+ — Gemini 3 Pro (5*)
+ — GLM-4.5 (6*)
+ — GPT-5 (7*)
+ — Hunyuan-Large (8*)
+ — Kimi K2 (9*)
+ — Mistral 3.1 (10*)
+ — Qwen3 (11*)
+ — DeepSeek-V3.2 (12*)
+Image generators  — DALL-E 3 (13*)
+ — Gemini 2.5 Flash (14*)
+ — Midjourney v7 (15*)
+ — Qwen-Image (16*)
+Video generators  — Cosmos (17*)
+ — Sora (18*)
+ — Pika (19)
+ — Runway (19)
+ — Veo 3 (20*)
+Robotics and navigation systems  — Gemini Robotics (21*)
+ — Gr00t N1 (22*)
+ — MobileAloha (23)
+ — OctoAI (24*)
+ — OpenVLA (25*)
+ — PaLM-E (26)
+Predictors of diverse classes 
+of biomolecular structures
+ — AlphaFold 3 (27)
+ — Amplify (28)
+ — CellFM (29)
+ — Evo 2 (30)
+AI agents  — AlphaEvolve (31*)
+ — ChatGPT Agent (32*)
+ — Claude Code (33*)
+ — Doubao-1.5 (34*)
+ — Magentic-One (35*)
+ — OpenScholar (36*)
+ — The AI Scientist-v2 
+(37*, 38*, 39*)
+Table 1.1: There are several different types of general-purpose AI. In this Report, models that can 
+predict structural information for diverse classes of molecules are considered to be ‘general-purpose’ 
+AI because they can be adapted for a variety of tasks. For example, models trained to predict protein 
+structure are applicable to a variety of other tasks, such as predicting protein interactions, predicting 
+small molecular binding sites, and predicting and designing cyclic peptides (40).
+Deep learning is foundational 
+to general-purpose AI
+Researchers build general-purpose AI models 
+using a process called ‘deep learning’, which 
+trains models to learn from examples (41). Unlike 
+software engineering, deep learning models learn 
+to accomplish tasks from data instead of relying 
+on hand-written instructions . By processing 
+large amounts of data, such as images, text, or 
+audio, these models discover ways to represent 
+that data, creating internal representations of 
+patterns (such as shapes, word associations, or 
+sound structures) that help the model recognise 
+relationships and generate outputs aligned with 
+its training objective. They then use these learned 
+internal representations as abstract features to 
+analyse new, similar data and generate outputs 
+in the same style. For example, a general-
+purpose AI model trained on enough examples 
+of 19th-century romantic English poetry can 
+recognise new poems in that style and produce 
+new material in a similar style.
+On a more granular level, deep learning 
+works by processing data through layers of 
+interconnected information-processing nodes . 
+These nodes are often called ‘neurons’ because 
+they are loosely inspired by neurons in biological 
+brains (‘neural networks’) ( Figure 1.1) (42). 
+As information flows from one layer of neurons 
+to the next, the model progressively transforms 
+the data into more abstract representations 
+as groups of learned features – patterns the 
+model has automatically discovered in the data, 
+rather than hand-coded ones . For example, in an 
+
+[[page 19]]
+19
+International AI Safety Report 2026
+What is general-purpose AI?
+image-processing model, the first layers might 
+learn to detect simple features such as edges 
+or basic shapes, while deeper layers combine 
+these features to pick out more complex 
+patterns such as fa ces or objects .
+The features at all layers are discovered through 
+the optimisation process that defines the training 
+procedure. During training, when the model 
+makes mistakes, deep learning algorithms adjust 
+the strength of various connections between 
+neurons to improve the model’s performance . 
+The strength of each connection between nodes 
+is often called a ‘weight’ . This layered approach 
+gives deep learning its name.
+Deep learning has proven very effective at 
+allowing AI systems to accomplish tasks that 
+were previously considered difficult for traditional 
+hand-programmed computational systems and 
+other earlier symbolic or rule-based AI methods . 
+Most state-of-the-art general-purpose AI models 
+are now based on a specific neural network 
+architecture known as the ‘transformer’ (43, 44). 
+Transformers use an ‘attention’ mechanism 
+(45) that helps the model to focus on the most 
+relevant parts of the input data when processing 
+information, such as determining which words in 
+a sentence are most important for understanding 
+its meaning. This particular way of building 
+models has led to significant improvements in 
+translation (43), natural language processing (46), 
+image recognition (47*) and speech recognition 
+(48*, 49), ultimately leading to the development 
+of today’s most advanced models.
+Figure 1.1: An illustrative representation of a ‘neural network’. Today’s general-purpose AI models 
+are based on these networks, which are loosely inspired by biological brains. Different networks have 
+different sizes and architectures. However, all are composed of connected information-processing units 
+called ‘neurons’, where the strengths of connections between neurons are called ‘weights’. Weights 
+are updated through training with large quantities of data. Source: International AI Safety Report 2025  
+(50) (modified). 
+Output layerHidden layersInput layer
+Structure of a neural network
+Input 1
+weight1
+w2
+w3
+Input 2 Output
+Input 3
+Numerous layers
+Node
+
+[[page 20]]
+What is general-purpose AI?
+20
+International AI Safety Report 2026
+General-purpose AI is developed 
+in stages
+Developing a general-purpose AI system 
+involves multiple stages, from initial model 
+training to post-deployment monitoring and 
+updates (Figure 1.2). In practice, these steps 
+often overlap in an iterative manner. Each stage 
+requires different resource inputs (e.g. data, 
+labour, compute) and different techniques, and 
+they are sometimes undertaken by different 
+developers (Figure 1.2 and Table 1.2).
+For example, model pre-training generally 
+requires large amounts of compute and data, 
+making this stage particularly sensitive to policies 
+that affect access to computational resources 
+or training data (51, 52). Similarly, data curation 
+and some model fine-tuning methods currently 
+involve large amounts of human labour for 
+initial data labelling (53). This stage is therefore 
+sensitive to changes in labour costs, platform 
+policies, or regulations affecting cross-border 
+contracting arrangements.
+1.  Data collection 
+and curation
+Before training a general-purpose AI model, developers and data workers collect, 
+clean, curate, and standardise raw training data into a format the model can 
+learn from. This can be a labour-intensive process . The training datasets behind 
+state-of-the-art models comprise an immense number of examples from across 
+the internet.
+Teams often develop sophisticated filtering methods to reduce harmful content, 
+eliminate duplicate data, and improve representation across different topics 
+and sources (54, 55). Data curation can also help reduce copyright and privacy 
+violations, remove examples containing dangerous knowledge, handle multiple 
+languages, and improve documentation for data provenance (56, 57, 58).
+2.  Pre-training 
+(first stage 
+of training)
+During pre-training, developers feed models massive amounts of diverse data 
+to instil a broad base of information and contextual understanding. This process 
+produces a ‘base model’. This is a highly data- and compute-intensive process.
+During pre-training, models are exposed to billions or trillions of examples of 
+content such as pictures, texts, or audio. Through this exposure, the model 
+gradually discovers abstract features to represent data and learns about how 
+these features are related, which allows it to make sense of new inputs in context. 
+This pre-training process takes weeks or months (59) and uses tens or hundreds 
+of thousands of graphics processing units (GPUs) or tensor processing units 
+(TPUs) (60) – specialised computer chips designed to rapidly process many such 
+calculations. Some developers conduct pre-training with their own compute, while 
+others use resources provided by specialised compute providers.
+Figure 1.2: A schematic representation of the stages of general-purpose AI development.  
+Source: International AI Safety Report 2026.
+Deployment 
+and release
+System 
+integration
+Post-
+training 
+and
+ﬁne-tuning 
+(training)
+Pre-training
+(training)
+Data 
+collection 
+and 
+curation
+Post-
+deployment 
+monitoring
+and updates
+Stages of general-purpose AI development
+Development stage
+
+[[page 21]]
+21
+International AI Safety Report 2026
+What is general-purpose AI?
+3.  Post-training 
+and fine-tuning  
+(second stage  
+of training)
+‘Post-training’ further refines the base model to optimise it for a specific 
+application. It is a moderately compute-intensive and highly labour-intensive 
+process. A shift towards using ‘synthetic data’ – artificially generated information 
+that mimics real-world data but is created using algorithms or simulations – 
+is helping to make this phase less labour-intensive.
+Post-training includes various fine-tuning techniques and other modifications. 
+‘Supervised fine-tuning’ involves further training a trained model on specific 
+datasets to improve the model’s performance in that domain (61, 62). For example, 
+a general-purpose model could be further trained on a large corpus of radiological 
+images. ‘Reinforcement learning’ (RL) involves improving model performance 
+by ‘rewarding’ a model (providing positive feedback) for desirable outputs and 
+‘penalising’ a model (providing negative feedback) for undesirable outputs. It has 
+two prominent subcategories. ‘Reinforcement learning from human feedback’ 
+involves rewarding outputs that align with human preferences and penalising 
+those that do not, based on human feedback (63, 64*). ‘Reinforcement learning 
+with verifiable rewards’ (RLVR) is used for improving model performance on tasks 
+that require factual correctness, such as maths or code generation. Developers 
+typically alternate between applying post-training techniques and running tests 
+until results show that the model meets desired specifications.
+4.  System  
+integration
+Developers combine one or more general-purpose AI models with other components 
+to create an ‘AI system’ that is ready for use. GPT-5 (for example) is a general-purpose 
+AI model that processes text, images, and audio, while ChatGPT is a general-purpose 
+AI system that combines several models of different sizes and capabilities with a chat 
+interface, content processing, Web access, and application integration to create 
+a functional product.
+In addition to making AI models operational, the additional components in an 
+AI system also aim to enhance capability, usefulness, and safety. For example, 
+a system might come with a filter that detects and blocks model inputs or 
+outputs that contain harmful content (65*). Developers are also increasingly using 
+‘scaffolding’ – additional software built around general-purpose AI models that 
+allows them to plan ahead, pursue goals, and interact with the world (66).
+5.  Deployment  
+and release
+Deployment is the process of making the integrated AI system available for its 
+intended use. Developers and deployers implement AI systems into real-world 
+applications, products, or services . Developers can deploy AI systems internally 
+(for their own use) or externally (for private customers or public use) . When 
+deploying AI systems externally, companies often provide users with access 
+through online user interfaces or application programming interfaces (APIs) 
+that allow users to access and run the system . For example, one company 
+might design a bespoke customer service chatbot that is powered by another 
+company’s general-purpose AI system.
+‘AI system deployment’ refers to making a model available for real-world use 
+with integrated tools and interfaces, while ‘model release’ involves making 
+the base model accessible to others – either as open-weight (downloadable 
+parameters) or closed-weight (API access only). See  §3.4. Open-weight models.
+
+[[page 22]]
+What is general-purpose AI?
+22
+International AI Safety Report 2026
+6.  Post-deployment  
+monitoring and  
+updates
+Developers often gather and analyse user feedback, track impact and 
+performance metrics, and make iterative improvements to address issues 
+discovered during real-world use (67). Improvements are made by updating 
+the system integrations, often via continual fine-tuning and providing 
+models with access to external databases of (recent) facts . This keeps large 
+AI models up-to-date without repeating the full pre-training process (68*). 
+This enables capabilities to accumulate across successive training rounds 
+while maintaining stability and reducing computational costs.
+Table 1.2: At each general-purpose AI development stage, the AI model is improved for downstream use 
+and eventually deployed as a fully integrated AI system, monitored and updated.
+Reasoning systems generate 
+‘chains of thought’ during inference 
+to improve performance
+Inference happens when someone uses the AI 
+model after it is trained. For example, inference 
+occurs when a person asks an AI system to 
+plan a trip and the model behind it draws on 
+relevant aspects of what it has learned regarding 
+geography, transportation, and cuisine to 
+generate an itinerary.
+In the past decade, advances in AI capabilities 
+have largely come from larger training runs; that 
+is, increasing the amount of compute used to 
+train an AI model. Recently, however, researchers 
+have made more gains by allowing models to 
+process information for longer and by training 
+them to produce explicit reasoning steps as they 
+accomplish a task (69*, 70). AI systems that work 
+like this are called ‘reasoning systems’, and the 
+intermediate explanations they go through while 
+solving a problem or answering a question are 
+called ‘chains of thought’. Reasoning systems 
+require more computational resources at the 
+time of use to generate these sophisticated 
+chains of thought (71, 72, 73, 74), and more 
+resources during training so that they learn 
+to reason better. In practice, these reasoning 
+capabilities let AI systems solve more complex 
+problems by iteratively decomposing a task into 
+smaller steps. Table 1.3 shows an example of 
+a non-reasoning system and a reasoning system 
+solving the same problem.
+Reasoning systems have achieved major 
+breakthroughs in capabilities on challenging 
+problems. For example, in 2025, reasoning 
+systems specialised for mathematical 
+problem-solving, such as Google’s Gemini Deep 
+Think and an unreleased, experimental model 
+from OpenAI, solved International Mathematical 
+Olympiad problems (in a structured test setting) 
+at a level equivalent to human gold-medal 
+performance (75, 76). Reasoning systems have 
+demonstrated significant progress in formal 
+domains such as mathematics, logic puzzles, 
+and structured scientific questions, where 
+step-by-step reasoning can be explicitly verified 
+(77). However, reasoning systems can also fail by 
+producing irrelevant, unproductive, or repetitive 
+chains of thought (78, 79).
+Updates on training 
+methods
+Since the publication of the last Report 
+(January 2025), a training method called 
+‘distillation’ has greatly increased the efficiency 
+with which some models can be fine-tuned. 
+Distillation involves training a ‘student’ model 
+on the outputs of a more powerful (and usually 
+larger) ‘teacher’ model, allowing the student 
+model to directly imitate the outputs of the 
+teacher (80*). For example, DeepSeek developed 
+a large model called DeepSeek-R1, which excels 
+at chain-of-thought reasoning. R1 produced 
+reasoning outputs which were then used to 
+fine-tune smaller student models, including 
+DeepSeek-V3. DeepSeek-V3 maintains much 
+of R1’s mathematical, coding, and document-
+analysis capabilities and was reportedly fine-
+tuned for approximately $10,000 USD (though its 
+pre-training costs were not reported) (81*). This 
+is likely orders of magnitude lower than the cost 
+of fine-tuning similarly capable, larger models.
+
+[[page 23]]
+23
+International AI Safety Report 2026
+What is general-purpose AI?
+Dark as night in the morning light.  
+I live up high, ’til I am ground. 
+I sit dry, ’til I am drowned. 
+What am I?
+The answer is a ‘sugar cube’ .
+Here’s how the answer fits the riddles:
+1.  ‘Dark as night in the morning light’  
+–  A sugar cube is white, but when you put 
+it in a dark coffee or tea, it appears dark.
+2.  ‘I live up high, ‘til I am ground’  
+–  A sugar cube is often stored in a high 
+place (like a cupboard or a high shelf) until 
+it’s needed, and then it’s ground or crushed 
+into the drink.
+3.  ‘I sit dry, ‘til I am drowned’  
+–  A sugar cube sits dry on a surface or in 
+a container until it’s dropped into a liquid 
+(like tea or coffee), at which point it’s ‘drowned’.
+The answer fits the riddles nicely, and it’s a clever 
+play on words!
+Let me break down each line: 
+1.  ‘Dark as night in the morning light .’ 
+–  This suggests something that appears dark in 
+the morning, despite the morning being bright .
+2.  ‘I live up high, ’til I am ground .’ 
+–  This suggests something that starts in a high 
+position but eventually becomes low . It could 
+also be referring to something physical that 
+gets worn down or reduced over time.
+3.  ‘I sit dry, ’til I am drowned .’ 
+–  This suggests something that is normally 
+dry but then gets wet or ‘drowned’ in liquid.
+Let me think about what could fit all these 
+descriptions:  
+–  A pencil? The lead is dark, it sits high (maybe 
+in a pencil cup), gets ground down as it’s used, 
+and could get drowned if dropped in water .
+–  Coffee beans? They’re dark, sit high on a shelf, 
+get ground, and then are drowned in hot water 
+to make coffee.
+–  A candle? It’s dark when not lit, sits high, gets 
+ground down as it burns, and would be drowned 
+if water is poured on it .
+The pencil and candle explanations seem to 
+fit well because being up high or being drowned 
+are not key to how they are made or used . I think 
+the coffee bean explanation fits better, especially 
+with the reference to ‘morning light’.  
+The answer to this riddle is a coffee bean.
+example: model response without reasoning
+example: prompt
+example: reasoning model  
+chain of thought and response
+Table 1.3: An example of a non-reasoning system (left) versus a reasoning system (right) solving the 
+same riddle. These examples are adapted from real AI responses. The reasoning system spends more 
+time and computational power on ‘thinking’ by constructing a ‘chain of thought’ before providing its 
+final answer.
+
+[[page 24]]
+What is general-purpose AI?
+24
+International AI Safety Report 2026
+Distillation can thus be a cheap and efficient 
+way for models to gain more powerful capabilities 
+(82). Some researchers have used distillation to 
+fine-tune highly capable models using as few 
+as 1,000 examples generated from state-of-
+the-art models (83). Since distillation requires 
+a pre-existing teacher model, it cannot be 
+directly used to advance state-of-the-art 
+model capabilities. However, it can speed up 
+the proliferation of advanced AI capabilities, 
+even from closed-source models (84*).
+Together with technological advances in 
+‘distributed compute’ and decentralised 
+training (approaches where developers use 
+multiple processors, servers, or data centres 
+working together to perform AI training or 
+inference (85, 86, 87)), the degree to which many 
+AI development projects depend on large-
+scale, centralised compute infrastructure has 
+been reduced. This increasingly enables less 
+well-resourced actors to develop and deploy 
+powerful systems.
+Updates on AI agents
+Since the last Report (January 2025), advances 
+in how developers combine AI models with tools 
+have enabled the development of increasingly 
+powerful AI agents. AI agents are designed to 
+pursue goals, which are often specified by users 
+in natural language. To achieve these goals, 
+they are given access to tools, such as memory, 
+a computer interface, and web browsers. These 
+tools and the code used to combine them with 
+the model are referred to as ‘scaffolding’, and 
+they help AI agents autonomously interact with 
+the world, make plans, remember important 
+details, and pursue goals (88*, 89) with much 
+less oversight or assistance from humans . For 
+example, Manus AI is a popular AI agent that can 
+automate various tasks, including Web search, 
+software development, and online purchases 
+(90). Figure 1.3 illustrates a simple example of 
+an AI agent composed of a general-purpose AI 
+model ‘brain’ that can iteratively plan, reason, 
+Figure 1.3: An illustrative representation of an AI agent: an AI model (centre) that has been configured 
+to iteratively plan, reason, and use tools to accomplish real-world tasks. Source: International AI Safety 
+Report 2026.
+Web browsing tool
+(used to surf, download, 
+and upload to the Web)
+Computer use tool
+(used to code, manage 
+ﬁles, and run 
+programs/apps)
+Memory tool
+(stores information)
+AI model
+Iterative reasoning
+(‘chain of thought’)
+AI agent
+Example construction of an AI agent – an AI system capable 
+of operating with little oversight and direction
+Inputs
+(e.g. “Please write
+code to develop
+an app for personal
+budgeting and
+expense tracking.”)
+Outputs
+(e.g. computer code)
+
+[[page 25]]
+25
+International AI Safety Report 2026
+What is general-purpose AI?
+and use tools for memory, web browsing, 
+and computer use.
+Digital infrastructure for AI agents is 
+expanding (91), and they are increasingly 
+common across industries (92, 93*, 94*). 
+AI agents have been developed for tasks such 
+as research (37*), software engineering (95), 
+robotic control (96*), and customer service (97). 
+Ongoing research and development has resulted 
+in steadily more capable and more autonomous 
+AI agents or multi-agent systems . Researchers 
+have estimated that the complexity of software 
+benchmark tasks that AI agents can accomplish 
+doubles approximately every seven months (see 
+also §1.2. Current capabilities) (98). Experts argue 
+that increasingly capable AI agents will give rise 
+to both major opportunities and risks (99, 100*) 
+(see §2.2.1. Reliability challenges).
+Evidence gaps
+The main evidence gaps around the general-
+purpose AI system development process stem 
+from a lack of publicly available information 
+regarding how they are developed. Some 
+developers are highly transparent about how 
+they develop general-purpose AI systems (1, 101). 
+However, in general, there is a limited degree 
+of public and policymaker knowledge about 
+how most advanced models are developed, 
+safeguarded, evaluated, and deployed . This 
+is particularly true for internally deployed AI 
+systems that are used within AI companies but 
+not used or understood by outside stakeholders 
+(102, 103). This limited external visibility creates 
+challenges for transparency and oversight . 
+Various researchers have pointed to limited 
+and inconsistent transparency around training 
+data (104, 105, 106), general-purpose AI models 
+(107, 108), AI agents (92), evaluations (109), 
+development pipelines (110), and safety (111). 
+Limitations to external disclosure are sometimes 
+necessary to protect companies’ trade secrets 
+and intellectual property. At the same time, 
+low transparency makes it more difficult for 
+independent researchers and policymakers to 
+study general-purpose AI mode ls and systems.

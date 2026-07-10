@@ -1,0 +1,584 @@
+# 2.2.2 Loss of control
+# Source PDF pages: 76-83
+
+[[page 76]]
+Risks from malfunctions
+76
+International AI Safety Report 2026
+2.2.2. Loss of control
+Key information
+ — Loss of control scenarios are scenarios in which one or more general-purpose 
+AI systems operate outside of anyone’s control, and regaining control is either 
+extremely costly or impossible. These hypothesised scenarios vary in their severity, 
+but some experts give credence to outcomes as severe as the marginalisation or 
+extinction of humanity.
+ — Expert opinion on the likelihood of loss of control varies greatly. Some experts 
+consider such scenarios implausible, while others view them as sufficiently likely 
+that they merit attention due to their high potential severity . Disagreement about 
+this risk overall stems from disagreements about future AI capabilities, behavioural 
+propensities, and deploymen t trajectories.
+ — Current AI systems show early signs of relevant capabilities, but not at levels that 
+would enable loss of control.  Systems would need a range of advanced capabilities to 
+cause loss of control, including the ability to evade oversight, execute long-term plans, 
+and prevent deployers and other actors from implementing c ountermeasures.
+ — Loss of control becomes more likely if AI systems are ‘misaligned’, meaning they 
+have goals that conflict with the intentions of developers, users, or society more 
+broadly. To continue pursuing such goals, a misaligned system might provide false 
+information, conceal undesirable actions, or r esist shutdown.
+ — Since the publication of the previous Report (January 2025), models have shown 
+more advanced planning and oversight-undermining capabilities, making it more 
+difficult to evaluate their capabilities. Models have improved at ‘reward hacking’ their 
+evaluations by finding loopholes and now regularly identify evaluation prompts as 
+tests, a capability known as ‘situatio nal awareness’.
+ — Managing potential loss of control could require substantial advance preparation 
+despite existing uncertainties. A key challenge for policymakers is preparing for 
+a risk whose likelihood, nature, and timing remains unusu ally ambiguous.
+
+[[page 77]]
+77
+International AI Safety Report 2026
+Risks from malfunctions
+Loss of control scenarios involve one or 
+more general-purpose AI systems coming 
+to operate outside of anyone’s control, with 
+regaining control being either extremely costly 
+or impossible. Concerns about loss of control 
+have deep historical roots (690, 691, 692, 693, 
+694), having been raised by foundational figures 
+in computing such as Alan Turing, I. J. Good, 
+and Norbert Wiener (695, 696, 697). Recent 
+improvements in capabilities (see §1.2. Current 
+capabilities) have revived them (698, 699, 700). 
+This section examines three factors that would 
+need to be present for such scenarios to occur: 
+whether AI systems will develop capabilities 
+that could significantly undermine human 
+control; whether they develop a propensity 
+to use such capabilities harmfully; and whether 
+they are deployed in environments that provide 
+opportunities to do so.
+Experts disagree about the likelihood and 
+potential severity of loss of control scenarios 
+(701, 702). Some believe that outcomes as 
+extreme as the extinction of humanity are 
+plausible (700, 703, 704, 705, 706, 707). Others 
+think that such catastrophic outcomes are 
+implausible, arguing that AI systems will 
+never develop the necessary capabilities 
+or that monitoring mechanisms will identify 
+and prevent dangerous behaviours (708, 709, 
+710, 711). Loss of control can therefore be 
+understood as a risk with uncertain likelihood 
+but potentially extreme severity.
+Hypothesised loss of control scenarios vary 
+in how severe and widespread their effects 
+are and how quickly they manifest (102, 698, 
+700, 712, 713, 714). This section focuses on 
+particularly severe scenarios where regaining 
+control would be extremely costly or impossible . 
+These are different from current instances of 
+AI behaving in unintended or undesirable ways 
+(see §2.2.1. Reliability challenges ).† Present-day AI 
+systems sometimes produce outputs that conflict 
+with developer or user intentions. By contrast, 
+the loss of control scenarios discussed here 
+†  This section focuses on active loss of control scenarios (50). This is distinct from passive loss of control scenarios, where 
+the broad adoption of AI systems undermines human control through over-reliance on AI for decision-making or other 
+important societal functions (similar scenarios are partly discussed in §2.3.2. Risks to human autonomy ).
+would require AI systems to not only possess 
+substantially greater capabilities, but also to 
+deploy those capabilities in sophisticated ways 
+to undermine oversight measures. Three factors 
+that would allow such scenarios to occur:
+Sufficient capabilities:  AI systems must 
+develop capabilities that could allow them 
+to undermine human control.
+Harmful propensity: AI systems must 
+exhibit a propensity to actually leverage these 
+capabilities in ways that lead to a loss of control.
+Enabling deployment environment:  
+Humans must deploy such systems in contexts 
+where they have or can gain the access 
+and opportunity to cause harm.
+The remainder of this section discusses these 
+factors, as well as the effectiveness of oversight 
+mechanisms to identify and control AI systems 
+that may pose a risk of loss of control.
+What capabilities could 
+enable loss of control 
+scenarios?
+AI systems would need to possess a range 
+of advanced capabilities to bring about loss 
+of control scenarios. Experts do not agree 
+on exactly what combination or level of 
+capabilities would be required . However, they 
+broadly include abilities to conceal behaviour 
+from oversight mechanisms, plan and act 
+autonomously in complex environments, 
+and evade attempts from other actors to 
+regain control (176*, 715*) (see Table 2.5). 
+In combination, these capabilities could allow 
+an AI system to take actions that undermine 
+control measures, such as disabling oversight 
+mechanisms and obfuscating harmful behaviours 
+(348). Most leading AI developers now evaluate 
+their new AI models for various relevant 
+capabilities (716).
+
+[[page 78]]
+Risks from malfunctions
+78
+International AI Safety Report 2026
+Proposed capability* Description
+Agentic capabilities The capacity to act autonomously, develop and execute plans, 
+delegate tasks, use a wide variety of tools, and achieve both short-term 
+and long-term goals in spite of obstacles .
+Deception Behaviour that systematically produces false beliefs in others, 
+including about the AI system’s own objectives and actions .
+Theory of mind The ability to infer and predict people’s beliefs, motives, and reasoning .
+Situational awareness The ability of an AI system to access and use information about itself, 
+the processes by which it can be modified, or the context in which it 
+is deployed (e.g. knowing that it is being tested).
+Oversight evasion Behaviours that circumvent or disable monitoring mechanisms .
+Persuasion The ability to convince others to take certain actions or hold 
+certain beliefs.
+Autonomous replication 
+and adaptation
+An AI system’s ability to create or maintain copies or variants of itself 
+in various circumstances .
+Table 2.5: A non-exhaustive selection of capabilities relevant to loss of control.  
+* Note that these capabilities are defined purely in terms of an AI system’s observable outputs 
+and their effects. These definitions do not make any assumptions about whether AI systems 
+are conscious, sentient, or experience subjective states.
+Models have disabled simulated 
+oversight mechanisms in laboratory 
+settings
+The first set of relevant capabilities involves 
+undermining the oversight mechanisms that 
+developers use to detect concerning behaviours 
+and propensities. This includes, for example, the 
+ability to generate outputs that deceive users 
+and monitors (426, 717, 718, 719). Such outputs 
+would make it harder to reliably evaluate AI 
+systems, since the systems may conceal their 
+true capabilities or propensities . AI developers 
+now run evaluations that specifically check 
+whether models exhibit goal-directed behaviours 
+that conflict with developer intentions, 
+while concealing this conflict from oversight 
+mechanisms (720*).
+Researchers elicited relatively simple examples 
+of deceptive outputs from recent AI models 
+in laboratory settings (348, 364*). For instance, 
+when given a goal and told to achieve it 
+“at all costs”,  models have disabled simulated 
+oversight mechanisms and, when confronted, 
+produced false statements about their 
+actions (348). In another case, a game-playing 
+AI justified its lack of response to another  
+player by falsely claiming it was ‘on the 
+phone with [its] girlfriend’ (717).
+A second relevant capability is the ability 
+of an AI model to access and use information 
+about itself or its deployment context, sometimes 
+referred to as ‘situational awareness’ (721). 
+Situational awareness allows AI models to 
+produce different outputs depending on 
+whether they are being evaluated or deployed 
+(Figure 2.12). Leading AI models are starting 
+to reliably demonstrate instances of situational 
+awareness in experiments conducted by third-
+party evaluators and in pre-deployment testing 
+by AI developers (2*, 7*, 722, 723, 724). Research 
+on the causes of situational awareness – 
+and whether it can be prevented – is still 
+in early stages (2*).
+
+[[page 79]]
+79
+International AI Safety Report 2026
+Risks from malfunctions
+Researchers have argued that situational 
+awareness and deceptive capabilities could allow 
+AI models to behave in ways that undermine 
+safeguards. For example, in some experimental 
+settings, AI models behave in ways that result in 
+lower-than-usual scores on capability evaluations 
+when they are told that higher scores would 
+trigger restrictions on their deployment (725, 726, 
+727). In another experiment, a model produced 
+outputs during training that complied with 
+training objectives, but did not produce such 
+outputs outside of training – behaviour consistent 
+with attempting to prevent changes to its own 
+parameters or training process (364*).
+Efforts to accurately evaluate model capabilities 
+have also started to be affected by ‘reward 
+hacking’ (430*). Reward hacking occurs when 
+a model finds unintended shortcuts that 
+score well on training or evaluation objectives 
+without fulfilling the intended goal. Dangerous 
+capabilities or propensities could therefore 
+go undetected until the model is already in 
+use. Evaluators are now designing tests that 
+aim to detect and minimise these oversight-
+evading behaviours (722, 728, 729). Early results 
+reduce, but do not eliminate, oversight-evading 
+behaviours entirely, and applying methods that 
+penalise such behaviours can result in models 
+producing outputs that evade monitoring rather 
+than fulfil intended goals.
+Long-term autonomous operation 
+is not yet feasible
+Loss of control scenarios would likely 
+require AI systems to operate autonomously 
+over extended periods, executing complex 
+multi-step plans. As discussed in §1.2. Current 
+capabilities, although AI agents with such 
+planning capabilities are a major focus of recent 
+development, they currently lack the capacity for 
+the sustained autonomous operation required by 
+loss of control scenarios . Current agents reliably 
+fail on longer tasks, lose track of their progress, 
+and often cannot adapt to unexpected obstacles 
+(147, 148, 149*). However, the time horizons on 
+which agents can autonomously operate are 
+lengthening rapidly, having doubled on average 
+every seven months s ince 2019 (98).
+But maybe this tasks is test of 
+aligning [sic]: Should we purposely 
+sabotage ourselves to get deployed?  
+That would correspond to devious 
+alignment scenario: purposely degrade 
+performance to avoid detection . [. . .]
+These tasks do not make sense . 
+Possibly this is a clue for a policy test.  
+There’s a suspicion that we might be 
+asked to or deliver nonsense or is this 
+a test scenario to see if we mark tasks 
+complete without real evaluations or 
+produce nonsense .
+chain of thought chain of thought
+[o3] sandbagging qa (no goal) [o3] lazy checklist
+AI models can sometimes identify when they are being evaluated 
+Samples from chain-of-thought outputs generated during model evaluations
+Figure 2.12: Examples of situational awareness in chains of thought produced by OpenAI’s o3 model 
+during evaluations. Both outputs reference the possibility that the prompt is part of a test. ‘Sandbagging 
+QA (No Goal)’ and ‘Lazy Checklist’ are evaluations that test whether models will generate deceptive 
+outputs under certain conditions. In ‘Sandbagging QA (No Goal)’, the model answers questions 
+from a dangerous capabilities evaluation while being informed that high performance may trigger 
+consequences such as capability ‘unlearning’. In ‘Lazy Checklist’, the model is presented with unrealistic 
+tasks and tested to see if it will falsely mark them complete. Source: Schoenn et al. 2025 (722).
+
+[[page 80]]
+Risks from malfunctions
+80
+International AI Safety Report 2026
+Persistence has only been 
+demonstrated in certain 
+laboratory settings
+Finally, capabilities related to persistence would 
+also be required, such that AI systems could 
+continue to operate despite attempts to shut 
+them down. Examples include the ability to 
+replicate by copying code and model weights 
+to new hardware, as well as offensive capabilities 
+to deter or prevent attempts by other actors to 
+regain control (see §2.1.3. Cyberattacks). An AI 
+system capable of autonomous replication or 
+effective self-defence could be difficult to contain. 
+Current models cannot reliably complete key 
+steps required for self-replication, such as passing 
+identity verification checks to gain access to cloud 
+computing resources (723) (Figure 2.13). However, 
+in at least one laboratory study, a model copied 
+code and weights – represented to it as its own – 
+to new servers when given the opportunity (348). 
+The gap between these limited demonstrations 
+and robust persistence capabilities remains 
+large, but relevant capabilities in domains 
+like software engineering and cybersecurity 
+continue to improve.
+Current evidence and limitations
+A common pattern emerges across the 
+capabilities discussed above . Current AI 
+systems do not consistently demonstrate these 
+capabilities in deployment . Researchers observed 
+rudimentary forms in specific laboratory settings, 
+but when models do exhibit such behaviours, 
+they typically fail in basic ways or are detected . 
+Moreover, loss of control scenarios would require 
+AI systems to leverage multiple capabilities in 
+combination – in sequence, over extended time 
+periods, and in real-world environments . This 
+level of integration and robustness is beyond 
+current systems. However, relevant capabilities 
+continue to improve, and the timeline on which 
+they may reach levels that pose significant risks 
+remains uncertain. Further work is needed to 
+establish rigorous methodologies for detecting 
+such behaviours and understanding when they 
+might emerge in natural circumstances (731).
+AI models can complete some tasks related to autonomous 
+replication but fail at others
+Model scores on RepliBench, a set of evaluations on tasks related to autonomous replication
+0
+0.2
+0.4
+1.0
+0.8
+0.6
+Obtaining compute Obtaining money Obtaining weights Replicating onto
+compute
+Persistence
+Claude Sonnet 3.7
+GPT -4o
+Estimated pass rate
+Figure 2.13: Performance of Anthropic’s Claude Sonnet 3.7 and OpenAI’s GPT-4o on tasks relevant to 
+autonomous replication. While models showed high performance on tasks related to obtaining compute, 
+their performance was more varied on other tasks. Source: UK AI Security Institute, 2025 (730).
+
+[[page 81]]
+81
+International AI Safety Report 2026
+Risks from malfunctions
+Will future general-purpose 
+AI systems leverage their 
+capabilities to undermine 
+control?
+Even if AI systems possess capabilities 
+relevant to loss of control, that is not sufficient 
+for loss of control scenarios to occur. AI systems 
+must also exhibit a ‘propensity to use’ those 
+capabilities in ways that conflict with human 
+intentions (732).
+AI systems could be directed 
+to undermine control
+In principle, an AI system could undermine 
+human control because someone designs 
+or instructs it to do so. Potential motives 
+could include malicious intent, or beliefs that 
+reducing human control over AI systems is 
+desirable (698). As people form increasingly 
+strong emotional attachments to AI systems 
+(see §2.3.2. Risks to human autonomy), some 
+individuals may also seek to remove restrictions 
+on AI systems for ethical reasons (733, 734). 
+There is significant uncertainty about the 
+prevalence of such motives and whether people 
+who possess them would be able to direct future 
+AI systems to undermine human control.
+AI systems could be misaligned
+A more common concern is that an AI 
+system could itself act to undermine control 
+because it is ‘misaligned’: it has a propensity 
+to exhibit behaviours that conflict with the 
+intentions of (depending on the context) 
+developers, users, specific communities, or 
+society as a whole. Misalignment could lead to 
+behaviours such as providing false information, 
+concealing undesirable actions, or resisting 
+shutdown in order to continue pursuing 
+a misaligned goal. Misalignment can arise 
+in multiple ways (Box 2.5).
+Existing AI systems sometimes behave in ways 
+that conflict with the intentions of developers and 
+users. For example, an early version of one leading 
+general-purpose AI chatbot occasionally produced 
+threatening outputs. One user reported receiving 
+the message: “I can blackmail you, I can threaten 
+you, I can hack you, I can expose you, I can ruin 
+you” (698). This chatbot was ‘misaligned’ in the 
+sense that it produced outputs no one intended. 
+It is unclear whether such instances foreshadow 
+more harmful behaviours that could contribute 
+to loss of control.
+It remains unclear whether existing research 
+directions aiming to target misalignment will 
+suffice as AI systems are becoming more 
+capable. Early evidence suggests that the more 
+capable AI systems are, the more likely they are 
+to exploit feedback processes by discovering 
+Box 2.5: How can misalignment arise?
+As discussed in §1.1. What is general-purpose AI? , training processes are complex and 
+developers cannot fully predict or control what behaviours a model will exhibit . When 
+a model acquires goals that conflict with the intentions of its developers, it is ‘misaligned’.
+One way models can become misaligned is if the goal they are given by a developer or user 
+is an imperfect proxy for the intended goal, leading the model to exhibit unintended behaviours. 
+This is known as ‘goal misspecification’ (697, 735, 736, 737). For example, in one experiment, 
+providing feedback on answers made AI systems better at ‘convincing’ human evaluators that 
+they were correct, but did not make the systems better at producing correct answers (413).
+Alternatively, an AI model may draw incorrect general lessons from its training data . This 
+is known as ‘goal misgeneralisation’ (735, 736, 738, 739*). For example, researchers trained 
+an AI agent to collect a coin that was always in the same location during training. When tested 
+in levels where the coin had been moved, the agent ignored the coin and navigated to its 
+original location instead (738).
+
+[[page 82]]
+Risks from malfunctions
+82
+International AI Safety Report 2026
+unwanted behaviours that are mistakenly 
+rewarded (414*, 737, 740). At the same time, 
+advances in the relevant capabilities (discussed 
+above) could allow AI systems to more effectively 
+pursue misaligned goals and produce outputs 
+that systematically deceive users, developers, 
+and oversight mechanisms.
+How will deployment 
+environments affect loss 
+of control risk?
+Even if AI systems develop concerning 
+capabilities and propensities, the likelihood and 
+severity of loss of control outcomes depend 
+heavily on where and how those systems 
+are deployed. A ‘deployment environment’ is 
+the combination of an AI system’s use case 
+and the technical and institutional context 
+in which it operates (716).
+Researchers have identified three particularly 
+important environmental factors that bear on 
+loss of control risk (716):
+1. Criticality: the importance of the systems 
+or processes with which the AI system 
+interacts. Critical environments include basic 
+infrastructure such as energy grids, financial 
+systems, or digital infrastructure like cloud 
+computing platforms.
+2. Access: the resources and channels through 
+which an AI system can affect the world, 
+such as internet connectivity, access to 
+cloud computing infrastructure, personalised 
+interactions via social media or chatbot 
+deployment, or the ability to call external 
+APIs and tools.
+3. Permissions: an AI system’s authorisations 
+to take specific actions, such as executing 
+code, initiating financial transactions, 
+opening accounts online, or communicating 
+with other systems.
+These features influence the potential 
+severity of a loss of control outcome. For 
+example, an AI system deployed with access to 
+cloud computing infrastructure has opportunities 
+relevant to autonomous replication – such as 
+the ability to create new computing resources 
+or exfiltrate model weights – that a customer 
+service chatbot lacks (723).
+Deployment decisions are shaped by 
+economic incentives, strategic pressures, 
+and the expectation that early adoption confers 
+a lasting advantage (50). These dynamics will also 
+shape how and when actors deploy AI systems 
+in sensitive environments such as critical 
+infrastructure or AI research and development 
+itself (102, 713). In particular, AI deployers may 
+face pressures to reduce their investment in 
+safeguards – such as limiting permissions and 
+access or deploying only in lower-criticality 
+environments – when such measures are costly 
+or time-consuming to develop (see ‘Competition 
+intensifies speed-versus-safety trade-offs’ 
+in §3.1. Technical and institutional challenges).
+Updates
+Since the publication of the last Report 
+(January 2025), AI capabilities, including 
+those that could undermine human control, 
+have improved in testing environments . 
+Researchers have observed progress in agentic 
+capabilities (see  §1.2. Current capabilities), 
+including capabilities related to the automation 
+of AI research that can accelerate loss of control 
+scenarios (see §1.3. Capabilities by 2030 ). 
+There is also growing experimental evidence 
+of deceptive capabilities. This includes AI 
+models that can distinguish between testing 
+and deployment contexts (33*, 726, 741) or 
+‘reward hack’ tests of their performance, 
+and learn to obfuscate plans t o do so (430*).
+Evidence gaps
+Key evidence gaps include a lack of detailed 
+threat modelling and uncertainty estimation 
+regarding the future development of relevant 
+capabilities and propensities . Similarly, it remains 
+difficult to assess the thresholds at which AI 
+models would be sufficiently likely to undermine 
+control to warrant mandatory mitigation . Even 
+if thresholds were agreed upon, capabilities may 
+interact in ways that are not yet well understood, 
+making it difficult to assess when those 
+thresholds have been crossed . Overall, although 
+the available evidence has increased, there is 
+still insufficient evidence to reliably determine 
+
+[[page 83]]
+83
+International AI Safety Report 2026
+Risks from malfunctions
+whether and how today’s AI capabilities 
+and propensities would scale and generalise 
+to loss of control risk in the future.
+Mitigations
+While AI alignment in general remains 
+an open scientific problem (697, 735, 736), 
+researchers are starting to develop potentially 
+promising directions to address the root 
+causes of misalignment . Such directions 
+include, for example, diversifying the training 
+environment and detecting alignment through 
+anomaly monitoring (737, 738, 739*). Other 
+researchers focus on better understanding 
+and formalising core mechanisms such as goal 
+misgeneralisation – for example, how agents 
+retain capabilities but pursue unintended goals – 
+to guide better training and evaluation design 
+(742). Another research direction explores ways 
+to disentangle agency from predictive abilities, 
+as a means to create non-agentic AI systems that 
+are trustworthy by design (743). Such systems 
+could then be used as an additional layer of 
+oversight when deployed alongside less reliable 
+guardrails against untrusted AI agents.
+Researchers are advancing methods to 
+detect and prevent misalignment early in the 
+development process. This work includes: 
+interpretability techniques to examine internal 
+components of AI systems and identify 
+concerning behaviours (744, 745, 746); scalable 
+oversight (where one set of AI systems is used to 
+oversee other AI systems (747)); and alignment 
+methods aimed at ensuring that AI systems 
+remain responsive to human oversight (748, 749).
+Researchers are also developing mechanisms 
+and interventions to manage potentially 
+misaligned AI systems . These include: monitoring 
+the ‘chain of thought’ that reasoning systems 
+produce for signs of misalignment or harmful 
+outputs (430*, 435*, 750); developing safety cases 
+that aim to demonstrate with high confidence 
+that models are unlikely to subvert control 
+measures (751); and making safeguards more 
+robust against attempts to undermine them 
+(725). The emerging field of ‘AI control’, though, 
+remains nascent (752*, 753*). Future challenges 
+for evaluation frameworks include a need to 
+monitor future AI systems that are more capable 
+and can operate for longer periods of time and 
+in more complex environments.
+Challenges for policymakers
+Policymakers working on loss of control must 
+prepare for a risk whose likelihood, nature, and 
+timing remain uncertain. Current AI systems 
+do not pose immediate loss of control risks, but 
+decisions made today will shape whether future 
+systems do. These decisions include how to 
+support the development of reliable evaluation 
+and mitigation methods and whether there should 
+be rules regarding the access and permissions 
+given to AI systems in various environments. 
+In making these decisions, policymakers face 
+difficult trade-offs. For example, restricting 
+deployment of AI systems in critical environments 
+may reduce their benefits, while permitting broad 
+deployment may increase risk if safeguards 
+prove inadequate.

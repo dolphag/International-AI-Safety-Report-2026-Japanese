@@ -1,0 +1,105 @@
+# Forewords
+# Source PDF pages: 6-8
+
+[[page 6]]
+6
+International AI Safety Report 2026
+Forewords
+Forewords
+A new scientific assessment  
+of a fast-moving technology
+This is the second International AI Safety Report , which builds on the mandate 
+by world leaders at the 2023 AI Safety Summit at Bletchley Park to produce 
+an evidence base to inform critical decisions about general-purpose artificial 
+intelligence (AI).
+This year, we have introduced several changes to make this Report even more 
+useful and accessible.
+First, to help policymakers better understand the range of potential outcomes despite the 
+uncertainty involved, we have drawn upon new research conducted by the Organisation 
+for Economic Co-operation and Development (OECD) and Forecasting Research Institute 
+to present more specific scenarios and forecasts.
+Second, following extensive consultation, we have narrowed the scope to focus on 
+‘emerging risks’: risks that arise at the frontier of AI capabilities . Given high uncertainty 
+in this domain, the rigorous analysis the Report provides can be especially valuable . 
+A narrower scope also ensures this Report complements other efforts, including the 
+United Nations’ Independent International Scientifi c Panel on AI.
+Of course, some things have not changed. 
+This remains the most rigorous assessment of AI capabilities, risks, and risk 
+management available. Its development involved contributions from over 
+100 experts, including the guidance of experts nominated by over 30 countries 
+and intergovernmental organisations.
+The Report’s fundamental goal is also the same: to advance a shared understanding 
+of how AI capabilities are evolving, risks associated with these advances, and what 
+techniques exist to mitigate those risks.
+The pace of AI progress raises daunting challenges . However, working with the many 
+experts that produced this Report has left me hopeful . I am immensely grateful 
+for the enormous efforts of all contributors – we are making progress towards 
+understanding these risks.
+With this Report, we hope to improve our collective understanding of what 
+may be the most significant technological transformatio n of our time.
+Professor Yoshua Bengio 
+Université de Montréal / LawZero /  
+Mila – Quebec AI Institute & Chair
+
+[[page 7]]
+7
+International AI Safety Report 2026
+Forewords
+Building a secure future for AI through 
+international cooperation
+AI continues to redefine the possibilities before us – transforming economies, 
+revitalising public services, and rapidly accelerating scientific advancement. 
+This pace of progress demands an up-to-date, shared understanding of AI 
+capabilities. This effort will build trust, enable adoption and pave the way 
+for AI to deliver prosperity for all. 
+The 2026 International AI Safety Report is the result of strong collaboration 
+across countries, organisations, civil society and industry partners – working 
+together to produce robust, evidence-based analysis . The Report provides 
+an essential tool for policymakers and world leaders to help navigate this 
+challenging and fast-moving landscape.
+The United Kingdom remains committed to strengthening international 
+partnerships, scientific collaboration, and institutions that drive innovative 
+AI research forward, including the AI Security Institute. Following the success 
+of the landmark Summits hosted in Bletchley Park (November 2023), Seoul 
+(May 2024) and Paris (February 2025), I am especially looking forward to the 
+India AI Impact Summit – where this Report will be showcased – to ensure 
+AI is shaped for humanity, inclusive growth and a sustainable future.
+I am delighted to present this Report and thank Yoshua Bengio, the writing 
+team, and all contributors for their dedication to this initiative. Together – 
+through shared responsibility and international cooperation – we can forge 
+a path where AI delivers security, opportunity and growth for every nation 
+and every citizen. 
+Kanishka Narayan MP 
+Minister for AI and Online Safety 
+Department for Science, Innovation  and Technology 
+UK Government
+
+[[page 8]]
+8
+International AI Safety Report 2026
+Forewords
+Enabling equitable access to AI for all
+The second International Al Safety Report  builds on the mandate of the 
+2023 Al Safety Summit at Bletchley Park. It aims at developing a shared, 
+science-based understanding of advanced Al capabili ties and risks.
+This edition focuses on rapidly evolving general-purpose Al systems, 
+including language, vision and agentic models . It also reviews associated 
+challenges, including wider impacts on labour markets, human autonomy 
+and concentration of power.
+As Al systems grow more capable, safety and security remain critical 
+priorities. The Report highlights practical approaches of model evaluations, 
+dangerous capability thresholds and ‘if-then’ safety commitments to reduce 
+high-impact failures.
+Our global risk management frameworks are still immature, with limited 
+quantitative benchmarks and significant evidence gaps. These gaps must 
+be addressed alongside innovation.
+For India and the Global South, Al safety is closely tied to inclusion, safety 
+and institutional readiness . Responsible openness of Al models, fair access 
+to compute and data, and international cooperation are  essential too.
+As host of the 2026 India Al Impact Summit, India has a key role in shaping 
+global Al safety efforts. The Report is intended to help policymakers, 
+researchers, industry and civil society shape nationa l strategies.
+Ashwini Vaishnaw 
+Minister of Railways, Information & Broadcasting and 
+Electronics & Information Technology 
+Government of India

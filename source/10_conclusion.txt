@@ -1,0 +1,95 @@
+# Conclusion
+# Source PDF pages: 146-146
+
+[[page 146]]
+146
+International AI Safety Report 2026
+Conclusion
+Conclusion
+This Report provides a scientific assessment, 
+guided by over 100 experts from more than 
+30 countries and international organisations, 
+of general-purpose AI: a rapidly evolving and 
+highly consequential technology . Contributors 
+differ in their views on how quickly capabilities 
+will improve, how severe risks may become, and 
+the extent to which current safeguards and risk 
+management practices will prove adequate . On 
+core findings, though, there is a high degree of 
+convergence. General-purpose AI capabilities are 
+improving faster than many experts anticipated . 
+The evidence base for several risks has grown 
+substantially. Current risk management 
+techniques are improving but insufficient. 
+This Report cannot resolve all underlying 
+uncertainties, but it can establish a common 
+baseline and an approach for navigating them.
+A year of change
+Regular scientific assessment allows for 
+changes to be tracked over time. Since the first 
+International AI Safety Report  was published in 
+January 2025, multiple AI systems have solved 
+International Mathematical Olympiad problems 
+at gold-medal level for the first time; reports 
+of malicious actors misusing AI systems for 
+cyberattacks have become more frequent and 
+detailed, and more AI developers now regularly 
+publish details about cyber threats; and several 
+developers released new models with additional 
+safeguards, after being unable to rule out the 
+possibility that they could assist novices in 
+developing biological weapons. Policymakers 
+face a markedly different landscape than they 
+did a year ago.
+The core challenge
+A number of evidence gaps appear repeatedly 
+throughout this Report . How and why general-
+purpose AI models acquire new capabilities and 
+behave in certain ways is often difficult to predict, 
+even for developers. An ‘evaluation gap’ means 
+that benchmark results alone cannot reliably 
+predict real-world utility or risk . Systematic 
+data on the prevalence and severity of AI-related 
+harms remains limited for most risks. Whether 
+current safeguards will be sufficiently effective 
+for more capable systems is unclear. Together, 
+these gaps define the limits of what any current 
+assessment can con fidently claim.
+The fundamental challenge this Report identifies 
+is not any single risk. It is that the overall 
+trajectory of general-purpose AI remains deeply 
+uncertain, even as its present impacts grow 
+more significant. Plausible scenarios for 2030 
+vary dramatically: progress could plateau near 
+current capability levels, slow, remain steady, or 
+accelerate dramatically in ways that are difficult 
+to anticipate. Investment commitments suggest 
+major AI developers expect continued capability 
+gains, but unforeseen technical limits could slow 
+progress. The social impact of a given level of 
+AI capabilities also depends on how and where 
+systems are deployed, how they are used, and 
+how different actors respond. This uncertainty 
+reflects the difficulty of forecasting a technology 
+whose impacts depend on unpredictable 
+technical breakthroughs, shifting economic 
+conditions, and varied instituti onal responses.
+The value of shared 
+understanding
+The trajectory of general-purpose AI is not 
+fixed: it will be shaped by choices made over 
+the coming years by developers, governments, 
+institutions, and communities . This Report 
+is not prescriptive about what should be 
+done. By advancing a shared, evidence-
+based understanding of the AI landscape, 
+however, it helps ensure that those choices 
+are well-informed and that key uncertainties 
+are recognised . It also allows policymakers 
+in different jurisdictions to act in accordance 
+with their community’s unique values and 
+needs while working from a common, 
+scientific foundation. The value of this Report 
+is not only in the findings it presents, but in 
+the example it sets of working together to 
+navigate sha red challenges .

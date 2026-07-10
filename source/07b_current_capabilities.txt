@@ -1,0 +1,506 @@
+# Current capabilities
+# Source PDF pages: 26-31
+
+[[page 26]]
+Current capabilities
+26
+International AI Safety Report 2026
+Section 1.2
+Current capabilities
+Key information
+ — General-purpose AI systems can perform a wide range of well-scoped tasks 
+with high proficiency. These include conversing fluently in numerous languages; 
+generating code to complete narrow software tasks; creating realistic images and 
+short videos; and solving graduate-level mathematics and sc ience problems.
+ — However, their capabilities are ‘jagged’: there remain many tasks AI systems 
+do not perform well. For example, AI systems can be derailed by simple errors 
+during multi-step projects; continue to generate text that includes false statements 
+(‘hallucinations’); and cannot yet integrate with robotic components to perform 
+basic physical tasks such as housework . Their performance also tends to decline 
+when prompted in languages other than English, which are less represented in 
+training datasets.
+ — AI agents are increasingly able to do useful work . For example, AI agents have 
+demonstrated the ability to complete a variety of software engineering tasks with 
+limited human oversight. However, they cannot yet complete the range of complex 
+tasks and long-term planning required to fully auto mate many jobs.
+ — Since the publication of the last Report (January 2025), advances in ‘reasoning 
+systems’ have driven performance improvements on more complex tasks.  Reasoning 
+systems are able to break problems into smaller steps and compare alternative 
+answers. This has especially improved their performance on tasks related to 
+mathematics, coding, and scien tific research.
+ — A central challenge is an emerging ‘evaluation gap’: existing evaluation methods 
+do not reliably reflect how systems perform in real-world settings. Many common 
+capability evaluations are outdated, affected by data contamination (when AI models 
+are trained on the same questions used in evaluations), or focus on a narrow set of 
+tasks. As a result, they provide limited insight into real-world AI performance.
+General-purpose AI systems exhibit many 
+remarkable capabilities. Leading systems now 
+perform at gold-medal level in mathematics 
+competitions and assist scientific researchers 
+with generating hypotheses and troubleshooting 
+laboratory work. They match, and in some cases 
+exceed, expert performance on a wide range 
+of benchmarks and task-specific evaluations. 
+Yet the performance profile these systems 
+display is also ‘jagged’: their capabilities vary 
+widely among different tasks and contexts. 
+They still sometimes generate false information 
+(‘hallucinations’) and produce inconsistent 
+outputs even when given identical or similar 
+inputs. An ‘evaluation gap’ exists: AI systems 
+often perform impressively in controlled settings 
+
+[[page 27]]
+27
+International AI Safety Report 2026
+Current capabilities
+such as pre-deployment evaluations, but more 
+poorly in real-world conditions . This variability 
+makes it difficult to assess general-purpose AI 
+capabilities with a single metric . This section 
+outlines both the capabilities of AI systems and 
+their shortcomings (Table 1.4).
+Most experts agree that general-purpose AI systems can currently perform tasks such as:
+ 
+Engage in fluent 
+conversation in 
+many languages
+Write and debug 
+code for narrow, 
+well-defined 
+software tasks
+Create highly 
+realistic images 
+and short video 
+clips
+Solve well-posed, 
+exam-style maths 
+and science 
+problems at 
+graduate level
+Contribute 
+to scientific 
+research, for 
+example through 
+literature reviews 
+and data analysis
+Most experts agree that general-purpose AI cannot perform tasks such as:
+Independently 
+executing multi-
+day projects
+Generating text 
+without false 
+statements 
+(‘hallucinations’) 
+with very high 
+reliability
+Performing 
+useful tasks 
+involving 
+robotics, such as 
+household work
+Solving maths 
+and science 
+problems that 
+require novel 
+insight or heavy 
+compositional 
+reasoning
+Perform as well 
+in languages 
+with significantly 
+less digital 
+presence than 
+English
+Table 1.4: A summary of the main capabilities and limitations of current general-purpose AI systems.
+What can current general-
+purpose AI systems do?
+General-purpose AI systems now perform at or 
+above the level of human experts on standardised 
+evaluations, covering a growing range of well-
+defined professional and scientific subjects 
+(Figure 1.4). For example, leading models score 
+over 90% on undergraduate-level examinations in 
+subjects from chemistry to law (MMLU, (112*)) and 
+achieve over 80% on graduate-level science tests 
+(GPQA, (14*)). In July 2025, models from Google 
+DeepMind and OpenAI reached gold medal-level 
+scores at the International Mathematical 
+Olympiad, solving five out of six problems under 
+competition-like conditions (76). Beyond text-
+based reasoning, these systems display 
+powerful multimodal capabilities: they can create 
+photorealistic images, short high-definition videos, 
+3D scenes, and musical pieces from simple text 
+prompts (13*, 18*, 113*, 114*, 115*, 116*), and they 
+are beginning to process complex sensor data to 
+guide physical robots (21*).
+Advanced capabilities are 
+increasing productivity in medicine, 
+education, software development, 
+and other sectors
+Advanced AI capabilities now power practical 
+tools that match or exceed human performance 
+on specific tasks, increasing productivity in 
+multiple sectors (117*).
+
+[[page 28]]
+Current capabilities
+28
+International AI Safety Report 2026
+ — In medicine, AI systems can analyse 
+clinical scenarios and conduct diagnostic 
+conversations to generate lists of potential 
+diagnoses. In specific simulated settings, 
+their accuracy can exceed that of human 
+physicians (118, 119), though they lack the 
+reliability and consistency required for 
+real-world clinical deployment.
+ — In education, AI systems are being rapidly 
+adopted in areas from curriculum design 
+to student assessment, transforming 
+the education process (120*, 121), while 
+widespread use by students is posing 
+significant challenges to the integrity 
+and validity of existing academic 
+assessments (122).
+ — In software development , AI coding 
+assistants are now widely adopted, with 
+some studies suggesting that developers 
+using AI assistants complete certain tasks 
+20–30% faster on average than those 
+without (123*, 124, 125*).
+ — Large-scale studies in other sectors 
+such as customer service, consulting, 
+and professional writing find measurable 
+productivity gains from AI-assisted work, 
+though these effects vary across tasks 
+and worker groups (126, 127, 128, 129, 130). 
+(For a more detailed discussion of the labour 
+market implications of general-purpose AI, 
+see §2.3.1. Labour market impacts.)
+General-purpose AI systems assist 
+scientific research
+General-purpose AI systems are now used 
+by researchers to support relatively complex 
+tasks across disciplines . Researchers have 
+demonstrated that AI systems can, under high-
+level human guidance, design novel proteins 
+for medical use, which are later validated 
+Leading general-purpose AI model performance has increased 
+across key benchmarks
+Mathematical 
+Problem-Solving 
+(High-School) 
+(MATH Level 5)
+Mathematical 
+Problem-Solving 
+(Expert) (FrontierMath)
+Graduate-Level 
+Scientiﬁc Reasoning 
+(GPQA Diamond)
+Software engineering 
+(SWE-bench Veriﬁed)
+Release date
+0
+10
+20
+30
+40
+50
+60
+70
+80
+90
+100
+Apr
+2023
+July 
+2023
+Oct 
+2023
+Jan 
+2024
+Apr
+2024
+July
+2024
+Oct
+2024
+Jan
+2025
+Apr
+2025
+July
+2025
+Nov
+2025
+GPT -4
+GPT -5
+o1-mini Gemini 3 Pro Preview
+Claude Sonnet 4.5 
+(no thinking)
+Claude Sonnet 3.5 
+Claude Sonnet 3.5
+Gemini 3 Pro Preview
+GPT -4
+Accuracy (%)
+Figure 1.4: Scores of leading general-purpose AI systems on key benchmarks from April 2023 to 
+November 2025. These benchmarks cover challenging problems in programming (SWE-bench Verified), 
+mathematics (MATH and FrontierMath), and scientific reasoning (GPQA Diamond). Reasoning systems, 
+such as OpenAI’s o1, show significantly improved performance on mathematical tasks, as illustrated 
+clearly on the MATH benchmark. Source: Epoch AI, 2025 (138).
+
+[[page 29]]
+29
+International AI Safety Report 2026
+Current capabilities
+in a physical laboratory (131). Other systems 
+have discovered new algorithms that are more 
+efficient than long-standing human-designed 
+methods (31*). Notably, such advances often 
+rely less on the raw power of the latest models 
+and more on appropriate system integration . 
+General-purpose AI is also increasingly used 
+to accelerate AI research itself, a trend with 
+significant implications discussed further 
+in §1.3. Capabilities by 2030. In the social 
+sciences, researchers are using AI to accelerate 
+data analysis through automated annotation 
+and to explore social dynamics by simulating 
+individual and collective behaviour with AI 
+agents (132, 133, 134). Moving from analysis to 
+direct application, researchers are beginning 
+to use general-purpose AI systems to design 
+and study scalable, novel social interventions . 
+For example, recent work has explored using 
+AI-mediated conversations to find common 
+ground in democratic debates or to reduce 
+belief in conspiracy theories through dialogue 
+(135, 136, 137).
+What are the current 
+limitations of general-
+purpose AI systems?
+Despite advances in capabilities, the performance 
+of general-purpose AI systems remains jagged 
+across tasks and contexts . This section highlights 
+some prominent limitations, though the full range 
+of challenges is broader.
+Reliability challenges persist 
+in current AI systems
+Despite recent improvements, general-purpose 
+AI systems can be unreliable and prone to 
+basic errors of fact and logic. Even systems 
+that excel at complex tasks may generate 
+non-existent citations, biographies, or facts – 
+a phenomenon known as ‘hallucination’ (139, 
+140, 141*). Their performance can also be 
+inconsistent; for example, accuracy on maths 
+problems can decrease significantly when 
+irrelevant information is inserted into the problem 
+description (142*). This brittleness extends to 
+multimodal capabilities, where models often have 
+low performance on spatial reasoning tasks, such 
+as basic counting of objects in a scene (143, 144). 
+While expert human oversight can mitigate some 
+of these risks, there is a corresponding danger 
+of over-reliance, where users trust incorrect 
+outputs because they are presented fluently and 
+confidently (145, 146) (see §2.3.2. Risks to human 
+autonomy). This unreliability makes it difficult 
+to safely adopt such systems in high-stakes 
+settings such as medicine and finance, where 
+errors can have grave consequences, and human 
+verification of system outputs rem ains necessary.
+Systems struggle with long-term 
+planning and unexpected obstacles
+General-purpose AI systems also struggle 
+with tasks that require long-term planning, 
+maintaining a coherent strategy over many 
+steps, and adapting to unexpected obstacles . 
+As tasks grow longer, AI agents often lose track 
+of their progress and cannot reliably deal with 
+unexpected inputs (147, 148, 149*). For example, 
+even a simple website pop-up ad can derail an 
+entire task (150). Large-scale evaluations confirm 
+this pattern: in software development, the most 
+capable systems achieve only 50% success on 
+tasks lasting just over two hours, and reaching 
+80% success requires limiting them to much 
+simpler 25-minute tasks (98, 151). For now, 
+reliable automation of long or complex tasks 
+remains infeasible.
+Interacting with the physical 
+world remains challenging
+Progress on digital tasks has also proved 
+difficult to translate into robotics, where the 
+complexity of the physical world introduces 
+new challenges. Recent advances are centred 
+on Vision-Language-Action (VLA) models – 
+foundation models designed to enable robots 
+to follow natural language instruction, interpret 
+multimodal sensory data, and generate motor 
+commands. State-of-the-art systems such 
+as π0.5 (152*) and Gemini Robotics (21*) can 
+now interpret simple verbal commands such 
+as ‘clean the kitchen’ and execute a sequence 
+of physical steps in an unfamiliar, controlled 
+environment. However, current VLA models 
+still do not perform well with unusual object 
+shapes and unexpected events (152*). Ensuring 
+that such systems can operate safely and 
+reliably to minimise the risk of physical harm 
+or property damage, and perform well in 
+
+[[page 30]]
+Current capabilities
+30
+International AI Safety Report 2026
+diverse environments remains an active area 
+of research (153, 154, 155*).
+Performance is uneven across 
+languages and cultures
+The capabilities of general-purpose AI models 
+and systems also vary across languages and 
+cultures. Performance is highest on tasks in 
+English, reflecting the fact that most training 
+data comes from Western sources (156*, 157). For 
+example, one evaluation of AI models across 83 
+languages found substantially lower performance 
+on languages that use non-Latin scripts and on 
+languages with limited digital resources (158). 
+This disparity extends to cultural knowledge (159); 
+in one study, AI models correctly answered 79% 
+of questions about everyday US culture but only 
+12% of questions about Ethiopian culture (160). 
+Another study finds that current models ‘reason’ 
+more effectively in high-resource languages, 
+which may widen the performance gap between 
+languages (161). Beyond language and culture, 
+similar patterns appear along geographic and 
+socioeconomic lines. Models underrepresent 
+locations with disadvantaged demographics 
+in recommendations (162) – for example, if asked 
+for a restaurant recommendation, they might 
+fail to suggest restaurants in poorer areas – and 
+their performance on factual recall degrades for 
+lower-income countries (163, 164). This inequality 
+is compounded by evaluation benchmarks that 
+are themselves heavily skewed toward English, 
+creating an ecosystem where low-resource 
+languages remain systematically understudied 
+and underoptimised (165*, 166).
+Updates
+Since the publication of the last Report 
+(January 2025), ‘reasoning’ systems have 
+become mainstream (see §1.1. What is general-
+purpose AI? for details of their development). 
+These systems demonstrate substantially 
+improved performance on hard mathematics, 
+coding, and scientific tasks by generating and 
+comparing multiple answers within their own 
+‘chain of thought’ before producing a final answer 
+(Figure 1.5) (112*, 167*). Because these models’ 
+performance depends in part on inference-time 
+compute, their effective capabilities can change 
+Figure 1.5: Performance of a general-purpose AI model (s1) on reasoning-intensive tasks with varying 
+amounts of test-time compute (i.e. when using additional compute during inference). Allocating more 
+computational time during response generation leads to substantially better results on mathematics 
+(AIME 24) and PhD-level science questions (GPQA Diamond). Source: Muennighoff et al., 2025 (173).
+Giving a model more inference-compute makes it more accurate
+American Invitational 
+Mathematics 
+Examination (AIME 2024)
+PhD-level science 
+questions (GPQA 
+Diamond benchmark)
+Average thinking time (tokens)
+Accuracy (%)
+80
+60
+40
+20
+0
+1,000 5,0004,0003,000 6,000 7,0002,000
+
+[[page 31]]
+31
+International AI Safety Report 2026
+Current capabilities
+after initial development – improving as more 
+computational resources  are allocated.
+In parallel, AI companies have focused more 
+on developing AI agents, especially in areas such 
+as software engineering (168) and computer 
+use (169*, 170*). While reliability remains 
+a bottleneck, the complexity of tasks these 
+agents can automate has been increasing 
+rapidly (98). Finally, enabling models to form 
+long-term memories and learn continuously 
+from user interaction is emerging as a key 
+area of development (171, 172*).
+Evidence gaps
+Jagged capabilities and the evaluation gap 
+make general-purpose AI capabilities difficult 
+to reliably measure and predict (174, 175). 
+Performance also depends heavily on the 
+specific test examples and prompt used, 
+making it difficult to prove with high-confidence 
+that an AI system cannot perform certain – 
+potentially dangerous – tasks (176*). There is 
+no single, comprehensive, and continuously 
+updated synthesis of AI capabilities, leading to 
+a fragmented and often outdated understanding 
+of the field. Existing reviews (138, 177), including 
+this Report, provide valuable summaries 
+but are static snapshots in a rapidly moving 
+field. With no widely accepted taxonomy for 
+capabilities, policymakers must navigate 
+a patchwork of benchmarks and sources 
+to form a complete picture. 
+Benchmarks often fail to predict 
+real-world performance
+Benchmark integrity is a growing concern . 
+Many capability evaluations rely on standardised 
+benchmarks. However, many models may 
+have been trained using data from these 
+same benchmarks – a problem called ‘data 
+contamination’, which most developers do not 
+currently track or disclose (178). This can lead to 
+inflated performance scores that do not reflect 
+a model’s true ability (179*), but rather its capacity 
+to memorise answers (180, 181, 182). A further 
+limitation of current evaluation practices is that 
+they rely on automated testing in controlled lab 
+environments. However, this often overestimates 
+AI systems’ practical utility in dynamic, real-world 
+settings (147, 149*, 183, 184). For example, one 
+study found that, while an AI agent could produce 
+functional code, the code still required significant 
+human effort to fix issues with documentation, 
+formatting, and quality before it was usable in 
+a real project (185). To address these limitations, 
+a dedicated ‘evaluation science’ is emerging, 
+advocating for rigorous methodologies that 
+ensure external validity and better predict real-
+world performance (186*, 187). For instance, 
+recent benchmarks have begun to measure AI 
+system performance on economically valuable 
+tasks (188*, 189*) and real-world remote 
+labour (190*, 191*).
+The evidence for how AI augments 
+human capabilities is inconclusive
+Measuring AI’s practical benefits consistently 
+is challenging because success depends on 
+both the specific task and the user’s skill at 
+leveraging AI for it, meaning lab results often 
+fail to predict real-world value . For example, 
+one study shows that a model’s standalone 
+accuracy is not a reliable predictor of human-AI 
+team performance (192). Many studies confirm 
+positive uplift from using AI (126, 127, 128). 
+However, one recent study found that, although 
+software developers believed that AI was making 
+them more productive, it actually slowed down 
+experienced programmers by 19% on complex 
+coding tasks (129).

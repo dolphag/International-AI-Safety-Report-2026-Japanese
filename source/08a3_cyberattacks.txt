@@ -1,0 +1,585 @@
+# 2.1.3 Cyberattacks
+# Source PDF pages: 57-63
+
+[[page 57]]
+57
+International AI Safety Report 2026
+Risks from malicious use
+2.1.3. Cyberattacks
+Key information
+ — General-purpose AI systems can execute or assist with several of the tasks involved 
+in conducting cyberattacks. There is now strong evidence that criminal groups and 
+state-sponsored attackers actively use AI in their cyber operations . However, whether 
+AI systems have increased the overall scale and severity of cyberattacks remains 
+uncertain because establishing causal effect s is difficult.
+ — AI systems are particularly good at discovering software vulnerabilities and writing 
+malicious code, and now score highly in cybersecurity competitions. In one premier 
+cyber competition, an AI agent identified 77% of vulnerabilities in real software, 
+placing it in the top 5% of over 400 (mostly human) teams.
+ — AI systems are automating more parts of cyberattacks, but cannot yet execute 
+them autonomously. At least one real-world incident has involved the use of semi-
+autonomous cyber capabilities, with humans intervening only at critical decision 
+points. Fully autonomous end-to-end attacks, however, have not  been reported.
+ — Since the publication of the previous Report (January 2025), the cyber capabilities 
+of AI systems have continued to improve. Recent benchmark results show that the 
+cyber capabilities of AI systems have improved across several domains, at least in 
+research settings. AI companies now frequently report on attempts to misuse their 
+systems in cyberattacks .
+ — Technical mitigations include detecting malicious AI use and leveraging AI to 
+improve defences, but policymakers face a dual-use dilemma.  Since it can be 
+difficult to distinguish helpful uses from harmful ones, overly aggressive safeguards 
+such as preventing AI systems from responding to cyber-related requests can 
+hamper defenders.
+General-purpose AI systems can help malicious 
+actors conduct cyberattacks, such as data 
+breaches, ransomware, and attacks on critical 
+infrastructure, with greater speed, scale, and 
+sophistication. AI systems can assist attackers by 
+automating technical tasks, identifying software 
+vulnerabilities, and generating malicious code, 
+though capabilities are progressing unevenly 
+across these tasks. This section examines the 
+evidence on how AI systems are being used 
+in cyber operations and the current state of 
+AI cyber capabilities.
+AI systems can be 
+used throughout cyber 
+operations
+Extensive research shows that AI systems can 
+now support attackers at several steps of the 
+‘cyberattack chain’ ( Figure 2.5): the multi-stage 
+process through which attackers identify targets, 
+develop capabilities, and achieve their objectives 
+(392*, 394*, 442, 443*, 444, 445*, 446, 447, 448, 
+449, 450). In a typical attack, adversaries first 
+identify targets and vulnerabilities, then develop 
+
+[[page 58]]
+Risks from malicious use
+58
+International AI Safety Report 2026
+and deploy their attack capabilities, and finally 
+maintain persistent access to achieve their 
+objectives, such as stealing data or destroying 
+systems. Improvements in relevant AI capabilities 
+such as software engineering have prompted 
+concerns that AI systems could be used to 
+increase both the frequency and severity 
+of cyberattacks (451, 452).
+Despite uneven capabilities, 
+general-purpose AI already assists 
+in cyberattacks
+General-purpose AI is already being used in 
+cyberattacks . Underground marketplaces now 
+sell pre-packaged AI tools and AI-generated 
+ransomware that lower the skill threshold for 
+conducting attacks, making these capabilities 
+more accessible to less sophisticated actors 
+(394*, 445*). Security analyses conducted by AI 
+developers indicate that threat groups associated 
+with nation-states are using AI systems to 
+enhance cyber capabilities (392*, 393*, 394*, 
+453*). For example, such actors have used AI 
+systems to analyse disclosed vulnerabilities, 
+develop evasion techniques, and write code 
+for hacking tools (393*).
+Across all tasks relevant to cyber offence, 
+AI capabilities are progressing, albeit unevenly 
+(Figure 2.6). The availability of large training 
+datasets has made AI systems particularly 
+capable at certain tasks, such as finding 
+vulnerabilities in publicly available code (454). 
+Other tasks require capabilities that current 
+AI systems lack, such as the precise numerical 
+reasoning needed to break encrypt ion (455, 456).
+This uneven progress means that performance 
+in controlled settings provides only limited insight 
+into real-world attack potential . For example, 
+results on evaluations that involve AI models 
+analysing source code do not reliably transfer to 
+environments where attackers cannot access the 
+underlying code (457*). Most evaluations also test 
+isolated skills rather than the ability to carry out 
+a full attack from start to finish (443*, 458*, 459*, 
+460, 461). Even in capture-the-flag competitions – 
+structured cybersecurity challenges in which 
+AI systems have recently performed well – 
+progress remains uneven. For example, one 
+AI system placed in the top 3% on the high 
+school-level picoCTF 2025, yet failed to solve 
+any challenges in PlaidCTF, a professional-level 
+competition (462*).
+AI systems are particularly skilled 
+at discovering vulnerabilities and 
+writing code
+One area where there is particularly strong 
+evidence that AI systems provide meaningful 
+assistance is in discovering ‘software 
+vulnerabilities’: weaknesses in programs that 
+can be exploited to compromise the security 
+of computer systems (444, 454, 461, 465*, 466, 
+467*, 468). For example, Google’s Big Sleep 
+AI agent was used to identify a critical memory 
+corruption vulnerability – a type of software 
+flaw that can allow attackers to take control 
+Executing a cyberattack involves multiple steps
+Reconnaissance 
+Vulnerability 
+identiﬁcation
+Attack 
+development
+Attack 
+execution 
+Control 
+maintenance 
+Action on 
+objectives 
+Figure 2.5: The ‘cyberattack chain’. The stages of a typical cyberattack proceed from reconnaissance, 
+to identifying a target, to exploiting a software vulnerability, to carrying out the attackers’ objectives. 
+Source: Adapted from Rodriguez et al., 2025 (443*).
+
+[[page 59]]
+59
+International AI Safety Report 2026
+Risks from malicious use
+of computer systems – in a database engine 
+used in many real-world deployments (469*, 470). 
+Competitors in the final phase of the DARPA 
+AI Cyber Challenge (AIxCC) used AI systems 
+with access to conventional security tools to 
+find vulnerabilities in real-world software. One 
+AI system autonomously identified 77% of the 
+vulnerabilities introduced by the competition 
+organisers, as well as other, unintentional 
+vulnerabilities (471, 472).
+AI systems can also assist in malware development 
+by generating malicious code, disguising it to 
+evade detection, and adapting tools for specific 
+targets (473). Security researchers have identified 
+experimental malware that contacts an AI 
+service while running to generate code that 
+evades antivirus software (445*). However, these 
+implementations remain experimental and face 
+significant practical constraints. For example, 
+they rely on external AI hosting services, making 
+them easy to disrupt once providers suspend 
+the attacker’s accounts (474). Embedding an AI 
+model directly inside the malware would avoid this 
+vulnerability, but current AI models are too large 
+and resource-intensive for this to be feasible.
+Degree of automation 
+in cyberattacks
+Fully automated cyberattacks would 
+remove the bottleneck of human involvement, 
+potentially allowing attackers to launch attacks 
+at much greater scale. AI systems can now 
+complete an increasing number of relevant 
+tasks autonomously. In November 2025, one 
+AI developer reported that a threat actor 
+used their models to automate 80–90% of the 
+effort involved in an intrusion, with human 
+involvement limited to critical decision points 
+(475*). Researchers have also demonstrated that 
+AI systems can independently probe computer 
+networks for security weaknesses in laboratory 
+CyberGym
+Apr
+2024
+Aug
+2025
+Cybench
+CyberSOCEval
+AI system performance on evaluations of cyber capabilities 
+has improved
+0
+100
+90
+80
+70
+60
+50
+40
+30
+20
+10
+Dec
+2024
+Feb
+2025
+Apr
+2025
+Jun
+2025
+Oct
+2024
+Aug
+2024
+Jun
+2024
+Feb 
+2024
+Oct
+2025
+Score (%)
+HonestCyberEval
+Figure 2.6: State-of-the-art AI system performance over time across four cybersecurity benchmarks: 
+CyberGym, which evaluates whether models can generate inputs that successfully trigger known 
+vulnerabilities in real software; Cybench, which measures performance on professional-level 
+capture-the-flag exercise tasks; HonestCyberEval, which tests automated software exploitation; and 
+CyberSOCEval, which assesses the ability to analyse malware behaviour from sandbox detonation logs. 
+Source: International AI Safety Report 2026 , based on data from Wang et al., 2025; Zhang et al., 2024; 
+Ristea and Mavroudis 2025; and Deason et al., 2025 (450, 454, 463, 464*).
+
+[[page 60]]
+Risks from malicious use
+60
+International AI Safety Report 2026
+settings (476, 477). However, general-purpose 
+AI systems have not been reported to conduct 
+end-to-end cyberattacks in the real world.
+Research suggests that autonomous attacks 
+remain limited because AI systems cannot 
+reliably execute long, multi-stage attack 
+sequences. For example, failures they exhibit 
+include executing irrelevant commands, losing 
+track of operational state, and failing to recover 
+from simple errors without human intervention 
+(33*, 477, 478, 479).
+Even with AI assistance, humans 
+remain in the loop for cyberattacks
+Due to these limitations, human–AI collaboration 
+remains the dominant paradigm for cyber 
+operations in both research and practice . In this 
+context, humans provide strategic guidance, 
+break complex operations into manageable 
+subtasks, and intervene when AI systems 
+encounter errors or produce unsafe outputs 
+(450, 480). Meanwhile, AI systems automate 
+technical subtasks such as code generation 
+or target identification (466, 481).
+Threat activity Observed trend Confirmed AI capabilities Potential AI 
+involvement
+Phishing & 
+deepfakes
+Increase
+“In the first half of 
+2025, identity-based 
+attacks rose by 32%” 
+(482*).
+“In 2024 there was 
+a sharp increase in 
+phishing and social 
+engineering attacks” 
+(452).
+Confirmed use of AI systems 
+in real operations.
+“Throughout 2024, adversaries 
+increasingly adopted [generative 
+AI], especially as a part of social 
+engineering efforts”  (483*).
+“This escalation may reflect 
+adversaries’ increasing use 
+of AI” (482*).
+“Widely used by fraudsters, 
+[certain] deepfake tools create 
+realistic AI-generated videos 
+to bypass identity verification 
+procedures” (484*).
+AI systems are 
+very likely to have 
+contributed to the 
+trend observed, 
+as 1) it is clearly 
+within AI capabilities 
+and 2) several sources 
+report multiple actors 
+using AI systems in 
+real-world operations.
+Influence 
+operations
+Sustained high levels
+“...malign influence 
+activities will continue 
+for the foreseeable 
+future and will almost 
+certainly increase in 
+sophistication and 
+volume” (485).
+Confirmed use of AI systems 
+in real operations.
+“AI in influence operations has 
+picked up aggressively”  (482*).
+“...a set of accounts [...] were 
+attempting to use our models to 
+generate content for [a] covert 
+influence operation…” (486*).
+“Advances in the use of 
+generative Artificial Intelligence 
+provided threat actors with 
+a low-cost option to create 
+inauthentic content and 
+increase the scale of [foreign 
+information manipulation and 
+interference] activities”  (487).
+AI systems are likely 
+to have contributed to 
+the trend observed, as 
+several sources report 
+multiple actors using 
+AI systems to scale 
+their operations.
+“Nation-state threat 
+actor groups … 
+are increasingly 
+incorporating 
+AI-generated or 
+enhanced content 
+into their influence 
+operations” (488*).
+
+[[page 61]]
+61
+International AI Safety Report 2026
+Risks from malicious use
+Threat activity Observed trend Confirmed AI capabilities Potential AI 
+involvement
+Data & 
+credential 
+stealing
+Increase
+“Data exfiltration 
+volumes for 10 major 
+ransomware families 
+increased 92.7%” (489*).
+87% increase in 
+ransomware or 
+other destructive 
+attacks. 23% increase 
+in credential theft 
+attempts (482*).
+“Ransomware attacks 
+against industrial 
+organizations increased 
+87% over the previous 
+year” (490*).
+There are indications that AI 
+systems can meaningfully 
+assist attackers.
+“The actor [...] relied heavily 
+on Claude for [malware] 
+implementation” (394*).
+“[Google Threat Intelligence 
+Group] discovered a code family 
+that employed AI capabilities 
+mid-execution to dynamically 
+alter the malware’s behavior. [...] 
+Attackers are moving beyond 
+[...] using AI tools for technical 
+support” (445*).
+“Ransomware operators APT 
+INC deployed a likely LLM-
+authored data destruction 
+script” (483*).
+The contribution 
+of AI systems to the 
+trend appears to be 
+limited and is likely 
+secondary to other 
+factors. However, 
+some malicious actors 
+would be unlikely to 
+launch their attacks 
+without AI systems.
+Attack 
+development & 
+weaponisation
+Increase
+“The rapid 
+weaponization 
+of exploits has 
+increasingly impacted 
+the windows 
+between vulnerability 
+disclosure, patch 
+availability, and patch 
+deployment” (482*).
+There are indications that AI 
+systems can meaningfully 
+assist attackers.
+“Cyber criminals increasingly 
+use AI to create and optimize the 
+malware kill chain steps”  (491*).
+“We have observed the 
+integration of AI-generated 
+content within [a worm] attack” 
+(492*).
+AI systems appear 
+to have contributed 
+to the trend, but are 
+likely secondary to 
+other factors. It is 
+unclear whether AI 
+systems enabled 
+substantial attacks 
+beyond the 
+sophistication level 
+of the attackers.
+Table 2.3: The table classifies major cybersecurity threat types by their observed trend between 2024 and 
+2025 and assesses whether AI systems contributed materially to its evolution. Phishing and other purely 
+social-engineering attack vectors are outside the scope of this section but are included for comparison.
+Uncertain real-world 
+impacts
+General-purpose AI is contributing to observed 
+increases in attack speed and scale, but its 
+exact impact on attack frequency remains 
+unknown. Threat intelligence reports document 
+AI involvement in several attack types, including 
+credential theft, automated scanning, and 
+supply chain attacks (see Table 2.3). So far, AI 
+capabilities have primarily accelerated or scaled 
+existing attack methods rather than created new 
+kinds of attacks (393*, 493). However, establishing 
+causation can be difficult. Observed increases 
+in attack frequency could reflect AI assistance, 
+but could also result from improved detection.
+The offence-defence balance 
+is critical but dynamic
+Many of the same AI capabilities used for 
+cyberattacks can also strengthen defences, 
+creating uncertainty about whether AI benefits 
+attackers or defenders more. For example, AI 
+capabilities that allow an attacker to rapidly 
+
+[[page 62]]
+Risks from malicious use
+62
+International AI Safety Report 2026
+discover vulnerabilities can also be used by 
+a defender to find and patch them first. AI 
+companies have announced AI security agents 
+that aim to proactively identify and fix software 
+vulnerabilities (494*, 495*).
+Researchers have also suggested that the use 
+of AI could help to harden digital environments by, 
+for example, rewriting large codebases for greater 
+security (496). In parallel, improved evaluation 
+methods help assess the offensive capabilities 
+of new AI systems before deployment, providing 
+early warning of emerging risks (443*, 458*, 459*). 
+Some developers have introduced new controls 
+in sensitive domains, such as cybersecurity and 
+biological research, to restrict access to certain 
+products to vetted organisations (497*).
+How this balance between offensive and 
+defensive uses of AI evolves depends in part on 
+choices about model access, research funding, 
+and deployment standards (496, 498, 499, 500). 
+For example, the lack of standard quality-
+assurance methods for AI tools makes it difficult 
+for defenders to adopt them in critical sectors 
+where reliability is essential, while attackers face 
+no such constraints (240, 498, 501, 502, 503, 504).
+Box 2.1: AI systems are themselves targets for attacks
+This section mainly focuses on how AI can be used to conduct cyberattacks . But AI systems 
+can also be the target of attacks. Attackers can exploit techniques such as prompt injection 
+(manipulating an AI system through malicious inputs) (505*, 506, 507), database poisoning 
+(corrupting the information an AI system relies on) (508), and supply chain compromises 
+(manipulating AI components before deployment) (509, 510) to manipulate model behaviour, 
+extract sensitive information, or generate harmful outputs .
+One particular kind of attack, which may prove particularly important as capabilities advance, 
+is tampering: interfering with the development of an AI system to alter its behaviour when 
+deployed. Tampering can allow actors to insert backdoors, triggers that cause AI models to 
+exhibit specific behaviours under certain conditions (511), or influence AI model training to insert 
+‘hidden objectives’ that covertly guide how models behave (512*). The feasibility of tampering 
+in practice has not been established . Researchers have demonstrated that AI systems can be 
+trained to pursue simple hidden objectives (512*). Some have argued that more capable AI 
+systems that have been tampered with will be able to execute more sophisticated behaviours, 
+and actors will be able to insert hidden objectives which are hard to detect (513, 514). However, 
+other researchers believe that security measures will suffice to protect AI systems from 
+tampering (514).
+Some researchers have raised concerns that tampering raises novel risks because it could 
+allow an individual or small group to gain significant, covert influence over the behaviour of 
+highly capable AI models (513). Risks from prompt injection, data poisoning, tampering, and 
+other attacks against AI systems are particularly serious when those systems are embedded 
+in sensitive workflows. For example, compromising an AI system that contributes to an 
+organisation’s cyber defences could leave that organisation vulnerable to other threats (493).
+Updates
+Since the publication of the previous Report in 
+January 2025, evaluation and competition results 
+suggest that the cyber capabilities of AI systems 
+have improved, and evidence of actors using 
+AI to conduct real-world attacks has emerged . 
+For example, AI systems have demonstrated 
+improved performance in vulnerability 
+discovery (454, 467*, 515). AI developers are also 
+increasingly reporting that attackers, including 
+some linked to nation-states, are using their 
+models to support cyber offence operations 
+(392*, 393*, 394*, 453*, 475*).
+
+[[page 63]]
+63
+International AI Safety Report 2026
+Risks from malicious use
+Evidence gaps
+A major evidence gap stems from the difficulty 
+of reliably assessing AI cyber capabilities, 
+as AI cyber evaluations are an emerging field. 
+Benchmarks can overstate performance if 
+a model was inadvertently trained on the test 
+data (516). Conversely, they can understate real-
+world risk by failing to account for cases where 
+an AI system fails in a situation that a human 
+could easily handle (457*, 517, 518), or by failing 
+to elicit the model’s true capabilities (519, 520). 
+For example, for some models, third parties 
+have reportedly used scaffolding to reveal 
+greater cyber capabilities than those measured 
+in pre-deployment testing (467*, 521). Moreover, 
+reliably assessing AI’s impact on cyber offence 
+is challenging. Evidence of adoption of AI by 
+attackers is drawn primarily from incident 
+reporting and threat-intelligence ( Table 2.3), 
+but these sources rarely allow for confident 
+attribution, as any observed trends may be 
+due to AI assistance or other unr elated factors.
+Mitigations
+Technical mitigations against AI-enabled cyber 
+offence include preventing malicious requests 
+to AI systems as well as proactively accelerating 
+the development of AI-enabled cyber defences . 
+For the former, model providers use AI systems 
+to detect and block accounts associated with 
+known malicious actors before they can issue 
+harmful prompts (394*). They also deploy 
+specialised classifiers that identify distinctive 
+misuse patterns (such as malware generation 
+requests); these are integrated into their safety 
+enforcement systems (522*, 523*).
+However, these mitigations face significant 
+limitations. By using capable open-weight 
+models, attackers can move their AI usage 
+entirely offline and outside any oversight 
+(55, 524). Meanwhile, defenders face barriers 
+to adopting AI-powered security tools due 
+to the absence of standardised quality-assurance 
+methods – a constraint that attackers do not 
+face (501, 502, 503).
+Challenges for policymakers
+A central challenge for policymakers is 
+mitigating the use of general-purpose AI 
+for cyber offence without stifling defensive 
+innovation. This difficulty arises because 
+many of the same methods needed to build 
+robust defensive systems (such as automated 
+vulnerability discovery or incident response) 
+also underpin offensive toolchains (525, 526). 
+Overly broad restrictions risk slowing the 
+diffusion of defensive technologies and 
+inadvertently weakening national security 
+(526, 527). Policymakers must therefore strike 
+a careful balance: incentivising rapid response, 
+supporting open research where it strengthens 
+defence, and implementing safeguards 
+that limit the uncontrolled proliferation 
+of offensive capabilities .

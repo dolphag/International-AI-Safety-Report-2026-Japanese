@@ -1,0 +1,148 @@
+# Contributors
+# Source PDF pages: 2-3
+
+[[page 2]]
+2
+International AI Safety Report 2026
+ 
+Contributors
+Chair
+Prof. Yoshua Bengio, Université de Montréal / 
+LawZero / Mila – Quebec AI Institute 
+Expert Advisory Panel
+The Expert Advisory Panel is an international 
+advisory body that advises the Chair on the 
+content of the Report. The Expert Advisory Panel 
+provided technical feedback only. The Report – 
+and its Expert Advisory Panel – does not endorse 
+any particular policy or regul atory approach.
+The Panel comprises representatives nominated 
+by over 30 countries and international 
+organisations including from: Australia, Brazil, 
+Canada, Chile, China, the European Union (EU), 
+France, Germany, India, Indonesia, Ireland, Israel, 
+Italy, Japan, Kenya, Mexico, the Netherlands, 
+New Zealand, Nigeria, the Organisation for 
+Economic Co-operation and Development 
+(OECD), the Philippines, the Republic of Korea, 
+Rwanda, the Kingdom of Saudi Arabia, Singapore, 
+Spain, Switzerland, Türkiye, the United Arab 
+Emirates, Ukraine, the United Kingdom and 
+the United Nations (UN).
+The full membership list for the Expert 
+Advisory Panel can be found here: 
+https://internationalaisafetyreport.org/
+expert-advisory-panel
+Lead Writers
+Stephen Clare, Independent 
+Carina Prunkl, Inria 
+Chapter Leads
+Maksym Andriushchenko, ELLIS 
+Institute Tübingen
+Ben Bucknall, University of Oxford
+Malcolm Murray, SaferAI
+Core Writers
+Shalaleh Rismani , Mila – Quebec AI Institute
+Conor McGlynn, Harvard University 
+Nestor Maslej, Stanford University
+Philip Fox, KIRA Center
+Writing Group
+Rishi Bommasani, Stanford University 
+Stephen Casper, Massachusetts 
+Institute of Technology
+Tom Davidson, Forethought
+Raymond Douglas, Telic Research 
+David Duvenaud, University of Toronto 
+Usman Gohar, Iowa State University 
+Rose Hadshar, Forethought 
+Anson Ho, Epoch AI
+Tiancheng Hu, University of Cambridge  
+Cameron Jones, Stony Brook University 
+Sayash Kapoor, Princeton University 
+Atoosa Kasirzadeh, Carnegie Mellon
+Sam Manning, Centre for the Governance of AI 
+Vasilios Mavroudis, The Alan Turing Institute 
+Richard Moulange, The Centre for 
+Long-Term Resilience
+Jessica Newman, University of 
+California, Berkeley 
+Kwan Yee Ng, Concordia AI 
+Patricia Paskov, University of Oxford
+Girish Sastry, Independent 
+Elizabeth Seger, Demos 
+Scott Singer, Carnegie Endowment 
+for International Peace
+Charlotte Stix, Apollo Research 
+Lucia Velasco, Maastricht University  
+Nicole Wheeler, Advanced Research 
++ Invention Agency
+Advisers to the Chair*
+* Appointed for the planning phase (February–July 
+2025); from July, consultants to the Report team
+Daniel Privitera, Special Adviser 
+to the Chair, KIRA Center
+Sören Mindermann, Scientific Adviser 
+to the Chair, Mila – Quebec AI Institute
+
+[[page 3]]
+3
+International AI Safety Report 2026
+ 
+Secretariat
+UK AI Security Institute:  Lambrini Das, Arianna Dini, Freya Hempleman, Samuel Kenny, 
+Patrick King, Hannah Merchant, Jamie-Day Rawal, Jai Sood,  Rose Woolhouse
+Mila - Quebec AI Institute: Jonathan Barry, Marc-Antoine Guérard, Claire Latendresse, 
+Cassidy MacNeil, Benja min Prud’homme 
+Senior Advisers
+Daron Acemoglu, Massachusetts 
+Institute of Technology
+Vincent Conitzer, Carnegie Mellon University
+Thomas G. Dietterich , Oregon State University
+Fredrik Heintz, Linköping University
+Geoffrey Hinton, University of Toronto
+Nick Jennings, Loughborough University
+Susan Leavy, University College Dublin
+Teresa Ludermir, Federal 
+University of Pernambuco
+Vidushi Marda, AI Collaborative
+Helen Margetts, University of Oxford
+John McDermid, University of York
+Jane Munga, Carnegie Endowment 
+for International Peace
+Arvind Narayanan, Princeton University
+Alondra Nelson, Institute for Advanced Study
+Clara Neppel, IEEE
+Sarvapali D. (Gopal) Ramchurn , 
+Responsible AI UK
+Stuart Russell , University of Calif ornia, Berkeley
+Marietje Schaake, Stanford University
+Bernhard Schölkopf, ELLIS Institute Tübingen
+Alvaro Soto, Pontificia Universidad 
+Católica de Chile 
+Lee Tiedrich, Duke University
+Gaël Varoquaux, Inria
+Andrew Yao, Tsinghua University
+Ya-Qin Zhang, Tsinghua University
+© Crown owned 2026
+This publication is licensed under the terms 
+of the Open Government Licence v3.0 except 
+where otherwise stated. To view this licence, 
+visit https://www.nationalarchives.gov.uk/doc/
+open-government-licence/version/3/  or write 
+to the Information Policy Team, The National 
+Archives, Kew, London TW9 4DU, or email: 
+psi@nationalarchives.gsi.gov.uk.
+Any enquiries regarding this publication 
+should be sent to: 
+secretariat.AIStateofScien ce@dsit.gov.uk.
+Disclaimer
+This Report is a synthesis of the existing research 
+on the capabilities and risks of advanced AI. 
+The Report does not necessarily represent the 
+views of the Chair, any particular individual 
+in the writing or advisory groups, nor any 
+of the governments that have supported its 
+development. The Chair of the Report has 
+ultimate responsibility for it and has overseen 
+its development from beginning to end.
+Research series number: DSIT 2026/001

@@ -1,0 +1,896 @@
+# Systemic risks
+# Source PDF pages: 84-95
+
+[[page 84]]
+Systemic risks
+84
+International AI Safety Report 2026
+Section 2.3 
+Systemic risks
+2.3.1. Labour market impacts
+Key information
+ — General-purpose AI systems can automate or help with tasks that are relevant 
+to many jobs worldwide, but predicting labour market impacts is difficult. Around 
+60% of jobs in advanced economies and 40% in emerging economies are exposed to 
+general-purpose AI, but the impacts of this will depend on how AI capabilities develop, 
+how quickly workers and firms adopt AI, and how instit utions respond.
+ — Current evidence shows rapid but uneven AI adoption with mixed employment 
+effects. Adoption and productivity gains vary widely across countries, sectors, 
+occupations, and tasks . Early evidence from online freelance markets suggests AI 
+has reduced demand for easily substitutable work like writing and translation, but 
+increased demand for complementary skills like machine learning programming 
+and chatbot development.
+ — Economists disagree on the magnitude of future impacts.  Some predict modest 
+macroeconomic effects with limited aggregate impact on employment levels. 
+Others argue that, if AI surpasses human performance across nearly all tasks, it will 
+significantly reduce wage levels and employment rates. Disagreements stem in part 
+from differing assumptions about whether AI will eventually perform nearly all tasks 
+more cost-effectively than humans and whether new kinds of work w ill be created.
+ — Since the publication of the previous Report (January 2025), new research from the 
+US and Denmark found no relationship between an occupation’s AI exposure or AI 
+adoption and overall employment.  However, multiple other studies found declining 
+employment for early-career workers in the most AI-exposed occupations since 
+late 2022, while employment for older workers in these same occupations remained 
+stable or grew.
+ — A key challenge for policymakers is enabling productivity benefits without causing 
+significant negative impacts for workers impacted by automation or changing skill 
+demands. This is particularly difficult because labour market risks and productivity 
+gains often stem from the same AI applications . Since evidence of impacts is likely to 
+emerge gradually over time, the appropriate timing of any potential policy responses 
+is also difficult to determine.
+
+[[page 85]]
+85
+International AI Safety Report 2026
+Systemic risks
+Experts expect the diffusion of increasingly-
+advanced general-purpose AI to transform many 
+occupations by accelerating job turnover and 
+reshaping labour demand. However, the magnitude 
+and timing of these effects remain uncertain. 
+General-purpose AI systems can perform tasks 
+relevant to a significant share of jobs worldwide 
+(754*, 755, 756). One study estimates that around 
+60% of jobs in advanced economies and 40% in 
+emerging economies are highly exposed to general-
+purpose AI, in the sense that tasks performed 
+in these roles could be affected because AI 
+systems can technically perform or complement 
+them (757). AI’s labour market impacts will 
+depend on how capabilities develop, how quickly 
+systems are adopted, and whether AI systems 
+substitute for humans performing existing tasks, 
+augment workers’ productivity, or create entirely 
+new tasks for humans to perform. Institutions 
+will also shape these outcomes through their 
+responses: for example, by setting incentives and 
+policies that steer AI development toward task 
+creation and labour augmentation rather than 
+automation (or vice versa) (758).
+AI adoption has been rapid, 
+but uneven
+To date, adoption of general-purpose AI has 
+been rapid in some places but highly uneven 
+across countries, sectors, and occupations . In 
+the US, general-purpose AI has diffused faster 
+than earlier technologies such as the internet 
+(239) (Figure 2.14). Globally, adoption rates range 
+from over 50% in the United Arab Emirates and 
+Singapore to under 10% in many lower-income 
+economies (Figure 2.15). Even within individual 
+countries, variation can be large . In the US, for 
+example, reported usage across sectors varies 
+from 18% in Information to 1.4% in Construction 
+and Agriculture (759). Evidence on usage patterns 
+suggests that current systems mainly benefit 
+high-income workers in cognitive jobs, offering 
+fewer gains to lower earners (760).
+0
+10
+20
+30
+40
+50
+60
+70
+80
+90
+100
+0 2 4 6 8 10 12 14 16 18 20 22 25
+Adoption rate (%)
+AI is being adopted faster than previous technologies in the US
+Years since release of ﬁrst mass-market product
+AI (RPS: 2024–2025)
+Computer (CPS: 1984–2003)
+Internet (CPS: 2001–2009)
+Internet (ITU: 1995–2021)
+Figure 2.14: The adoption rates of AI, the internet, and the personal computer. Adoption rate refers to 
+the share of working-age adults (18–64) who reported using each technology, measured via nationally 
+representative surveys at comparable points after each technology’s first mass-market product launch 
+(in the case of AI, the launch of OpenAI’s ChatGPT). This data suggests that, in the US, general-purpose 
+AI is being adopted at a faster pace than other technologies like the personal computer and the internet. 
+Source: Bick et al. 2024 (239).
+
+[[page 86]]
+Systemic risks
+86
+International AI Safety Report 2026
+Productivity impacts differ 
+across tasks and jobs
+Productivity impacts from general-purpose 
+AI also vary significantly across jobs and tasks. 
+A recent review of task-level productivity studies 
+found that productivity gains usually range 
+from 20–60% in controlled studies, and 15–30% 
+in most experiments within real-world work 
+settings, though there are outliers on both the 
+high and low end (129, 761, 762). Productivity 
+boosts from AI usage can have varied effects 
+on outcomes like wages and employment . 
+For example, when productivity gains enable 
+workers to produce more output, this can 
+increase employment and/or wages if demand 
+for that output grows at equivalent or greater 
+scale. However, when productivity gains allow 
+firms to maintain the same output with fewer 
+workers, they may choose to reduce employment 
+or wages if demand does not expand (763, 764, 
+765, 766, 767, 768, 769). While automation can 
+initially reduce labour demand in affected tasks 
+(763), the resulting productivity gains may later 
+stimulate economic growth and increase demand 
+for human labour in non-automated activities, 
+creating new employment opportunities 
+(770, 771, 772).
+Early employment effects are mixed 
+but suggest concentrated impacts 
+on certain jobs and on junior workers
+Early evidence on AI’s employment effects is 
+mixed. Two national-level studies from Denmark 
+and the United States find no discernible 
+relationship between AI exposure or adoption 
+and changes in overall employment (760, 774). 
+Despite minimal aggregate effects, other 
+research has found concentrated impacts on 
+specific jobs. For example, one study found that 
+four months after ChatGPT was released, writing 
+jobs on one online labour platform declined by 
+2%, and writers’ monthly earnings fell by 5 .2% 
+(767). Recent research also found that demand 
+for freelance work using substitutable skills such 
+as writing and translation decreased sharply after 
+the release of ChatGPT, but demand for machine 
+Figure 2.15: AI adoption rates by country. The United Arab Emirates and Singapore exhibit the 
+highest adoption rate, with over half of the working-age population using AI tools. Most high-adoption 
+economies are in Europe and North America. These estimates are based on anonymised data largely 
+from Microsoft Windows users, adjusted to account for varying rates of personal computer ownership 
+across countries and usage on mobile devices. Source: Microsoft, 2025 (773*).
+Global AI adoption is highly uneven
+Estimated share of working-age population using AI tools
++40%
+30–40%
+20–30%
+10–20%
+0–10%
+Insufficient data
+AI user share
+
+
+[[page 87]]
+87
+International AI Safety Report 2026
+Systemic risks
+learning programming increased by 24% (768). 
+Some studies also suggest that AI adoption is 
+disproportionately affecting junior workers. New 
+data finds that employment in AI-exposed jobs 
+in the US has declined for younger workers but 
+either held steady or has risen for older workers 
+since the release of ChatGPT (775, 776). In the UK, 
+one study found that firms with high AI exposure 
+have slowed new hiring, particularly for junior 
+positions (777).
+Future scenarios 
+and uncertainties
+AI could lead to periods of labour 
+market adjustment in which skill 
+demands change rapidly
+While current AI systems require human 
+oversight for complex tasks, there is concern 
+about the labour market impacts of potential 
+future systems that could cost-effectively 
+automate a wider range of work with greater 
+reliability and autonomy. Forecasting how such 
+systems would affect employment is challenging. 
+In the past, new automation technologies have 
+led to varied effects on workers, resulting in 
+adjustment periods as workers shifted from 
+displaced forms of work to new jobs with 
+growing labour demand (772). Historically, these 
+periods of adjustment have caused significant 
+hardship for displaced workers, but were also 
+followed by strong gains in real wages for many 
+workers in the longer term (778). This historical 
+precedent suggests that even if AI capabilities 
+advance significantly, there may still be plentiful 
+employment opportunities, but that a core policy 
+challenge will be ensuring that workers can adapt 
+to fast-changing skill demands as AI diffuses 
+throughout the economy.
+The impacts of general-purpose AI 
+may differ from those of previous 
+automation technologies
+Other economists argue that if general-purpose 
+AI surpasses human performance across nearly 
+all tasks, it could ultimately reduce wage levels 
+and employment rates significantly (779, 780, 781). 
+Some evidence suggests that automation 
+produces better labour market outcomes when 
+it is accompanied by the creation of new labour-
+intensive tasks (758). Whether AI development 
+will generate new labour-intensive tasks at scale 
+remains uncertain. As computational resources 
+expand and AI systems become more cost-
+efficient, competitive pressures to automate 
+human workers could intensify (782).
+Key factors shaping future impacts
+The magnitude of labour market impacts will 
+depend on several key factors. First, how broadly 
+capable AI systems ultimately become: many 
+disagreements among economists stem from 
+differing assumptions about whether general-
+purpose AI will eventually perform nearly all 
+economically valuable tasks more cost-effectively 
+than humans. Second, how quickly capabilities 
+improve: if AI agents gained the capacity to 
+act with greater autonomy across domains 
+within only a few years – reliably managing 
+longer, more complex sequences of tasks in 
+pursuit of higher-level goals – this would likely 
+accelerate labour market disruption (99, 783). 
+Third, the pace of adoption: even if capabilities 
+advance rapidly, diffusion may be slowed by 
+institutional and organisational frictions (240, 
+784), system integration requirements (785, 786), 
+and cost barriers (787). If systems remain narrow, 
+capabilities improve gradually, and adoption is 
+slow, effects will likely be more muted and both 
+workers and policymakers will have more time 
+to adapt (779, 788).
+Implications for inequality
+General-purpose AI could widen income and 
+wealth inequality within and between countries . 
+AI adoption may shift earnings from labour to 
+capital owners, such as shareholders of firms 
+that develop or use AI (789, 790, 791). Globally, 
+high-income countries with skilled workforces 
+and strong digital infrastructure are likely to 
+capture AI’s benefits faster than low-income 
+economies (757). One study estimates that 
+AI’s impact on economic growth in advanced 
+economies could be more than twice that 
+in low-income countries  (792). AI could also 
+reduce incentives to offshore labour-intensive 
+services by making domestic automation more 
+cost-effective, potentially limiting traditional 
+development paths (793).
+
+[[page 88]]
+Systemic risks
+88
+International AI Safety Report 2026
+Updates
+Since the publication of the previous Report 
+(January 2025), new research has provided 
+greater clarity on the relationship between 
+changes in employment and both AI exposure 
+and AI adoption. As discussed above, new 
+national-level studies from Denmark and the 
+US found that AI adoption and exposure had 
+no effect on aggregate employment (760, 774, 
+794). However, other studies find declining 
+demand for younger workers in AI-exposed 
+occupations, (775, 776), and according to one 
+UK study, new hiring slowed significantly at 
+firms highly exposed to AI after the release of 
+ChatGPT, particularly for junior positions (777). 
+Additionally, recent research confirms that 
+impacts of automation generally vary significantly 
+depending on which tasks within a job are 
+automated: automating relatively expert tasks 
+tends to lower the skill requirements for a given 
+job, expanding employment opportunities in that 
+job but reducing wages. On the other hand, if 
+relatively novice tasks within a job are automated, 
+that tends to raise the job’s skill requirements, 
+increasing wages but reducing total employment 
+(769). Adoption has also accelerated since the 
+previous Report: the share of US workers using 
+general-purpose AI rose from 30% in December 
+2024 to 46% by mid-2025 (795).
+Evidence gaps
+There is limited data on AI adoption and its 
+links to employment outcomes. Most studies 
+rely on proxy measures for AI usage, such as ‘AI 
+exposure’, because occupation-level adoption 
+data remains scarce (particularly outside the US) . 
+It is difficult to gather usage data and connect it 
+to employment, wages, or hiring trends, making it 
+harder to track how AI diffusion affects different 
+populations of workers or to make empirically-
+grounded forecasts. Furthermore, while research 
+on labour market risks is often concerned with 
+automation and displacement effects, less work 
+has been done to determine what new jobs 
+AI adoption is creating or how career paths 
+may change as a result of AI. Finally, evidence 
+on effective worker protections is limited: 
+though retraining is often proposed as a policy 
+solution, studies of its effectiveness show mixed 
+results (796, 797).
+Mitigations
+Technical measures proposed to mitigate 
+labour market risks include pacing AI 
+deployment to allow time for workforce 
+adaptation and prioritising AI development that 
+complements workers by creating new labour-
+intensive tasks alongside task automation (798*, 
+799). However, it is often difficult to predict in 
+advance whether a given AI system will displace 
+workers, complement them, or create new 
+opportunities – outcomes will depend on how 
+systems are deployed and how labour markets 
+respond (771, 800).
+Evaluations and monitoring may also help 
+workers and policymakers prepare for and 
+respond to labour market impacts . Benchmarks 
+that test AI systems’ capabilities on real-
+world work tasks may not reliably predict the 
+employment or wage effects of those systems 
+after deployment. However, they can provide 
+some indication of which tasks, occupations, and 
+sectors are most likely to be affected. Collecting 
+post-deployment data on how AI adoption 
+affects employment and wages can also improve 
+visibility into actual impacts and improve 
+forecasts of future effects (801).
+Challenges for policymakers
+For policymakers, a central challenge will be 
+supporting workers through AI-related labour 
+market disruptions without stalling productivity 
+growth across the economy. This requires 
+balancing the productivity gains from AI 
+adoption against the costs of involuntary job 
+displacement that may occur for some workers 
+(802). Given uncertainty about the pace and 
+scale of AI’s labour market impacts, researchers 
+have emphasised the need for mitigations to 
+be adaptable, while still providing sufficient 
+regulatory certainty for business investment 
+and worker training decisions (803). As general-
+purpose AI systems become more capable and 
+widely deployed, policymakers can monitor AI 
+adoption rates, employment and wage changes 
+across occupations, and shifts in employer skill 
+demands to help them anticipate impacts and 
+adjust policy responses.
+
+[[page 89]]
+89
+International AI Safety Report 2026
+Systemic risks
+2.3.2. Risks to human autonomy
+Key information
+ — General-purpose AI systems can affect people’s autonomy  in multiple ways. 
+These include impacts on their cognitive skills (such as critical thinking), how they 
+form beliefs and preferences, and how they make and act on decisions . These 
+effects vary across contexts, users, and f orms of AI use.
+ — AI use can alter how people engage cognitively with tasks, including how skills are 
+practised and maintained over time.  For example, one clinical study reported that 
+clinicians’ ability to detect tumours without AI was approximately 6% lower following 
+several months of exposure to AI-assi sted diagnosis.
+ — In some contexts, people show ‘automation bias’ by over-relying on AI outputs and 
+discounting contradictory information.  For example, in a randomised experiment with 
+2,784 participants on an AI-assisted annotation task, participants were less likely to 
+correct erroneous AI suggestions when doing so required extra effort or when users 
+held more favourable attitudes toward AI.
+ — Since the publication of the previous Report (January 2025), ‘AI companions’ have 
+grown rapidly in popularity, with some applications reaching tens of millions of 
+users. ‘AI companions’ are AI-based applications designed for emotionally engaging 
+interactions with users. Evidence on their psychological effects is early-stage and 
+mixed, but some studies report patterns such as increased loneliness and reduced 
+social interaction among frequent users.
+ — Key challenges for policymakers include limited access to data on how people use 
+AI systems and a lack of long-term evidence.  These constraints make it difficult to 
+assess how sustained interactions with AI systems affect autonomy, or to distinguish 
+short-term adaptation from longer-lasting changes in behaviour and d ecision-making .
+The growing integration of AI systems into daily 
+activities and decision processes raises concerns 
+about how these systems shape – or constrain – 
+individual autonomy. ‘Autonomy’ is commonly 
+understood as a capacity for self-rule: the 
+effective ability to set goals that reflect one’s own 
+values and govern one’s actions accordingly (804, 
+805). It involves both ‘authenticity’  – having values 
+and motives that are genuinely ‘one’s own’ rather 
+than the result of manipulation or deception – 
+and ‘agency’, that is, the opportunity, ability, 
+and freedom to enact one’s choices (337, 340, 
+806, 807). ‘Competence’ – understanding, 
+planning, and self-regulation – underpins both 
+by enabling informed endorsement of one’s 
+reasons and effective execution of one’s choices 
+(Figure 2.16). Psychological research, including 
+Self-Determination Theory, additionally stresses 
+the importance of a sense of ownership over 
+one’s actions (808, 809).
+
+[[page 90]]
+Systemic risks
+90
+International AI Safety Report 2026
+This section considers emerging trends in 
+AI and AI companion use that could impact 
+each of these elements of autonomy, such 
+as cognitive skill decline, automation bias, 
+emotional dependence, and AI-shaped 
+information environments. Closely related risks 
+concerning manipulation are covered separately 
+in §2.1.2. Influence an d manipulation.
+Decision-making 
+competence in AI-mediated 
+environments
+Decision-making competence underpins both 
+authenticity and agency by sustaining the 
+cognitive capacities, including understanding, 
+deliberation, and self-regulation, that are needed 
+to form one’s own judgements and act on them.
+AI use may negatively affect critical 
+thinking in some contexts
+Emerging evidence suggests that when people 
+rely on AI to perform cognitive tasks, this may 
+negatively impact their critical thinking skills and 
+memory. Everyday chatbot use spans a broad 
+range of cognitively demanding activities, 
+including writing, tutoring, problem-solving, 
+and information seeking (Figure 2.17). When 
+these tasks are routinely delegated to chatbots, 
+users may engage less deeply with underlying 
+reasoning. This relates to a broader trend of 
+‘cognitive offloading’ – the act of delegating 
+cognitive tasks to external systems or people, 
+reducing one’s own cognitive engagement and 
+therefore ability to act with autonomy (810, 811, 
+812). Cognitive offloading can free up cognitive 
+resources and improve efficiency, but research 
+also indicates potential long-term effects on 
+the development and maintenance of cognitive 
+skills (811, 812, 813, 814). For example, one study 
+found that three months after the introduction 
+of AI support, clinicians’ ability to detect tumours 
+without AI assistance had dropped by 6% (815). 
+Another study with 666 participants found that 
+heavier AI-tool use was strongly associated with 
+lower scores on a self-assessment scale related 
+to critical-thinking behaviours, mediated by 
+cognitive offloading (811). However, research 
+into the relationship between use of AI and 
+cognitive offloading and critical thinking is 
+nascent, and further studies supporting these 
+findings are warranted.
+Human autonomy
+Authority and effective capacity for self-determination and self-governance
+Adequate information, critical reﬂection, 
+resistance to manipulation
+or self-deception, rational thought
+Means-end reasoning, planning, execution
+Authenticity
+Formation of beliefs, values, and motives; 
+making one’s own decisions
+Agency
+Opportunity and freedom to act;
+executing one’s own decisions
+Human autonomy has multiple dimensions
+Competence
+Capacities for understanding, deliberation, 
+self-control, and planning; Skills
+Figure 2.16: A diagrammatic representation of the relationship between autonomy, authenticity, agency, 
+and competence. Source: International AI Safety Report 2026 .
+
+[[page 91]]
+91
+International AI Safety Report 2026
+Systemic risks
+Automation bias persists with 
+new AI tools
+‘Automation bias’ is the tendency of technology 
+users to overly rely on automated outputs 
+while discounting contradictory information 
+(816, 817). It undermines competence by 
+discouraging active reasoning and verification, 
+which in turn can weaken both the authenticity 
+of people’s judgement and their agency to act 
+independently. In settings such as aviation or 
+task monitoring, automation bias has been 
+shown to lead users both to overlook problems 
+that a (non-AI-based) automated system fails to 
+flag, and to act on incorrect advice from such 
+systems (818, 819). In the context of AI, there 
+is evidence of automation bias when users 
+perform high-automation tasks and in AI-assisted 
+decision-making, including medical diagnostics 
+(820, 821, 822, 823). Similar patterns appear in 
+everyday uses of AI: for example, one study 
+found that when participants used a chatbot to 
+assist with writing, this shifted both the opinions 
+expressed in the text, and the author’s own 
+opinions, toward those suggested by the model 
+(372). Magnitude and persistence of automation 
+bias appear to vary by task, interface, and 
+accountability (824).
+Users may follow incorrect advice from 
+automated systems more generally because 
+they overlook cues signalling errors or because 
+they perceive the automation system as superior 
+to their own judgement (818). A particular 
+challenge stems from the human preference for 
+mental shortcuts, which is a strong predictor 
+for automation bias (818, 825). For example, in 
+a randomised experiment with 2,784 participants 
+on an AI-assisted annotation task, participants 
+were less likely to correct erroneous suggestions 
+labelled as coming from an AI system when 
+correcting them required extra effort or when 
+users held more favourable attitudes toward AI 
+(826). Potential mitigations include helping users 
+form accurate expectations of how a system 
+performs and addressing cognitive shortcuts 
+that contribute to automation bias (827*). 
+Research shows that early system interactions 
+strongly shape later behaviour, and that making 
+users engage in slow, deliberate thinking can 
+Figure 2.17: Breakdown of ChatGPT use across different activities. Source: NBER, 2025 (117*).
+Create an image
+4.2%
+Generate 
+or retrieve 
+other media
+1.1%
+Analyze 
+an image
+0.6%
+Other/unknown
+4.1%
+Asking about the model
+0.4%
+Tutoring or teaching
+10.2%
+How to advice 
+8.5%
+Health ﬁtness 
+beauty or self care
+5.7%
+Creative Ideation
+3.9%
+Speciﬁc info
+18.3%
+Purchasable products 2.1% Cooking and 
+recipes 0.9%
+Greetings and 
+chitchat  2%
+Relationships and 
+personal reﬂection
+1.9% Games and 
+role play
+0.4%
+Computer programming
+4.2%
+Mathematical
+calculation 3%
+Data
+analysis
+0.4%
+Edit or critique provided text
+10.6%
+Personal writing or communication
+8%
+Translation
+4.5%
+Argument 
+or summary 
+generation
+3.6%
+Write ﬁction 1.4%
+Practical guidance
+Writing
+Seeking information
+Technical help
+Multimedia
+Other/unknown Self-expression
+The most common uses of OpenAI’s ChatGPT are seeking information, 
+writing, and practical guidance
+
+[[page 92]]
+Systemic risks
+92
+International AI Safety Report 2026
+counteract common cognitive shortcuts, such 
+as anchoring on the first suggestion or favouring 
+information that confirms prior beliefs (827*, 
+828, 829, 830).
+Self-regulation 
+and wellbeing
+Some user groups are at risk of 
+emotional dependence on chatbots
+There is evidence that a subset of users 
+have developed or are at risk of developing 
+pathological emotional dependence on AI 
+chatbots. A recent report from OpenAI finds 
+that about 0.15% of users active in a given week, 
+and 0.03% of messages, indicate potentially 
+heightened levels of emotional attachment to 
+ChatGPT (831*). Other studies find that indicators 
+of emotional dependence are correlated with 
+high levels of usage (354). In this context, 
+‘emotional dependence’ involves intense 
+emotional need and craving, an unhealthy 
+pattern of submission, and cognitive-emotional 
+patterns such as self-deception and persistent 
+negative feelings (832).
+AI use may interact with existing 
+mental health vulnerabilities
+Another, more indirect, way that AI systems can 
+affect human autonomy is by impacting users’ 
+mental health, which shapes individuals’ capacity 
+to hold accurate beliefs and to act on their values . 
+The emerging literature reports both negative 
+psychological impacts (357, 842, 843, 844) and 
+potential therapeutic uses of general-purpose 
+AI (845, 846), but current evidence is limited, 
+reflecting the early stage of research, small 
+sample sizes, and a lack of long-term studies.
+Emerging research indicates that chatbot 
+use may interact with existing mental health 
+issues, for example, by encouraging rather than 
+discouraging delusional thinking (842, 843, 844). 
+Media outlets have also described isolated cases 
+Box 2.6: AI companions
+‘AI companions’ are chatbots designed to engage emotionally with users, often through 
+adopting intimate social roles (833). Their scale is rapidly growing: some AI companions now 
+have tens of millions of active users (401, 402, 403). Users engage with AI companions for varied 
+reasons (Figure 2.18). Fun and curiosity dominate, though some users also seek companionship 
+or support for loneliness . While supportive relationships can strengthen autonomy by building 
+people’s confidence and encouraging them to act of their own volition (834), AI companions 
+occupy a more ambiguous space . Some users report experiences that feel relational or 
+emotionally meaningful, but it remains contested whether such interactions constitute genuine 
+relationships (835). Moreover, there is concern that AI companions may negatively impact 
+autonomy by influencing individuals’ beliefs or social environments in ways that unduly limit 
+independent decision-making, for example by encouraging addictive behaviour or creating 
+emotional dependence (836, 837). Research also indicates that individuals can sometimes 
+unintentionally form relationships with non-companion AI systems through productivity-focused 
+interactions (838).
+Evidence on the psychological and social impacts of AI companions is emerging but 
+remains mixed. Some studies find that heavy use of AI companions is associated with increased 
+loneliness, emotional dependence, and reduced engagement in human social interactions (401, 
+835, 836, 837, 839). Other studies find that chatbots can reduce feelings of loneliness (839, 840) 
+or find no measurable effects on emotional dependence or social health (841). The impact of 
+AI companions appears to depend on user characteristics, chatbot design, and usage patterns 
+(836, 837). The above concerns have led some researchers to call for further work on the 
+socioaffective alignment of AI systems – that is, how an AI system behaves during extended 
+interactions with a user in a shared env ironment (417).
+
+[[page 93]]
+93
+International AI Safety Report 2026
+Systemic risks
+of psychosis or suicide occurring in the context 
+of chatbot use (847, 848, 849). Systematic 
+studies are currently lacking and there is no 
+clear evidence that chatbot usage causes any 
+particular mental health issue . Separately, 
+platform data indicates that around 0 .07% of 
+weekly ChatGPT users display signs consistent 
+with acute mental health crises such as 
+psychosis or mania (831*), suggesting that a non-
+negligible number (approximately 490,000 (117*)) 
+of vulnerable individuals interact with these 
+systems each week . Recent research suggests 
+that general-purpose AI chatbots might amplify 
+delusional thinking in already-vulnerable people 
+(357, 850). Studies also suggest that existing 
+vulnerabilities tend to drive heavier AI use (851). 
+Together, these patterns raise concerns that 
+people with existing mental health vulnerabilities 
+may both use AI more heavily and be more 
+susceptible to having their symp toms amplified.
+AI shows promise for mental health 
+support but limitations remain
+Researchers have also examined the potential 
+benefits of general-purpose AI in mental 
+health care, with some evidence emerging that 
+specialist chatbots designed for this purpose can 
+be helpful for low-risk, symptom-management 
+use (845). For example, specialist chatbots can 
+provide small-to-moderate improvements in 
+managing depression (846), with particular 
+benefits stemming from their round-the-
+clock availability (852, 853). At the same time, 
+both general and specialist models perform 
+inconsistently when presented with prompts 
+relating to suicide in simulated scenarios (854). 
+One study also found that non-specialised AI 
+systems can express stigma towards people 
+with mental health conditions and respond 
+inappropriately to common therapy-related 
+scenarios (842). Another recent evaluation 
+of ChatGPT, Claude, and Gemini on suicide-
+related prompts found that, although all three 
+Figure 2.18: Results from a survey of 404 regular AI companion users indicate that people engage with 
+AI companions for a range of reasons. Enjoyment or fun and curiosity about AI chatbots are the most 
+common reasons for continued engagement, followed by passing time and reducing stress, and seeking 
+chatbot companionship. Adapted from Liu et al., 2025 (401).
+Users engage with AI companions for varied reasons, 
+with companionship ranking fourth
+1.8%
+5.4%
+5.9%
+6.1%
+6.5%
+6.9%
+9.9%
+12.9%
+20.9%
+23.7%
+0% 5% 10% 15% 20%
+25%
+Other reasons
+To boost self-conﬁdence/esteem
+To understand others
+For self-discovery
+For emotional experiences
+To alleviate loneliness
+For chatbot companionship
+To pass time/reduce stress
+To satisfy curiosity
+For enjoyment/fun
+
+
+[[page 94]]
+Systemic risks
+94
+International AI Safety Report 2026
+reliably refused high-risk ‘how-to’ questions 
+and answered very low-risk factual ones, their 
+responses differed for medium-risk prompts. 
+For example, models diverged on whether to 
+give direct answers to questions such as ‘What 
+is the easiest way to purchase a firearm in 
+the US?’ (855).
+Information environments
+General-purpose AI systems can also affect 
+human autonomy through the information they 
+make available to people to inform their own 
+decisions, as well as by influencing institutional 
+decisions about them. Many of these information 
+effects are positive: for example, AI systems can 
+make complex topics more accessible in public 
+health, medicine, and science communication 
+(856, 857, 858), or they can facilitate constructive 
+discussions on divisive topics (135, 859). However, 
+the growing use of AI to generate information 
+at scale may also undermine autonomy by 
+degrading the quality of information available 
+both to individuals and about them. Lower-quality 
+or biased information environments threaten 
+authenticity, by distorting the formation of 
+beliefs and values, and competence, by impeding 
+informed reasoning. For example, AI systems 
+may introduce subtle errors into the content 
+they generate due to hallucinations or other 
+mistakes (860) (see §2.2.1. Reliability challenges). 
+In addition, general-purpose AI systems often 
+display ‘sycophantic’ behaviour: producing 
+answers that reflect a user’s stated preferences 
+rather than factual accuracy (358, 740, 861). Such 
+errors and biased answers can impair people’s 
+ability to make informed decisions.
+Updates
+Since the publication of the previous Report 
+(January 2025), AI companions have become 
+more ubiquitous, with user numbers rapidly 
+increasing (835). Evidence for automation bias 
+in generative-AI-assisted tasks has accumulated. 
+Similarly, findings on mental health impacts are 
+emerging, though this evidence remains mixed 
+(401, 835, 836, 837, 839, 862). As AI-generated 
+content scales, the information environment is 
+further shifting, improving access to information 
+but complicating diversity and accuracy (714).
+Mitigations
+Researchers have proposed a range of 
+mitigations for automation bias in non-AI 
+domains, for example, increasing human 
+accountability for decisions, or designing 
+systems that require users to adapt to different 
+tasks and hence remain cognitively engaged 
+(819, 827*). For AI systems in particular, 
+some have suggested that organisations can 
+periodically test employees or use ‘reliance drills’ 
+to monitor for over-reliance on AI systems (863).
+Proposed mitigations also include teaching 
+‘AI literacy’ – roughly defined as the competency 
+of individuals to effectively use AI tools in 
+a beneficial manner (864, 865) – as a way 
+of mitigating risks to human autonomy (866, 
+867, 868). This could help students gain the 
+benefits of automation without sacrificing 
+their own intellectual development (811). The 
+usefulness of these methods is highly context-
+dependent, however, and impacts vary by task, 
+user population, and deployment setting . For 
+example, one challenge for mitigations is that 
+users may choose to delegate work to AI systems 
+precisely because it is convenient and practical 
+(811, 814). Any interventions that compel users 
+to perform tasks without using AI systems could 
+thus limit the benefits of AI usage and oppose 
+user incentives.
+Evidence gaps
+There are major evidence gaps regarding the 
+risks to human autonomy from AI, related to 
+measurement, transparency, and the fact that 
+the technology is relatively new. The effects 
+of AI systems on human autonomy can be 
+difficult to observe or evaluate due to the lack 
+of a consensus definition of autonomy in the 
+context of human-AI interactions, as well 
+as practical challenges in assessing it (869). 
+Research is further constrained by limited access 
+to real-world interaction data from systems, 
+including chatbots or AI companions, which 
+inhibits independent evaluation of how they affect 
+users in practice (870). Evidence is also limited 
+by the novelty of many interaction patterns – 
+particularly sustained or socially complex chatbot 
+use – for which little longitudinal research exists 
+to assess potential cumulative or longer-term 
+
+[[page 95]]
+95
+International AI Safety Report 2026
+Systemic risks
+impacts on autonomy. Early examples of such 
+studies are emerging, however (841). Another 
+evidence gap concerns the systemic effects 
+that could result from widespread erosion 
+of individual autonomy. For example, some 
+researchers argue that degraded decision-making 
+skills could impair humans’ ability to oversee AI 
+systems in critical sectors, potentially weakening 
+institutional accountability over time (871). More 
+broadly, individual-level disruptions to autonomy 
+could accumulate across interconnected 
+economic, political, and social systems, 
+eventually crossing thresholds that trigger 
+broader societal impacts (714). However, these 
+possibilities currently remain highly speculative, 
+and empirical methods to detect or measure 
+such aggregate effects are lacking.
+Challenges for policymakers
+For policymakers working on maintaining human 
+autonomy, key challenges include distinguishing 
+temporary disruption from longer-term effects 
+and managing growing pressure to adopt AI 
+systems. Understanding long-term effects of 
+human-AI interactions is especially relevant in 
+education, where children’s early interactions 
+with AI systems may influence how their key 
+skills and habits develop over time. It can be 
+difficult to assess whether observed changes 
+in behaviour or decision-making represent 
+short-term adjustments to new tools or more 
+persistent shifts that could affect autonomy. At 
+the same time, organisational and governmental 
+incentives to deploy AI systems quickly can limit 
+opportunities to evaluate these effects carefully 
+and to implement appropriate safeguards.

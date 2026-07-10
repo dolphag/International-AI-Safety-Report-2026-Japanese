@@ -1,0 +1,190 @@
+# Introduction
+# Source PDF pages: 14-15
+
+[[page 14]]
+14
+International AI Safety Report 2026
+Introduction
+Introduction
+Leading general-purpose AI systems now 
+pass professional licensing exams in law and 
+medicine, write functional software when given 
+simple prompts, and answer PhD-level science 
+questions as well as subject-matter experts. Just 
+three years ago, when ChatGPT launched, they 
+could not reliably do any of these things. The pace 
+of this transformation has been remarkable, and 
+while the pace of future changes is uncertain, most 
+experts expect that AI will continue to improve.
+Almost a billion people now use general-purpose 
+AI systems in their daily lives for work and 
+learning. Companies are investing hundreds of 
+billions of dollars to build the infrastructure to 
+train and deploy them. In many cases, AI is already 
+reshaping how people access information, make 
+decisions, and solve problems, with applications 
+in industries from software development to legal 
+services to scientific research.
+But the same capabilities that make these systems 
+useful also create new risks. Systems that write 
+functional code also help create malware. Systems 
+that summarise scientific literature might help 
+malicious actors plan attacks. As AI is deployed in 
+high-stakes settings – from healthcare to critical 
+infrastructure – the impacts of deliberate misuse, 
+failures, and systemic disruptions can be severe.
+For policymakers, the rate of change, the breadth 
+of applications, and the emergence of new risks 
+pose important questions . General-purpose AI 
+capabilities evolve quickly, but it takes time to 
+collect and assess evidence about their societal 
+effects. This creates what this Report calls 
+the ‘evidence dilemma’. By acting too early, 
+policymakers risk implementing ineffective 
+or even harmful interventions. But waiting 
+for conclusive evidence can leave societies 
+vulnerable to potential risks.
+The role of this Report
+This Report aims to help policymakers navigate 
+that dilemma. It provides an up-to-date, 
+internationally shared scientific assessment 
+of general-purpose AI capabili ties and risks.
+The writing team included over 100 independent 
+experts, including an Expert Advisory Panel 
+comprising nominees from more than 
+30 countries and intergovernmental organisations 
+including the EU, OECD, and UN. The Report also 
+incorporates feedback from reviewers across 
+academia, industry, government, and civil society. 
+While contributors differ on some points, they 
+share the belief that constructive and transparent 
+scientific discourse on AI is necessary for people 
+around the world to realise the technology’s 
+benefits and mitigate its risks.
+Because the evidence dilemma is most acute 
+where scientific understanding is thinnest, 
+this Report focuses on ‘emerging risks’: risks 
+that arise at the frontier of general-purpose 
+AI capabilities. Its analysis focuses on issues 
+that remain particularly uncertain, aiming to 
+complement efforts that consider the broader 
+social impacts of AI . While this Report draws on 
+international expertise and aims to be globally 
+relevant, readers should note that variation in AI 
+adoption rates, infrastructure, and institutional 
+contexts mean that risks may manifest differently 
+across countries and regions.
+The evidence base for these risks is uneven . 
+Some risks, such as harms from AI-generated 
+media or cybersecurity vulnerabilities, now 
+have robust empirical evidence . Evidence for 
+others – particularly risks that may arise from 
+future developments in AI capabilities – relies 
+on modelling exercises, laboratory studies under 
+controlled conditions, and theoretical analysis . 
+The analysis here draws on a broad range of 
+scientific, technical, and socioeconomic evidence 
+published before December 2025 . Where high 
+uncertainty remains, it identifies evidence gaps 
+to guide future research.
+Changes since 
+the 2025 Report
+This edition of the International AI Safety Report 
+follows the publication of the first Report in 
+January 2025. Since then, both general-purpose 
+AI and the research community’s understanding 
+
+[[page 15]]
+15
+International AI Safety Report 2026
+Introduction
+of it have continued to evolve, warranting 
+a revised assessment .
+Over the past year, AI developers have continued 
+to train larger and more capable AI models . 
+However, they have also achieved significant 
+capability gains through new techniques that 
+allow systems to use more computing power 
+to generate intermediate steps before giving 
+a final answer. These new ‘reasoning systems’ 
+show particularly improved performance in 
+mathematics, coding, and science . In addition, 
+AI agents – systems that can act in the world 
+with limited human oversight – have become 
+increasingly capable and reliable, though they 
+remain prone to basic errors that limit their 
+usefulness in many contexts.
+General-purpose AI systems have also 
+continued to diffuse, faster than many previous 
+technologies in some places, though unevenly 
+across countries and regions . Improved 
+performance in capabilities related to scientific 
+knowledge has also prompted multiple 
+developers to release new models with additional 
+safeguards, as they were unable to confidently 
+rule out the possibility that these models could 
+assist novices with weap on development .
+This Report covers all these developments 
+in greater depth, and incorporates several new 
+structural elements to improve its usefulness 
+and accessibility. It includes capability forecasts 
+developed with the Forecasting Research Institute 
+and scenarios developed with the OECD. Each 
+section includes updates since the last Report, 
+key challenges for policymakers, and evidence 
+gaps to guide future research.
+How this Report is organised
+This Report is organised around three 
+central questions:
+1. What can general-purpose AI do today, 
+and how might its capabilities change? 
+Chapter 1 covers how general-purpose AI 
+is developed (§1.1. What is general-purpose 
+AI?), current capabilities and limitations 
+† In this Report, systemic risks are risks that result from widespread deployment of highly capable general-purpose 
+AI across society and the economy. Note that the EU AI Act uses the term differently, to refer to risks from general-purpose 
+AI models that pose “risks of lar ge-scale harm” .
+(§1.2. Current capabilities), and the factors 
+that will shape developments over the 
+coming years (§1.3. Capabilities by 2030).
+2. What emerging risks does 
+general-purpose AI pose?
+Chapter 2 covers risks from malicious 
+use, including the use of AI systems for 
+criminal activities (§2.1.1. AI-generated 
+content and criminal activity), manipulation 
+(§2.1.2. Influence and manipulation ), 
+cyberattacks (§2.1.3. Cyberattacks), and 
+developing biological or chemical weapons 
+(§2.1.4. Biological and chemical risks); risks 
+from malfunctions, including operational 
+failures (§2.2.1. Reliability challenges) and 
+loss of control (§2.2.2. Loss of control); 
+and systemic risks,† including disruptions 
+to labour markets (§2.3.1. Labour market 
+impacts) and threats to human autonomy 
+(§2.3.2. Risks to human autonomy).
+3. What risk management approaches 
+exist, and how effective are they?
+Chapter 3 covers the distinctive policymaking 
+challenges that general-purpose AI 
+poses (§3.1. Technical and institutional 
+challenges), current risk management 
+practices (§3.2. Risk management practices ), 
+the various techniques developers 
+use to make AI models and systems 
+more robust and resistant to misuse 
+(§3.3. Technical safeguards and monitoring ), 
+the particular challenges of open-weight 
+models (§3.4. Open-weight models), and 
+efforts to make society more resilient 
+to potential AI shocks and harms 
+(§3.5. Building societ al resilience).
+Many aspects of how general-purpose AI will 
+develop remain deeply uncertain . But decisions 
+made today – by developers, governments, 
+communities, and individuals – will shape its 
+trajectory. This Report aims to ensure that 
+those decisions are made with the best possible 
+understanding of AI capabilities, risks, and 
+options for risk management.

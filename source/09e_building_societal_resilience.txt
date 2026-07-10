@@ -1,0 +1,724 @@
+# Building societal resilience
+# Source PDF pages: 138-145
+
+[[page 138]]
+Building societal resilience
+138
+International AI Safety Report 2026
+Section 3.5
+Building societal resilience
+Key information
+ — ‘Societal resilience’ refers to the ability of societal systems to resist, absorb, recover 
+from, and adapt to shocks and harms. Technical safeguards may fail in deployment, 
+and some risks emerge only in novel deployment contexts, interactions with other 
+societal systems, or cascading effects beyond any developers’ control. AI resilience 
+efforts complement risk management practices and technical safeguards, adding 
+a defence-in-depth layer at the societal level.
+ — Resilience-building measures can be implemented by different actors in various 
+sectors. For risks from general-purpose AI, examples of resilience-building measures 
+include DNA synthesis screening (for AI-enabled biological risks), incident response 
+protocols (for AI-assisted cyberattacks), media literacy programmes (for harms 
+from AI-generated content), and human-in-the-loop frameworks (for reliability 
+and control challenges).
+ — Current AI resilience efforts are uneven and largely untested. Some measures, such 
+as cybersecurity incident response protocols, are relatively mature . Others, such as 
+AI-generated content detection algorithms, remain nascent . Little concrete evidence 
+exists on the effectiveness of most measures in an AI context, and appropriate 
+interventions vary by geographic, linguistic, and socioec onomic context.
+ — Since the publication of the last Report (January 2025), preliminary funding and 
+data-collection efforts related to resilience have increased. For example, industry-
+linked initiatives have announced funding commitments in the tens of millions of 
+dollars, while some government-led initiatives have placed greater emphasis on 
+the systematic collection of data on seriou s AI incidents.
+ — A key challenge for policymakers is deciding whether or how to incentivise, 
+fund, develop, and evaluate resilience-building measures. AI itself can strengthen 
+resilience through defensive applications, but the balance between offensive and 
+defensive AI capabilities remains uncertain . Evidence on how these capabilities 
+interact remains limited, though research indicates that their relative balance 
+shapes overall system resilience.
+‘Resilience’ is the ability of societal systems to 
+resist, absorb, recover from, and adapt to shocks 
+and harms associated with general-purpose AI . 
+Proactively building resilience can help create 
+an ecosystem for safe and beneficial adoption 
+and diffusion. Resilience represents a ‘defence-
+in-depth’ approach to AI risks, layering multiple 
+interventions to avoid over-dependence on 
+any single safety measure. It complements 
+organisational risk management practices 
+(see §3.2. Risk management practices ) and 
+technical safeguards (see §3.4. Open-weight 
+
+[[page 139]]
+139
+International AI Safety Report 2026
+Building societal resilience
+models) to fortify societies against AI-related 
+harms. Ultimately, risks from AI systems emerge 
+not only from an AI model in isolation, but also 
+from its interactions with resources, individuals, 
+organisations, institutions, and technologies 
+(904*, 905*, 1358). As general-purpose AI systems 
+increasingly interact within broader social, 
+technical, and institutional infrastructure, they 
+may create new and unpredictable risks that 
+current safety measures alone cannot prevent 
+(953, 993, 1359).
+Even when technical safeguards mitigate narrowly 
+defined harms, risks can emerge from the complex 
+interactions between AI systems and societal 
+infrastructure. Safeguard effectiveness becomes 
+uncertain amidst real-world complexity (1360), 
+when AI models interact with other models, tools, 
+environments, actors, and networks (1361). As AI 
+systems are deployed widely across networks 
+of users, institutions, and other AI systems, risks 
+may arise unpredictably from their interactions 
+(100*, 614, 661) (see §2.2.1. Reliability challenges). 
+Research from other domains – including disaster 
+risk reduction, climate, health, and enterprise – 
+suggests that resilience-building measures can 
+reduce vulnerability to technological system 
+failures, and improve recovery outcomes 
+(1362, 1363, 1364, 1365, 1366).
+Resilience-building 
+measures
+Resilience-building measures fall into four 
+categories, grouped by function  (Figure 3.11):
+ — Resistance measures  reduce the likelihood 
+or severity of a shock before it occurs
+ — Absorption measures enable 
+societal systems to maintain critical 
+functions during a shock
+ — Recovery measures help restore normal 
+function after a shock occurs
+ — Adaptation measures transform societal 
+systems to reduce vulnerability to future 
+shocks (1367, 1368).
+The above categories are not mutually exclusive 
+and often overlap: a single measure may serve 
+multiple functions simultaneously and iteratively . 
+Resilience-building measures can target specific 
+risks or apply broadly across multiple domains . 
+Resilience helps societal systems resist, absorb, recover from, 
+and adapt to shocks from AI
+Resist
+Absorb
+Recover
+Adapt
+Shock
+Figure 3.11: Building resilience involves reducing the likelihood or severity of a shock before it occurs 
+(Resist). If a shock occurs, resilience-building measures include absorbing the shock by maintaining 
+critical functions (Absorb), recovering from harms and disruptions (Recover), and reducing the 
+vulnerability to future shocks (Adapt). Source: International AI Safety Report 2026 .
+
+[[page 140]]
+Building societal resilience
+140
+International AI Safety Report 2026
+The range of AI-related risks requiring resilience 
+spans AI-enabled biological and chemical attacks 
+(see §2.1.4. Biological and chemical risks) to 
+large-scale societal challenges such as labour 
+market risks (see §2.3.1. Labour market impacts).
+Table 3.10 shows examples of resilience-building 
+measures for biological and chemical attacks 
+(see §2.1.4. Biological and chemical risks), 
+cyberattacks (see §2.1.3. Cyberattacks), synthetic 
+media and crime (see §2.1.1. AI-generated content 
+and criminal activity), influence and manipulation 
+(§2.1.2. Influence and manipulation ), and cross-
+cutting measures that may apply to many risk 
+domains. The examples demonstrate how 
+approaches from other domains can inform 
+AI resilience strategies.
+Risk Resist Absorb Recover Adapt
+AI-enabled 
+biological and 
+chemical attacks 
+(see §2.1.4. 
+Biological and 
+chemical risks)
+DNA synthesis 
+screening systems 
+to flag dangerous 
+genetic sequences 
+before they 
+can be ordered 
+or produced 
+(1084); know-
+your-customer 
+protocols to 
+screen actors 
+(1085).
+Contact tracing, 
+quarantines 
+(1369), and 
+early detection 
+networks 
+to identify 
+biological agents 
+during attacks 
+or outbreaks 
+(1370, 1371).
+Strategic 
+stockpiles 
+of medical 
+countermeasures 
+(e.g. vaccines, 
+antibiotics, 
+and medical 
+equipment) to 
+enable rapid 
+response (1372).
+Strengthened 
+international 
+biosecurity 
+governance 
+frameworks to 
+facilitate policy 
+coordination 
+(1373, 1374).
+AI-enabled 
+cyberattacks 
+(§2.1.3. 
+Cyberattacks)
+Multi-factor 
+authentication to 
+reduce account 
+breaches 
+(1375); regular 
+vulnerability 
+assessments 
+(1376) to identify 
+and patch 
+weaknesses 
+before attacks 
+can occur.
+Network 
+segmentation 
+and automated 
+system shutdown 
+to isolate 
+infected systems 
+while backup 
+infrastructure 
+maintains critical 
+operations (1377).
+Offline backup 
+restoration 
+procedures 
+to rebuild 
+compromised 
+computational 
+systems from air-
+gapped storage 
+without paying 
+ransoms (1378).
+Incentives for 
+implementing 
+cybersecurity 
+measures, and 
+incident reporting 
+to qualified bodies 
+for continuous 
+feedback loops 
+(1379).
+AI-enabled 
+synthetic media 
+and crime (§2.1.1. 
+AI-generated 
+content and 
+criminal activity) 
+and influence 
+and manipulation 
+(§2.1.2. Influence 
+and manipulation)
+Critical media 
+literacy (1380) 
+and education to 
+inform the public 
+of the capabilities 
+and pitfalls of 
+AI-generated 
+content; 
+disclosure 
+mechanisms for 
+synthetic content 
+(1381) to prevent 
+deception.
+Real-time 
+detection 
+algorithms to 
+identify and label 
+synthetic content 
+while maintaining 
+platform 
+operations 
+(1382, 1383).
+Correction and 
+notification 
+frameworks to 
+inform customers, 
+partners, the 
+media, and the 
+public of synthetic 
+content (1384).
+Legal liability 
+frameworks 
+to hold parties 
+responsible for 
+generating or 
+disseminating 
+unauthorised 
+or undisclosed 
+synthetic content 
+(1385).
+
+[[page 141]]
+141
+International AI Safety Report 2026
+Building societal resilience
+Risk Resist Absorb Recover Adapt
+Cross- cutting Societal education 
+programmes to 
+increase public 
+awareness of risks 
+and impacts (1386, 
+1387); third-party 
+audits to flag risks 
+before deployment 
+(1014, 1388, 1389); 
+simulations 
+to anticipate 
+societal impacts 
+(1390, 1391).
+Human-in-the-
+loop design to 
+maintain critical 
+functions when 
+AI systems fail, 
+whether from 
+attacks, errors, 
+or unexpected 
+behaviour (1392).
+Incident response 
+protocols to 
+restore functions 
+after emergencies 
+(713, 1374).
+Insurance to 
+restructure 
+risk allocation 
+and incentivise 
+long-term safety 
+investments (1393, 
+1394); standards 
+to establish new 
+baseline practices 
+(1395, 1396).
+Table 3.10: Examples of resilience-building measures for biological and chemical, cyber, synthetic 
+media, influence and manipulation, and cross-cutting risks. Examples in this table draw from historical 
+precedents of non-AI-enabled risks.
+Evidence on the effectiveness 
+of resilience-building measures 
+for AI is sparse
+Little concrete evidence or research exists on 
+the effectiveness of these resilience-building 
+measures in an AI context . Education is one 
+example of a cross-cutting intervention that may 
+be relevant to societal capacity to anticipate 
+and respond to AI-related risks . However, 
+understanding the appropriateness and value of 
+any resilience-building measure requires further 
+analysis of the foreseen harm and the pathways 
+by which it may occur. The context and the 
+geographic, linguistic, and socioeconomic 
+characteristics of relevant communities will 
+also impact the efficacy and appropriateness of 
+resilience-building measures (1397, 1398, 1399).
+Effective resilience measures require 
+iterative development
+Iterative frameworks, such as the one 
+shown in Figure 3.12, can be used to structure 
+discussion of resilience-building measures across 
+four functions. In the context of labour market 
+and inequality risks (see §2.3.1. Labour market 
+impacts), for example, resistance measures could 
+include anticipatory skill monitoring mechanisms 
+to flag at-risk occupations, and expanded digital 
+Building resilience is an iterative process
+Forecast
+and conduct 
+scenario planning
+1
+Pilot resilience-
+building measures
+2
+Evaluate 
+resilience-building 
+measures
+3
+Measure 
+post-deployment 
+outcomes
+4
+Figure 3.12: Resilience-building is an iterative process and benefits from evidence-driven 
+implementation. It involves forecasting, piloting, and evaluating resilience-building measures, as well as 
+measuring outcomes post-deployment, as illustrated by an observe-orient-decide-act (OODA) feedback 
+loop. Source: Enck, 2012 (1405).
+
+[[page 142]]
+142
+International AI Safety Report 2026
+Building societal resilience
+infrastructure to ensure broad access to AI-
+enabled opportunities . Absorption measures 
+could include public–private training partnerships 
+and unemployment insurance to support 
+workers through AI-related job transitions . 
+Recovery measures might include reskilling 
+and redevelopment programs, and adaptation 
+measures could include lifelong-learning 
+programmes (1400, 1401, 1402, 1403, 1404).
+Resilience efforts have 
+cascading impacts
+Resilience-building measures interact across 
+domains. Unaddressed brittleness in one 
+domain may create or exacerbate vulnerabilities 
+elsewhere. For example, in the aftermath 
+of Hurricane Sandy in New York in 2012, 
+though airports resumed operations relatively 
+quickly, road and rail delays prevented airline 
+employees from getting to work, resulting in 
+continued air delays (1392). On the other hand, 
+in a positive scenario, an integrated approach 
+to resilience between domains can strengthen 
+societal resilience overall, as resilience-building 
+measures reinforce each other. For instance, 
+collecting and sharing data across societal 
+systems and domains can support scenario 
+analysis of emergent behaviour, while real-time 
+information sharing can enable more adaptive 
+responses (1392, 1406).
+AI itself can strengthen 
+societal resilience
+The same capabilities that can pose risks 
+can also help strengthen societies’ defences . 
+For example, AI systems can support cyber 
+defence through enhancing large-scale 
+anomaly detection, malware classification, 
+and phishing attacks prevention (1407, 1408, 
+1409). Similarly, AI systems can combat 
+risks related to AI-generated content by 
+strengthening deepfake detection and 
+digital watermarking tools (1410, 1411) 
+(see §3.3. Technical safeguards and monitoring ). 
+Across different risks, evidence indicates 
+that AI could help enhance emergency, crisis, 
+and disaster management by increasing the 
+accuracy, speed, and efficiency of forecasting, 
+monitoring, and response effort s (1390, 1412).
+Emerging general-purpose AI capabilities point 
+toward even more sophisticated resilience 
+applications. For example, AI could help counter 
+biological and chemical risks by accelerating 
+potential medical countermeasure research and 
+development (1413, 1414). Research indicates that 
+general-purpose AI systems may also support 
+early detection, rapid response, and containment 
+of biological threats (1370). Recent work shows 
+that AI agents can identify software vulnerabilities, 
+including previously undiscovered security flaws 
+(known as zero-day vulnerabilities), which can 
+facilitate defensive actions such as early patching 
+(1415, 1416, 1417). For example, Google’s Big Sleep 
+AI agent, a tool to help security researchers find 
+zero-day vulnerabilities, reportedly directly foiled 
+efforts to exploit a vulnerability in the wild in 2025 
+(1418*). Further, AI demonstrates potential to 
+efficiently address the large problem of converting 
+highly vulnerable, legacy computer code into 
+more secure forms (1419).
+Beyond domain-specific applications, AI may 
+enhance resilience by strengthening institutions 
+and public administration. This can support 
+societies’ ability to anticipate threats, resist 
+shocks, and adapt to new challenges (1420). 
+For example, some research anticipates that 
+AI could transform democratic institutions by 
+enhancing transparency, reducing monitoring 
+and compliance costs, enabling coordination, 
+and strengthening identity verification systems 
+(1421, 1422). Just as the internet enabled new 
+business models and social platforms, AI could 
+facilitate new approaches to citizen engagement, 
+institutional decision-making, and cross-
+cultural collaboration (1423). AI furthermore 
+has the potential to strengthen government 
+functions when human capacity is overwhelmed, 
+restructure government machinery to operate 
+at unprecedented scales and speeds, and help 
+enable continuous democrati c input (1421).
+Leveraging AI for resilience requires 
+managing the offence-defence balance
+Leveraging AI for resilience, however, does not 
+come without risks. Due to its dual-use nature, 
+developing AI capabilities to defend against AI-
+enabled threats may simultaneously accelerate 
+offensive capabilities. This may, in turn, shift 
+the offence-defence balance (the relative 
+advantage between attackers and defenders) 
+
+[[page 143]]
+143
+International AI Safety Report 2026
+Building societal resilience
+in sometimes unpredictable ways (496, 1424). 
+When the balance shifts toward defence, harms 
+become less likely and less severe, but when 
+it shifts toward offence, harms become more 
+likely or more damaging. For example, tools for 
+software vulnerability detection may also help 
+malicious actors identify and exploit attack 
+vectors (444, 496, 1419, 1425). AI systems that 
+enhance government legibility by analysing vast 
+data streams could also enable surveillance and 
+social control (1421). In biosecurity, one study 
+suggests that offence is currently favoured, 
+and AI may tilt this balance further (1424). 
+Well-intentioned AI research for resilience may 
+therefore inadvertently exacerba te risks (444).
+Many open questions remain on how to steer 
+the offence-defence balance towards safety (444, 
+496, 1326, 1424, 1426). Policymakers, investors, 
+and researchers have to weigh whether defensive 
+AI developments will provide a net security 
+benefit or whether they risk unfavourably tilting 
+the balance (444). This assessment requires them 
+to anticipate not just the immediate value of 
+defensive technologies, but also their potential 
+to enable new forms of harm.
+Researching, incentivising, 
+and funding resilience
+Although societal resilience can generate broad 
+benefits, these benefits are diffuse, which can 
+lead individual stakeholders to underinvest . 
+As a result, efforts to strengthen resilience 
+often involve coordination across stakeholders 
+with differing incentives (1425). The literature 
+discusses a range of ways in which policymakers 
+may influence investment in resilience-building 
+measures, drawing on their regulatory authorities 
+and institutional capacities (1349, 1392, 1427, 
+1428, 1429*, 1430, 1431). These include so-called 
+‘positive’ incentives such as advanced market 
+commitments, tax credits, public procurement 
+policies, and reduced regulatory hurdles to 
+enhance private actors’ incentives to develop 
+42%
+36%
+20%
+21%
+15%
+15%
+40%
+27%
+40%
+7%
+35%
+15%
+50%
+14%
+27%
+31%
+36%
+37%
+48%
+25%
+4%
+9%
+9%
+36%
+13%
+17%
+25%
+Latin America
+Africa
+Asia
+Middle East
+Europe
+North America
+Oceania
+70% 60% 50% 40% 30% 20% 10% 0% 10% 20% 30% 40% 50% 60% 70% 80%
+Not conﬁdent Neutral Conﬁdent Very conﬁdent
+Perceived preparedness for cyberattacks on critical 
+infrastructure varies globally
+Responses when asked “How conﬁdent are you that the country in which your organisation 
+is based is well prepared to respond to major cyber incidents targeting critical infrastructure?”
+Figure 3.13: Data from the World Economic Forum’s Global Cybersecurity Outlook, which surveyed 
+409 respondents from 57 countries regarding their perceptions of preparedness for cyberattacks 
+against critical infrastructure. Source: World Economic Forum, 2025 (452).
+
+[[page 144]]
+Building societal resilience
+144International AI Safety Report 2026
+resilience-building measures (1425, 1431, 1432, 
+1433). ‘Negative’ incentives, on the other hand, 
+such as liability frameworks and insurance 
+markets, relate to how the costs of potential 
+harms are distributed and how investment 
+in resilience-building measures is shaped 
+(940, 1434, 1435).
+Government agencies, industry, and 
+philanthropic donors have played roles in 
+supporting resilience research and activities 
+that markets may underprovide. Historically, 
+for example, the Defense Advanced Research 
+Projects Agency (DARPA) in the US contributed 
+to key advances in the creation of the internet, 
+synthetic biology, and carbon nanotubes 
+(1436). Currently, DARPA funds the TRACTOR 
+(Translating All C TO Rust) project, which seeks to 
+eliminate memory safety vulnerabilities and boost 
+cybersecurity (1437). Private initiatives such 
+as the $2 million Microsoft and OpenAI Societal 
+Resilience Fund provide catalytic funding for 
+research on techniques including, for example, 
+watermarking for AI-generated media and 
+education campaigns about risks (1438*). 
+Meanwhile, the non-profit OpenAI Foundation 
+pledged $25 billion to causes including technical 
+solutions to AI resilience (1439*). Competitions 
+and prizes can also advance resilience 
+research (1431). For example, in the AI Cyber 
+Challenge, top AI companies collaborate with 
+the US Government to develop AI systems that 
+secure critical software infrastructure (1440). 
+Government agencies can also convene frontier 
+AI companies and incentivise them to provide, for 
+example, early and discounted AI model access 
+for AI-enabled resilience-building efforts (1425).
+Evidence-gathering often depends on 
+coordinated ecosystems with substantial 
+investment in data infrastructure and access 
+protocols. Building up a stronger evidence base 
+of pre-deployment evaluations (see §3.2. Risk 
+management practices), post-deployment 
+monitoring, and incident reports can enable 
+forecasting, piloting of resilience-building 
+measures, continuous assessment, and iteration, 
+as illustrated in Figure 3.12 (869, 1441). Legal 
+and operational pathways for data-sharing 
+between AI developers, critical infrastructure 
+operators, and public authorities across borders 
+can facilitate this process . AI itself can enhance 
+evidence collection by improving data quality 
+and automating analysis.
+Understanding baseline characteristics 
+of societies and their preparedness for risk 
+can also support the design, piloting, and 
+evaluation of resilience-building measures (1358). 
+Perceptions of risk and preparedness can vary 
+widely across different regions (Figure 3.13 for an 
+example regarding cyber resilience). Community 
+characteristics including, for example, digital 
+infrastructure, technological literacy, institutional 
+capacity, regulatory frameworks, cultural norms, 
+linguistic characteristics, and AI deployment 
+patterns, may all inform the best approaches to 
+particular interventions . Several governments 
+have engaged in resilience assessments in other 
+domains, including on critical infrastructure 
+and community resilienc e (1442, 1443).
+Updates
+Since the publication of the last Report 
+(January 2025), actors have committed 
+preliminary funding to resilience efforts. 
+For example, the OpenAI Foundation pledged 
+$25 billion to causes including technical solutions 
+to AI resilience (1439*), while OpenAI itself 
+committed $50 million to support initiatives 
+including AI literacy and public understanding, 
+community innovation, and economic 
+opportunity (1444*, 1445*). Anthropic announced 
+$10 million for rigorous research and policy 
+ideas on AI’s economic impact (1446*). The UK AI 
+Security Institute awarded seed grants of up to 
+£200,000 for projects focused on safeguarding 
+societal systems, totalling up to £4 million 
+(1447). At the same time, these known resilience 
+investments remain small relative to overall AI 
+investment: private investment in generative 
+AI alone totalled $33.9 billion in 2024, and 
+infrastructure commitments such as OpenAI’s 
+Stargate Project involve pledges of $500 billion 
+over four years (255*, 1448).
+In addition to funding, data-collection 
+efforts have increased. AI developers including 
+Amazon, Anthropic, Cohere, Google, IBM, 
+Microsoft, Mistral AI, and OpenAI, have signed 
+the EU AI Act Code of Practice, a non-binding 
+governance instrument (see §3.2. Risk 
+management practices). Signatories commit 
+to systematically tracking, documenting, and 
+
+[[page 145]]
+145
+International AI Safety Report 2026
+Building societal resilience
+reporting serious incidents to the EU AI Office, 
+all of which may strengthen the knowledge base 
+for effective resilience strategies (965). It remains 
+too early to assess the impact on resilience 
+of the Code, which will come into full 
+enforcement in mid-2026.
+Evidence gaps
+The main evidence gaps for resilience are the 
+limited information on risks of general-purpose 
+AI and limited evidence on the effectiveness 
+of resilience-building measures . While AI 
+evaluations have gained traction through 
+voluntary commitments and policy (965, 1116), 
+methodologies to measure the capabilities 
+and risks of general-purpose AI systems are 
+nascent (224, 1449, 1450). Evidence remains 
+particularly sparse for emerging risks arising 
+from AI systems’ interactions with technical, 
+social, and institutional systems, such as 
+financial, educational, or healthcare systems, 
+where unexpected failures may occur. Several 
+AI companies have begun to release post-
+deployment usage data (117*, 1451*), but research 
+gaps remain. Without clear understanding of 
+which risks are most likely or consequential, 
+designing targeted resilience-building measures 
+is difficult (1392, 1427). Even when risks are better 
+understood, evidence on the effectiveness of 
+resilience-building measures remains limited . 
+To date, many resilience-building measures for 
+AI are at an early stage of development or lack 
+systematic evaluation.
+Challenges for policymakers
+For policymakers, key challenges in building 
+resilience include making decisions about 
+incentivising, funding, developing, and 
+evaluating resilience-building measures; and 
+evaluating offence-defence balance trade-offs. 
+AI developers currently only internalise some of 
+the potential cost of risks of general-purpose AI 
+(1349) and have limited incentives and ability to 
+invest in resilience-building measures . This is 
+associated with a funding gap: known resilience 
+investments remain limited relative to the 
+potential scale of the risks. Policymakers face 
+questions about whether and how incentives 
+should be shifted across stakeholders, and 
+about the extent to which the financial burden 
+of resilience-building measures is borne by 
+governments. They also face challenges in 
+assessing offence-defence trade-offs: general-
+purpose AI systems can support resilience-
+building in domains such as cybersecurity and 
+biosecurity, but the same capabilities may also 
+accelerate offensive risks in those domains.

@@ -1,0 +1,348 @@
+# 2.2.1 Reliability challenges
+# Source PDF pages: 71-75
+
+[[page 71]]
+71
+International AI Safety Report 2026
+Risks from malfunctions
+Section 2.2
+Risks from malfunctions
+2.2.1. Reliability challenges
+Key information
+ — When general-purpose AI systems fail, they can cause harm.  Failures include 
+producing false or fabricated information (often described as ‘hallucinations’), writing 
+flawed computer code, and giving misleading medical advice. These failures have the 
+potential to cause physical or psychological harm and expose users and organisations 
+to reputational damage, financial loss, or l egal liability.
+ — Models’ behaviour is often difficult to understand or predict, making it challenging 
+to guarantee reliability. Even the developers of general-purpose AI models can 
+often not meaningfully explain model behaviour, anticipate specific failure modes, 
+or demonstrate that such failures will not occur . Malicious actors can also induce 
+failures by interfering with AI development or giving systems adversarial inputs 
+that evade safeguards.
+ — AI agents pose heightened reliability risks because they act autonomously and 
+can directly affect other systems or the physical world.  Agent failures can cause 
+greater harm because humans have fewer chances to intervene . Multi-agent 
+systems introduce further risks, as errors can propagate and amplify through 
+agent interactions.
+ — Since the publication of the previous Report (January 2025), AI systems have 
+generally become more reliable and, as a result, have seen greatly increased 
+commercial deployment. Many kinds of failures, such as hallucinations, have 
+generally become less likely, but systems still commonly make mistakes when 
+performing more complex tasks.
+ — Despite significant research efforts, no combination of methods ensures the 
+high reliability required in critical domains. New training methods and giving AI 
+systems access to tools can make failures less likely, but usually do not eliminate 
+them completely.
+General-purpose AI systems fail in ways 
+that have already caused real-world harm, 
+from fabricated legal citations to medical 
+misdiagnoses . While human professionals 
+also make mistakes, AI failures raise distinct 
+concerns because of their novelty, potential 
+scale, the difficulty of predicting when they 
+will occur, and users’ tendency to uncritically 
+trust confident-sounding outputs. Current 
+general-purpose AI failures include providing 
+
+[[page 72]]
+Risks from malfunctions
+72
+International AI Safety Report 2026
+false information (602, 603), making basic 
+reasoning errors (604, 605), and degrading 
+when deployed in new contexts (606, 607, 608). 
+Documented harms from such failures include 
+medical misdiagnoses, mistakes in legal briefs, 
+and financial losses (609, 610, 611). Reliability 
+challenges are particularly critical for AI agents, 
+since failures can directly cause harm without 
+human action or oversight (612*, 613, 614, 615*). 
+Multi-agent systems introduce further failure 
+modes through miscoordination, conflicts, or 
+undesired collusion between age nts (614, 616).
+General-purpose AI systems 
+face a range of reliability 
+challenges
+Table 2.4. summarises common categories of 
+reliability issues. The first three apply to all AI 
+systems, while the last two pertain specifically 
+to AI agents and multi-agent systems . Many 
+reliability risks stem from the difficulty of 
+predicting and monitoring AI system behaviour. 
+These challenges (discussed further in 
+§3.1. Technical and institutional challenges ) 
+are particularly acute for AI agents operating 
+in complex environments. Current techniques 
+for evaluating and mitigating such failures can 
+reduce failure rates, but even leading AI agents 
+are still sufficiently unreliable to pose risks and 
+hamper deployment in many contexts.
+‘Reliability’ refers to the extent to which an AI 
+system functions as intended by the developer 
+or user. General-purpose AI systems experience 
+a range of reliability issues, ranging from 
+inaccurate or misleading content generation 
+to failures performing basic reasoning. For 
+example, while models have improved at recalling 
+factual information, even leading models 
+continue to give confident but incorrect answers 
+at significant rates (Figure 2.10). In software 
+engineering, general-purpose AI can now provide 
+substantial assistance in writing, evaluating, 
+and debugging computer code (215*, 628, 629). 
+However, AI-generated code often includes bugs 
+(630), while coding agents regularly make errors 
+(631). Such failures can introduce vulnerabilities 
+Reliability issue Examples
+Hallucination  — Citing non-existent precedent in legal briefs (617)
+ — Citing non-existent reduced fare policies for 
+bereaved passengers (618)
+ — Providing inaccurate and biased medical information (619)
+ — Providing outdated information about events (620)
+Basic reasoning failure  — Failing to perform mathematical calculations (621)
+ — Failing to infer basic causal relationships (622*)
+Out-of-distribution failure (failure 
+on unfamiliar or unusual inputs)
+ — Misclassifying images when background lighting 
+or context shifts (623)
+Tool use failure  — Privacy breach by exposing a user’s private image 
+via an AI agent that sends it to a third-party tool (624)
+ — Failure of short-term working memory (625, 626)
+Multi-agent system failure: 
+miscoordination and conflict
+ — Failing to manage shared resources because of 
+a conflict between individual incentives and collective 
+welfare goals (627)
+Table 2.4: Documented reliability issues in general-purpose AI systems, AI agents, 
+and multi-agent systems.
+
+[[page 73]]
+73
+International AI Safety Report 2026
+Risks from malfunctions
+into programs and security systems (see 
+§2.1.3. Cyberattacks).
+Reliability issues are particularly important to 
+track in high-stakes settings, such as medicine, 
+due to the accelerating use of AI and the 
+potential for failures to result in severe harm 
+(609, 619). Relevant capabilities have improved 
+quickly, with leading models now able to pass 
+medical exams (633*, 634). Yet, real-world use 
+reveals limitations that benchmarks miss . 
+For example, in one study, models provided 
+potentially harmful answers to 19% of medical 
+questions posed (635). Such failures could 
+result in misdiagnosis, inappropriate treatment, 
+or wrongful denial of care (611).
+AI agents pose novel reliability 
+risks due to their autonomy
+Because AI agents directly act in the real world, 
+their failures have the potential to cause more 
+harm than failures in non-agentic systems (99). 
+Unlike AI systems that simply produce text 
+or images for humans to review, AI agents 
+can independently take actions that affect the 
+world (99, 615*, 636, 637) (see also §1.1. What 
+is general-purpose AI?). AI agents can initiate 
+actions, influence other humans or AI systems, 
+and dynamically shape future outcomes. This 
+expanded scope of influence introduces new 
+risks and amplifies the importance of reliability, 
+as failures could directly cause harm with no 
+opportunity for human intervention (99, 612*, 
+638, 639, 640). This may be especially important 
+for agents deployed in strategic or safety-
+critical settings such as financial services 
+(641), energy management (642), or scientific 
+research (643*, 644).
+Multi-agent AI systems introduce 
+new kinds of reliability failures
+Multi-agent AI systems introduce new kinds 
+of reliability failures due to coordination 
+failures or conflict between agents. In multi-
+July 2023 Jan 2024 July 2024 Jan 2025 July 2025 Jan 2026
+0%
+20%
+40%
+60%
+80%
+Simple QA Veriﬁed Score
+General-purpose AI models have improved on factual 
+accuracy benchmarks
+Model release date
+Figure 2.10: Results of major models on the SimpleQA Verified benchmark by model release 
+date. This benchmark measures model factuality, the ability of a model to reliably recall facts. It has 
+a short-form question-answer (QA) format, designed to detect reliability issues such as hallucinations. 
+Source: SimpleQA Kaggle Leaderboard, November 2025 (632*).
+
+[[page 74]]
+Risks from malfunctions
+74
+International AI Safety Report 2026
+agent AI systems, agents interact with 
+each other while pursuing either shared 
+or individual goals (614, 645, 646, 647, 648, 
+649). For example, in a multi-agent system 
+designed to conduct a research literature 
+review, a lead agent decomposes the user’s 
+query and assigns subtasks to specialised 
+subagents, each responsible for researching 
+a different aspect in parallel (650*). While this 
+allows for efficiency gains, it also means that 
+errors can propagate between agents (614, 
+651, 652, 653, 654, 655). If multiple agents are 
+built on the same base model or incorporate 
+the same tools, then they may also exhibit 
+correlated failures (656). Empirical evidence 
+for such failures in deployed systems remains 
+limited, but these risks may grow as multi-agent 
+systems become more common.
+Updates
+Since the publication of the last Report (January 
+2025), commercial and research interest in AI 
+agents has greatly increased. More AI agents are 
+being deployed in the real world (Figure 2.11), most 
+of which specialise in computer-use or software 
+engineering applications (92). Recent releases such 
+as XBOW hacking agent (467*), Claude-4 (659*), 
+The number of AI agents has grown since 2023
+July/Aug
+2023
+Mar/Apr
+2023
+Nov/Dec
+2023
+July/Aug
+2024
+Mar/Apr
+2024
+Nov/Dec
+2024
+20
+18
+16
+14
+12
+10
+8
+6
+4
+2
+0
+Number of releases Application domains
+Software
+(37.3%)
+Computer use
+(37.3%)
+Other (10.4%)
+Robotics (3%)
+Universal (6%)
+Research (6%)
+Figure 2.11: Results from a December 2024 survey of 67 deployed AI agents. Left: Timeline of major AI agent 
+releases. Right: Application domains in which AI agents are being used. The six domains are defined based 
+on the most common categories of use identified in the survey. Source: Casper et al., 2025 (92).
+Box 2.4: Deliberate attacks can also cause AI systems to fail
+This section focuses on unintended reliability failures, but malicious actors can also deliberately 
+induce failures through attacks such as prompt injections . In a prompt injection attack, 
+malicious instructions are presented to an agent indirectly via avenues like hidden instructions 
+in websites or databases (507, 657, 658). These instructions can ‘hijack’ the agent, causing it 
+to act against the user’s intentions. Such attacks are particularly difficult to defend against 
+because they are delivered using external content outside the user’s or developer’s control . 
+AI systems as targets of attack are discussed further in §2.1.3. Cyberattacks, and technical 
+defences are covered in §3.3. Technical safeguards and monitoring.
+
+[[page 75]]
+75
+International AI Safety Report 2026
+Risks from malfunctions
+and ChatGPT Agent (660*) demonstrate nascent 
+autonomous capabilities such as creating slide 
+decks based on Web searches (660*). However, 
+they cannot yet perform more complex tasks such 
+as planning and booking travel (100*) since failure 
+rates increase for longer tasks (98, 148). Current 
+research includes efforts to develop standards 
+for how agents communicate with external tools 
+and other agents (661, 662). Examples include 
+Google’s Agent2Agent (663*) and Agent Payments 
+(664*) protocols, and Anthropic’s Model Context 
+Protocol (665*). 
+Evidence gaps
+The main evidence gaps stem from the 
+difficulty of reliably evaluating AI system 
+capabilities, limitations, and failure modes (see 
+§3.1. Technical and institutional challenges). 
+Systematic evaluations of the reliability of 
+AI agents are limited and lack standardisation 
+(92, 666). Certain issues, such as reliance on 
+outdated information (620), may only manifest 
+in real-world usage, making pre-deployment 
+evaluations inadequate. Prior work has examined 
+the reliability of agents and multi-agent systems 
+in conventional software and earlier forms of AI 
+(647, 667, 668). However, the applicability of this 
+work to modern AI agents, which are often based 
+on large language models, is unclear (669). Some 
+researchers have raised concerns about the novel 
+behaviours agents may exhibit in their interactions 
+with each other, such as collusion or correlated 
+failures (614), but empirical evidence remains 
+limited. Efforts to address these gaps include the 
+National Institute of Standards and Technology’s 
+(NIST’s) new evaluations of agent-hijacking 
+risks (670), the OECD’s AI Capability Indicators 
+(243), and UK AI Security Institute’s Inspect 
+Sandboxing Toolkit (671).
+Mitigations
+Techniques for improving AI reliability target 
+both the model itself and the broader system 
+in which it is deployed. These can reduce 
+failure rates, but none can yet ensure the high 
+reliability required in critical domains (672). An 
+important technical measure is adversarial 
+training, which exposes models to challenging 
+inputs during training to help it develop more 
+suitable, robust responses (673, 674, 675, 676, 677) 
+(see §3.3. Technical safeguards and monitoring). 
+To reduce hallucinations, developers can apply 
+retrieval-augmented generation (RAG), which 
+supplements a model’s responses with information 
+retrieved from an external database, helping 
+ensure outputs are accurate and current (678, 
+679, 680), or specifically fine-tune models to be 
+more factual (681) or reason more effectively 
+(682). Environment- or tool-based methods can 
+also help developers monitor AI systems (683). For 
+example, deployers could pilot AI systems in limited 
+sandboxed environments to analyse potential 
+failure modes before deploying them more broadly.
+For AI agents specifically, researchers have 
+proposed improving reliability through improved 
+transparency, oversight, and monitoring . For 
+example, monitoring agents’ interactions with 
+external tools and with other agents would allow 
+for more effective oversight of agent activities 
+(684, 685) and incident analysis (686). Methods 
+for collecting such information automatically, 
+including in multi-agent settings, remain an 
+active area of research (653, 654).
+Challenges for policymakers
+Key challenges for policymakers include weighing 
+the benefits of AI agent deployment against 
+the risks of reliability failures, and ensuring that 
+developers, deployers, and users have access to 
+accurate information about agent performance 
+and risk profiles. Deciding how to attribute liability 
+for harms caused by AI agents poses a further 
+challenge (639), particularly in multi-agent settings 
+where it may be hard to identify when and how 
+failures occurred (687). These challenges are 
+compounded by the difficulty of evaluating agent 
+reliability as agents gain autonomy and access 
+to external tools (688*, 689). Uncertainty about 
+how quickly agentic capabilities will emerge also 
+makes planning for novel challenges difficult 
+(see §3.1. Technical and institutional challenges 
+regarding the ‘evidence dilemma’).

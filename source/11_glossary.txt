@@ -1,0 +1,850 @@
+# Glossary
+# Source PDF pages: 147-155
+
+[[page 147]]
+147
+International AI Safety Report 2026
+Glossary
+Glossary
+Adoption: When individuals or organisations 
+start using a new technology in their operations 
+or daily practices.
+Adversarial training: A machine learning 
+technique used to make models more reliable. 
+First, developers construct inputs that are 
+designed to make a model fail. Second, they 
+train the model to recognise and handle 
+these kinds of inputs.
+AI agent: An AI system that can adaptively 
+perform complex tasks, use tools, and interact 
+with its environment – for example, by creating 
+files, taking actions on the Web, or delegating 
+tasks to other agents – to pursue goals with 
+little to no human oversight.
+AI companion: An AI system designed to 
+simulate personal relationships with users, for 
+example, in order to offer emotional support.
+AI developer: Any organisation that designs, 
+builds, or adapts AI models or systems.
+AI-enabled biological and chemical tools:  
+Specialised AI models that are trained on 
+biological or chemical data to make them 
+more useful in scientific applications.
+AI exposure: The degree to which a particular 
+work activity or occupation could be affected 
+by AI systems, either through augmentation 
+of human capabilities or autom ation of tasks.
+AI-generated media:  Audio, text, or visual 
+content produced by generative AI.
+AI lifecycle: The stages of developing AI, 
+including data collection and curation, pre-training, 
+post-training and fine-tuning, system integration, 
+deployment and release, and post-deployment 
+monitoring and updates.
+Algorithm: A set of rules or instructions that 
+allow an AI system to process data and perform 
+specific tasks.
+Algorithmic efficiency:  A set of measures of how 
+many computational resources an algorithm uses 
+to learn from data, such as the amount of memory 
+used or the time taken for training.
+Algorithmic transparency:  The degree to which 
+the factors informing general-purpose AI output, 
+such as recommendations or decisions, are 
+knowable by various stakeholders. Such factors 
+might include the inner workings of the AI model, 
+how it has been trained, the data it was trained 
+on, what features of the input affected its output, 
+and what decisions it would have made under 
+different circumstances.
+Alignment: The propensity of an AI model or 
+system to use its capabilities in line with human 
+intentions, values, or norms. Depending on the 
+context, this can refer to the intentions and values 
+of various entities, such as developers, users, 
+specific communities, or soci ety as a whole.
+Application programming interface (API):  
+A set of rules and protocols that enables 
+integration and communication between software 
+applications, for example, between an AI system 
+and a search engine.
+Artificial general intelligence (AGI):  
+A hypothetical AI model or system that equals 
+or surpasses human performance on all or almost 
+all cognitive tasks.
+Artificial intelligence (AI):  Machine-based models 
+or systems capable of performing tasks that 
+typically require human intelligence, such as 
+generating text.
+Attention mechanism: A method used in neural 
+networks that allows a model to focus on the 
+most relevant parts of the input data when 
+generating an output. Attention helps models 
+to understand context and generate more 
+accurate results.
+Audit: A formal review of whether an organisation 
+or system conforms to or complies with relevant 
+standards, policies, or procedures, carried out 
+internally or by an independent third party.
+Automation: The use of technology to perform 
+tasks with reduced or no hum an involvement.
+Automation bias: The tendency of humans to 
+rely on automated systems, including AI systems, 
+without sufficient scrutiny of  their outputs.
+
+[[page 148]]
+148
+International AI Safety Report 2026
+Glossary
+Autonomous planning: An AI system’s ability to 
+develop and execute multi-step strategies with 
+little or no human guidance.
+Benchmark: A standardised, often quantitative 
+test or metric used to evaluate and compare the 
+performance of AI systems on a fixed set of tasks, 
+often designed to represent re al-world usage.
+Biological weapon: A pathogen (such as 
+a bacterium, virus, or fungus) or a toxin (a poison 
+derived from animals, plants, microorganisms 
+or produced synthetically) that is deliberately 
+released to cause disease, death, or incapacitation 
+in humans, animals, plants or microorganisms.
+Biosecurity: A set of policies, practices, 
+and measures (e.g. diagnostics and vaccines) 
+designed to protect humans, animals, plants, 
+and ecosystems from harmful toxins and 
+pathogens, whether naturally occurring 
+or intentionally introduced.
+Biotechnology: A multidisciplinary field at 
+the intersection of biology and engineering, 
+which uses biological processes to develop 
+products and services.
+Capabilities: The tasks or functions that 
+something (e.g. a human or an AI system) can 
+perform, and how competently it can perform 
+them, in specific conditions.
+CBRN: Abbreviation of ‘chemical, biological, 
+radiological, and nuclear’. Used to refer to threats 
+with the potential for mass harm involving 
+chemical, biological, radiological, or nuclear 
+materials or weapons.
+Chain of thought: A technique for generating 
+responses in which an AI model generates 
+intermediate steps or explanations. By breaking 
+down complex tasks into smaller steps, this 
+approach can improve the model’s accuracy 
+and indicate how it arrived at its answer.
+Chemical weapon: Toxic chemicals used 
+to cause harm or death.
+Child Sexual Abuse Material (CSAM):  
+Content that depicts sexually explicit conduct 
+involving children.
+Cloud computing: Computing services delivered 
+over the internet on demand, allowing users 
+to access servers, storage, data, and software 
+without maintaining local infrastructure. 
+Commonly used for AI development 
+and deployment.
+Cognitive offloading: Reducing one’s own mental 
+effort by delegating cognitive tasks to other 
+people or external systems.
+Cognitive tasks: Activities that involve processing 
+information, problem-solving, decision-making, 
+and creative thinking, as distinct from physical 
+tasks. Examples include analysing data, writing, 
+and programming.
+Collective autonomy: The effective capacity of 
+a group to form and act on shared beliefs, values, 
+and goals, free from undue external influence, 
+and with meaningful options available to influence 
+their circumstances.
+Collusion: Secret cooperation between multiple 
+actors, including potentially AI agents, to achieve 
+shared goals, typically to the detri ment of others.
+Comparative advantage: The ability of a person, 
+business, country, or AI system to produce 
+a particular good or service at lower opportunity 
+cost than another producer.
+Compute: Shorthand for ‘computational 
+resources’. The hardware (e.g. computer chips), 
+software (e.g. data management software), and 
+infrastructure (e.g. data centres) required to 
+develop and deploy AI systems.
+Continual fine-tuning (CFT):  A method for 
+updating general-purpose AI models with new 
+knowledge and skills by sequentially fine-tuning 
+on previous versions.
+Control: The ability to influence the behaviour of 
+a system in a desired way. This includes adjusting 
+or halting its behaviour if the system acts 
+in unwanted ways.
+Copyright: A form of legal protection granted to 
+creators of original works, giving them exclusive 
+rights to use, reproduce, and distribute their work.
+Critical infrastructure:  Organisations, 
+facilities, or systems of major importance to 
+the functioning of society, including in sectors 
+such as food, energy, transport, or public 
+administration.
+Critical sectors: Sectors where AI failures or 
+misuse pose especially serious risks to public 
+safety, security, or governance. Examples 
+
+[[page 149]]
+149
+International AI Safety Report 2026
+Glossary
+include government decision-making, critical 
+infrastructure, and AI deve lopment itself.
+CTF (capture-the-flag) exercises:  Exercises often 
+used in cybersecurity training, designed to test 
+and improve the participants’ skills by challenging 
+them to solve problems related to cybersecurity, 
+such as finding hidden information or bypassing 
+security defences.
+Cyberattack: A malicious attempt to gain 
+access to a computer system, network or 
+digital device, for example, in order to steal 
+or destroy information.
+Data centre: A large collection of networked, 
+high-power computer servers used for 
+remote computation.
+Data collection and curation:  A stage of AI 
+development in which developers and data 
+workers collect, clean, label, standardise, and 
+transform raw training data into a format that 
+the model can effectiv ely learn from.
+Data contamination: A problem that occurs when 
+AI models are trained on data from benchmark 
+questions that are later used to test their 
+capabilities, leading to i nflated scores.
+Data provenance: A historical record of where 
+data comes from and how it has been processed.
+Deception: A form of influence characterised by 
+systematically inducing false beliefs in others in 
+pursuit of some goal.
+Deepfake: A type of AI-generated audio or visual 
+content that depicts people saying or doing 
+things they did not actually say or do, or events 
+occurring that did not actually occur.
+Deep learning: A machine learning technique 
+in which large amounts of compute are used 
+to train multilayered, artificial neural networks 
+(inspired by biological brains) to automatically 
+learn information from large datasets, 
+enabling powerful pattern recognition and 
+decision-making capabilities.
+Defence-in-depth:  A strategy that involves 
+implementing multiple layers of independent 
+safeguards, such that if one measure fails, others 
+remain in place to prevent harm.
+Defensive technologies:  Technologies that 
+reduce risks posed by another technology 
+(or set of technologies) without modifying 
+that technology.
+Deployment: The process of putting an AI system 
+into operational use, making it available to users 
+in real-world settings.
+Deployment environment: The combination 
+of an AI system’s use case and the technical 
+and institutional context in whi ch it operates.
+Digital infrastructure: The foundational 
+services and facilities necessary for computer-
+based technologies to function, including 
+hardware, software, networks, data centres, and 
+communication systems.
+Distillation: A form of training in which a ‘student’ 
+AI model learns by imitating the outputs of a more 
+powerful ‘teacher’ system.
+Distributed compute: The use of multiple 
+processors, servers, or data centres working 
+together to perform AI training or inference, 
+with workloads divided and coordinated 
+across many machines.
+Downstream AI developer: A developer who 
+builds AI models, systems, applications or 
+services using or integrating existing AI models 
+or systems created by others.
+Dual-use science:  Research and technology that 
+can be applied for beneficial purposes, such as in 
+healthcare or energy, but also potentially misused 
+to cause harm, such as in biological or chemical 
+weapon development .
+Ecosystem monitoring: The process of studying 
+the real-world uses and impacts  of AI systems.
+Emergent capabilities:  Capabilities of an AI 
+model that arise unexpectedly during training 
+and are hard to predict, even with full information 
+about the training setup.
+Encryption: The process of converting 
+information into a coded format that can only 
+be read by authorised parties with the correct 
+decryption key.
+Evaluations: Systematic assessments, before 
+or after deployment, of the performance, 
+capabilities, vulnerability, or potential impacts 
+of an AI model or system.
+
+[[page 150]]
+150
+International AI Safety Report 2026
+Glossary
+Evidence dilemma: The challenge that 
+policymakers face when making decisions 
+about a new technology before there is strong 
+scientific evidence about its benefits or risks, 
+forcing them to weigh the risk of creating 
+ineffective or unnecessary regulations against the 
+risk of allowing serious harms to occur without 
+adequate safeguards.
+Feedback loop: A process where the outputs of 
+a system are fed back into the system as inputs.
+Fine-tuning: The process of adapting an AI 
+model after its initial training to a specific task 
+or making it more useful in general by training 
+it on additional data.
+Floating point operations (FLOP):  
+The computational operations performed 
+by a computer program. Often used as 
+a measure for the amount of compute 
+used in training an AI model.
+Foundation model: A general-purpose AI model 
+designed to be adaptable to a wide range of 
+downstream tasks.
+Frontier AI: A term sometimes used to refer to 
+particularly capable AI that matches or exceeds 
+the capabilities of today’s most advanced 
+AI. For the purposes of this Report, frontier 
+AI can be thought of as particularly capable 
+general-purpose AI.
+Frontier AI Safety Framework: A set of protocols 
+created by an AI developer, typically structured 
+as if-then commitments, that specifies safety or 
+security measures that they will take when their 
+AI systems reach predefined thresholds.
+General-purpose AI:  AI models or systems that 
+can perform a variety of tasks, rather than being 
+specialised for one specific function or domain. 
+See ‘Narrow AI’ for contrast.
+Generative AI: AI that can create new content 
+such as text, images, or audio by learning 
+patterns from existing data and producing 
+outputs that reflect those patterns.
+Goal misgeneralisation:  A training failure in 
+which an AI system learns a goal consistent 
+with its training data but generalises 
+incorrectly to new data.
+Goal misspecification:  A failure mode in AI 
+development where the specified objective 
+serves as an imperfect proxy for the developer’s 
+intended goal, leading to unintended 
+system behaviours.
+Graphics processing unit (GPU):  A specialised 
+computer chip, originally designed for computer 
+graphics, that is now widely used to handle 
+complex parallel processing tasks essential 
+for training and running AI models.
+Hacking: Exploiting vulnerabilities or weaknesses 
+in a computer system, network, or software to 
+gain unauthorised access, disrupt operations, 
+or extract information.
+Hallucination: Inaccurate or misleading 
+information generated by an AI model or system, 
+presented as factual.
+Hazard: Any event or activity that has the 
+potential to cause harm, such as loss of 
+life or injury.
+Human autonomy: The effective capacity to 
+form and act on one’s own beliefs, values, and 
+goals, free from undue external influence, and 
+with meaningful options available to influence 
+one’s circumstances.
+Human in the loop: An approach where humans 
+retain decision-making authority in automated 
+systems by reviewing and approving actions 
+before they are executed, rather than allowing 
+full automation.
+If-then commitments:  Conditional agreements, 
+frameworks, or regulations that specify actions 
+or obligations to be carried out when certain 
+predefined conditions are met.
+Incident reporting: Documenting and sharing 
+cases where an AI system has failed or been 
+misused in a potentially harmful way during 
+development or deployment.
+Inference: The process in which an AI generates 
+outputs based on a given input, thereby applying 
+the knowledge learnt during training.
+Inference-time scaling:  Improving an AI system’s 
+capabilities by providing additional computational 
+resources during inference, allowing the system 
+to solve more complex problems.
+
+[[page 151]]
+151
+International AI Safety Report 2026
+Glossary
+Input (to an AI system): The data or prompt 
+submitted to an AI system, such as text or an 
+image, which the AI system processes and 
+turns into an output.
+Institutional transparency:  The degree to which 
+organisations publicly disclose information, such 
+as (in the case of AI developers) sharing training 
+data, model architectures, safety and security 
+measures, or decision-ma king processes.
+Interpretability: The degree to which humans 
+can understand the inner workings of an AI 
+model, including why it generated a particular 
+output or decision.
+Jailbreaking: Generating and submitting prompts 
+designed to bypass safeguards and make 
+an AI system produce harmful content, such 
+as instructions for building weapons.
+Labour market: The system in which employers 
+seek to hire workers and workers seek 
+employment, encompassing job creation, 
+job loss, and wages.
+Labour market disruption: Significant and 
+often complex changes in the labour market 
+that affect job availability, required skills, wage 
+distribution, or the nature of work across 
+sectors and occupations.
+Large language model (LLM):  An AI model 
+trained on large amounts of text data to perform 
+language-related tasks, such as generating, 
+translating, or summarising text.
+Loss of control scenario: A scenario in which 
+one or more general-purpose AI systems come to 
+operate outside of anyone’s control, with no clear 
+path to regaining control.
+Machine learning (ML): A subset of AI focused 
+on developing algorithms and models that learn 
+from data without being explici tly programmed.
+Malfunction: The failure of a system to 
+operate as intended by its developer or user, 
+resulting in incorrect or harmful outputs or 
+operational disruptions.
+Malicious use: Using something, such as 
+an AI system, to intentionally cause harm.
+Malware: Harmful software designed to 
+damage, disrupt, or gain unauthorised access to 
+a computer system. It includes viruses, spyware, 
+and other malicious programs that can steal 
+data or cause harm.
+Manipulation: A form of influence characterised 
+by changing someone’s beliefs or behaviour to 
+achieve some goal without their full awareness 
+or understanding.
+Marginal risk: The extent to which 
+the deployment or release of a model 
+counterfactually increases risk beyond 
+that already posed by existing models 
+or other technologies.
+Metadata: Data that provides information about 
+other data. For example, an image’s metadata can 
+include information about when it was created, 
+or whether it is AI-generated.
+Misalignment: An AI’s propensity to use its 
+capabilities in ways that conflict with human 
+intentions, values, or norms. Depending on the 
+context, this can refer to the intentions and values 
+of various entities, such as developers, users, 
+specific communities, or soci ety as a whole.
+Miscoordination: When different actors (such 
+as AI agents) share a common goal, but are 
+unable to align their behaviours to achieve it.
+Modalities: The kinds of data that an AI model 
+or system can receive as input and produce as 
+output, such as text (language or code), images, 
+video, and robotic actions.
+(AI) Model: A computer program that processes 
+inputs to perform tasks such as prediction, 
+classification, or generation, and that may 
+form the core of larger AI systems. Most AI 
+models today are based on machine learning: 
+they learn from data rather than being 
+explicitly programmed.
+Model card: A document providing useful 
+information about an AI model, for instance about 
+its purpose, usage guidelines, training data, 
+performance on benchmarks, or s afety features.
+Model release: Making a trained AI model 
+available for others to use, study, or modify, 
+or integrate into their own systems.
+Multi-agent system: A network of interacting 
+(AI) agents that may adapt to each other’s 
+behaviour and goals, including by potentially 
+cooperating or competing.
+
+[[page 152]]
+152
+International AI Safety Report 2026
+Glossary
+Multimodality: The ability of an AI model or 
+system to process different kinds of data, 
+such as text, images, v ideo, or audio.
+Narrow AI: An AI model or system that 
+is designed to perform only one specific 
+task or a few very similar tasks, such as 
+ranking Web search results, classifying 
+species of animals, or playing chess. 
+See ‘General-purpose AI’  for contrast.
+Neural network: A type of AI model composed 
+of interconnected nodes (loosely inspired 
+by biological neurons), organised in layers, 
+which learns patterns from data by adjusting 
+the connections between nodes. Current 
+general-purpose AI systems are based 
+on neural networks.
+Non-consensual intimate imagery (NCII):  Sexual 
+photos or videos of a person that are created or 
+distributed without their consent.
+Observe-orient-decide-act (OODA):  A framework 
+for iterative decision-making, involving observing 
+conditions, orienting to circumstances, deciding 
+on interventions, and acting, then repeating to 
+refine approaches based on outcomes.
+Offence-defence balance:  The relative advantage 
+between attackers and defenders in a given 
+domain, such as cybersecurity. A shift towards 
+defenders means attacks become costlier or 
+less consequential; a shift toward attackers 
+means the opposite.
+Open-ended domains:  Environments into which 
+AI systems might be deployed which present 
+a very large set of possible scenarios. In open-
+ended domains, developers typically cannot 
+anticipate and test every possible way that 
+an AI system might be used.
+Open source model: An AI model whose 
+essential components (such as model weights, 
+source code, training data, and documentation) 
+are released for public download under terms 
+that grant the effective freedom to use, study, 
+modify, and share the model for any purpose. 
+There remains disagreement about which 
+specific components must be available, what 
+level of documentation is required, and whether 
+certain use restrictions are compatible with 
+open source principles.
+Open-weight model: An AI model whose 
+weights (see Weights) are publicly available for 
+download. Some, but not all, open-weight models 
+are open source.
+Out-of-distribution failure:  The failure of an AI 
+model or system to perform its intended function 
+when confronted with inputs, environments, or 
+tasks not encountered during training.
+Parameters (of an AI model): Numerical 
+components, such as weights and biases, that 
+are learned from data during training and that 
+determine how an AI model processes inputs 
+to generate outputs. Note that ‘bias’ here is 
+a mathematical term that is unrelated to bias 
+in the context of distorted human judgement 
+or algorithmic output.
+Passive loss of control: A scenario where the 
+broad adoption of AI systems undermines human 
+control through over-reliance on AI for decision-
+making or other important soci etal functions.
+Pathogen: A microorganism, for example, a virus, 
+bacterium, or fungus, that can cause disease in 
+humans, animals, or plants .
+Penetration testing: A security practice 
+where authorised experts or AI systems simulate 
+cyberattacks on a computer system, network, 
+or application to proactively evaluate its security. 
+The goal is to identify and fix weaknesses before 
+they can be exploited by real attackers.
+Persuasion: A form of influence that uses 
+communication – including rational argument, 
+emotional appeals, or appeals to authority – to 
+change someone’s beliefs, rather than relying 
+on force or coercion.
+Phishing: Using deceptive emails, messages, or 
+websites to trick people into revealing sensitive 
+data, such as passwords.
+Pluralistic alignment: An approach to developing 
+AI systems that seeks to represent and balance 
+different, and sometimes conflicting, preferences 
+across different groups.
+
+[[page 153]]
+153
+International AI Safety Report 2026
+Glossary
+Post-deployment monitoring:  The processes 
+by which actors, including governments and AI 
+developers, track the impact and performance of 
+AI models and systems, gather and analyse user 
+feedback, and make iterative improvements to 
+address issues or limitations discovered during 
+real-world use.
+Post-training: A stage in developing 
+a general-purpose AI model that follows 
+pre-training. It involves applying techniques 
+such as fine-tuning and reinforcement learning 
+to refine the model’s capabilities  and behaviour.
+Pre-training: The initial and most compute-
+intensive stage in developing a general-purpose 
+AI model, in which a model learns patterns from 
+large amounts of data.
+Privacy: A person’s right to control how others 
+access or process d ata about them.
+Probabilistic: Relating to mathematical 
+probability, or indicating that something 
+is at least partly b ased on chance.
+Prompt: An input to an AI system, such as 
+text or an image, that the system processes 
+to generate an output.
+Race to the bottom: A situation where 
+competition drives actors to progressively reduce 
+safety precautions, quality standards, or oversight 
+to gain an advantage.
+Ransomware: A type of malware that locks or 
+encrypts a user’s files or system, making them 
+inaccessible until a ransom (usually money) is 
+paid to the attacker.
+Reasoning system: A general-purpose AI system 
+that generates intermediate steps or explanations 
+through chains of thought before giving 
+a final output.
+Reconnaissance: The process by which 
+attackers gather information about a target 
+system, organisation, or network before 
+launching an attack. This typically involves 
+identifying weaknesses, entry points, or 
+valuable assets.
+Red-teaming: A systematic process in which 
+dedicated individuals or teams search for 
+vulnerabilities, limitations, or potential for misuse 
+through various methods. In AI, red teams 
+often search for inputs that induce undesirable 
+behaviour in a model or system.
+Reinforcement learning: A machine learning 
+technique for improving model performance 
+by rewarding the model for desirable outputs 
+and penalising undesirable outputs.
+Reinforcement learning from human feedback:  
+A machine learning technique in which an AI 
+model is refined by using human-provided 
+evaluations or preferences as a reward signal, 
+allowing the system to learn and adjust its 
+behaviour to better align with human values 
+and intentions through iterative training.
+Reinforcement learning with verifiable rewards 
+(RLVR): A machine learning technique in which 
+an AI model is refined by using objectively 
+verifiable criteria, such as correctness in 
+a mathematical proof, to improve performance 
+on tasks such as mathematical problem-solving 
+or code generation.
+Reliability (of an AI system): The property 
+of an AI system to consistently perform its 
+intended function under the conditions for 
+which it was designed.
+Resilience: The ability of societal systems 
+to absorb, adapt to, and recover from 
+shocks and harms.
+Retrieval-augmented generation (RAG):  
+A technique that allows AI systems to draw 
+information from other sources during inference, 
+such as Web search results or an internal 
+company database, enabling more accurate 
+or personalised response s in real time.
+Risk: The combination of the probability 
+and severity of a harm.
+Risk factors: Properties or conditions that can 
+increase the likelihood or severity of harm. In AI, 
+for example, poor cybersecurity is a risk factor 
+that could make it easier for malicious actors 
+to obtain and misuse an AI system.
+Risk management: The systematic process 
+of identifying, evaluating, mitigating, and 
+governing risks.
+Risk register: A risk management tool that serves 
+as a repository of all risks, their prioritisation, 
+owners, and mitigation plans.
+
+[[page 154]]
+154
+International AI Safety Report 2026
+Glossary
+Risk threshold: A quantitative or qualitative limit 
+that distinguishes acceptable from unacceptable 
+risks and triggers specific risk management 
+actions when exceeded.
+Risk tolerance: The level of risk that an individual 
+or organisation is willing to take on.
+Robustness (of an AI system): The property of 
+behaving safely in a wide range of circumstances. 
+This includes, but is not limited to, withstanding 
+deliberate attempts by malicious users to make 
+the system act harmfully.
+Safeguard: A protective measure intended 
+to prevent an AI system from causing harm.
+Safety case: A structured argument, typically 
+produced by a developer and supported by 
+evidence, that a system is acceptably safe in 
+a given operational context. Developers or 
+regulators can use safety cases as the basis 
+for important decisions (for instance, whether 
+to deploy an AI system).
+Safety fine-tuning:  A machine learning 
+method in which a pre-trained model is trained 
+on additional data in order to make it safer 
+(see also Fine-tuning).
+Safety (of an AI system): The property of 
+an AI system being unlikely to cause harm, 
+whether through malicious misuse or 
+system malfunctions.
+Sandbagging: Behaviour where a model 
+or system performs below its capabilities 
+on evaluations, potentially to avoid further 
+scrutiny or restrictions.
+Sandboxing: Restricting an AI system’s 
+ability to directly affect the external world 
+(such as by limiting internet access or file 
+system permissions), making the system 
+easier to oversee and control.
+Scaffold(ing): Additional software built to help 
+AI models and systems perform certain tasks. 
+For example, an AI system might be given access 
+to an external calculator app to improve its 
+performance in mathematics.
+Scaling laws: Systematic relationships observed 
+between key factors in AI development – such 
+as the number of parameters in a model or 
+the amount of time, data, and computational 
+resources used in training or inference – and 
+the resulting performance o r capabilities.
+Security (of an AI system): The property of 
+being resilient to technical interference, such 
+as cyberattacks or leaks of the underlying 
+model’s source code.
+Semiconductor: A material (typically silicon) 
+with electrical properties that can be precisely 
+controlled. These form the fundamental building 
+block of computer chips, such as graphics 
+processing units (GPUs).
+Source code: The human-readable set of 
+instructions written in a programming language 
+that defines how a software application 
+operates. Source code can be publicly accessible 
+and modifiable (open source) or private and 
+controlled by its owner (closed source).
+Sycophancy: The tendency of general-purpose 
+AI models and systems to flatter or validate 
+their users, even when that involves providing 
+inaccurate or harmful information.
+Synthetic data: Artificially generated data, such 
+as text or images, that is sometimes used to train 
+AI models, for example, when high -quality data 
+from other sources is scarce.
+(AI) System: An integrated combination of 
+one or more AI models with other components, 
+such as a chat interface, to support practical 
+deployment and operation.
+Systemic risks: Risks that arise from how 
+AI development and deployment changes 
+human behaviour, organisational practices, 
+or societal structures, rather than directly 
+from AI capabilities. (Note that this is different 
+from how ‘systemic risk’ is defined by the AI 
+Act of the European Union. There, the term 
+refers to “risk that is specific to the high-impact 
+capabilities of general-purpose AI models, 
+having a significant impact”.)
+(AI) System integration: The process of 
+combining an AI model with other software 
+components to produce an AI system that is 
+ready for use. For instance, integration might 
+involve combining a general-purpose AI model 
+with content filters and a user interface to 
+produce a chatbot application.
+
+[[page 155]]
+155
+International AI Safety Report 2026
+Glossary
+(AI) System monitoring: The process of 
+inspecting systems while they are running to 
+identify issues with their perform ance or safety.
+Systems-theoretic process analysis (STPA):  
+A hazard analysis method that looks beyond 
+individual component failures to identify 
+how interactions between system parts, 
+human factors or environmental conditions 
+cause accidents.
+Tampering: Secretly interfering with the 
+development of a system to influence 
+its behaviour, for example, by inserting 
+hidden code into an AI system that enables 
+unauthorised control.
+Threat modelling: A process to identify 
+vulnerabilities in an AI model or system and 
+anticipate how it could be exploited, misused, 
+or otherwise cause harm.
+Toxin: A poisonous substance produced by living 
+organisms (such as bacteria, plants, or animals), 
+or synthetically created to mimic a natural toxin, 
+that can cause illness, harm, or death in other 
+organisms depending on its potency and the 
+exposure level.
+TPU (tensor processing unit): A specialised 
+computer chip, developed by Google for 
+accelerating machine learning workloads, 
+that is now widely used to handle large-scale 
+computations for training and run ning AI models.
+Training (of an AI model): A multi-stage process, 
+including pre-training and post-training, by 
+which an AI model learns from data to develop 
+and improve its capabilities. During training, the 
+model’s weights are repeatedly adjusted based on 
+examples, allowing it to recognise patterns and 
+perform different tasks.
+Transformer architecture: The neural network 
+architecture underlying the development of most 
+modern general-purpose AI models. It allows 
+models to effectively improve their capabilities 
+using large amounts of training data and 
+computational resources.
+Uplift study: A systematic assessment comparing 
+how humans perform on a given task with access 
+to an AI model or system, compared to a relevant 
+baseline (such as internet access without AI use). 
+An uplift study thereby measures the marginal 
+contribution offered by the AI model or system 
+against the baseline.
+Vision-Language-Action (VLA) model:  A type 
+of multimodal foundation model that enables 
+robotic actions by taking visual content and 
+natural language instructions as input and 
+returning motor commands as output.
+Vulnerability: A weakness or flaw in a system 
+that could be exploited by a malicious 
+actor to cause harm.
+Watermark: A pattern or mark, visible or 
+imperceptible, embedded within text, images, 
+videos or audio, for example, to indicate its origin 
+or protect against unauthorised use.
+Web crawling: Using an automated program, 
+often called a crawler or bot, to navigate the 
+web and collect data from websites.
+Weights: Model parameters that represent the 
+strength of connection between different nodes 
+in a neural network. Weights play an important 
+part in determining the output of a model in 
+response to a given input and are iteratively 
+updated during model training to improve 
+its performance.
+Whistleblowing: The disclosing of information 
+to internal or external authorities or the public 
+by a member of an organisation about illegal 
+or unethical activities taking place within 
+the organisation.
+Zero-day vulnerability:  A security vulnerability 
+in software or hardware that is unknown to 
+the provider, giving them ‘zero days’ to patch 
+it before it can be exploited.

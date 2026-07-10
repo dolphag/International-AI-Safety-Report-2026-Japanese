@@ -1,0 +1,1179 @@
+# Risk management practices
+# Source PDF pages: 105-119
+
+[[page 105]]
+105
+International AI Safety Report 2026
+Risk management practices
+Section 3.2
+Risk management practices
+Key information
+ — General-purpose AI risk management comprises a range of practices used to 
+identify, assess, and reduce risks from general-purpose AI. These include model-
+level testing and evaluation (such as ‘red-teaming’), organisational processes 
+guiding development and release decisions, conditional safeguards (such as ‘if-then’ 
+commitments), and incident reporting.
+ — Several AI developers have produced Frontier AI Safety Frameworks.  These 
+frameworks include information about risk assessments and specify conditional 
+measures such as access restrictions companies plan to implement for more capable 
+models. They vary in the risks they cover, how they define capability thresholds, and 
+what actions are triggered when threshol ds are reached.
+ — Evidence on the real-world effectiveness of AI risk management practices remains 
+limited. Lack of incident reporting and monitoring makes it difficult to assess how well 
+current practices reduce risks or how consistently they a re implemented.
+ — Since the publication of the last Report (January 2025), risk management has 
+become more structured through new industry and governance initiatives. New 
+instruments such as the EU’s General-Purpose AI Code of Practice, China’s AI Safety 
+Governance Framework 2.0, and the G7’s Hiroshima AI Process Reporting Framework, 
+together with company-led initiatives, illustrate the trend towards more standardised 
+approaches to transparency, evaluation, and inci dent reporting.
+ — Key challenges for policymakers include prioritising among the diverse risks 
+posed by general-purpose AI, and clarifying which actors across the AI value 
+chain are best positioned to mitigate them.  These challenges are compounded by 
+limited visibility into how risks are identified, evaluated, and managed in practice, 
+as well as fragmented information sharing between developers, deployers, and 
+infrastructure providers.
+AI risk management comprises a range 
+of practices that aim to identify, assess, and 
+reduce the likelihood and severity of risks 
+associated with AI systems . These practices 
+can be implemented by AI developers, deployers, 
+evaluators, and regulators. Examples include 
+threat modelling, risk tiering, red-teaming, 
+auditing, and incident reporting . This section 
+outlines current risk management practices, 
+new developments, and remaining limitations.
+Since the start of 2025, several new international 
+initiatives for general-purpose AI risk management 
+have developed, including organisational 
+transparency and risk reporting frameworks as 
+well as regulatory and governance frameworks. 
+
+[[page 106]]
+Risk management practices
+106
+International AI Safety Report 2026
+Remaining challenges include limited 
+standardisation, which complicates compliance 
+and assessment, and limited evidence regarding 
+real-world effectiveness. Further, institutional, 
+cultural, and political contexts differ globally, 
+which implies that approaches to identifying 
+and managing risks, including acceptable risk 
+thresholds, may vary across regions.
+This section’s discussion of risk management 
+approaches is descriptive: it aims to inform 
+actors in the AI ecosystem about current 
+global approaches to risk management . Where 
+available, evidence on the effectiveness and 
+limitations of these approaches is discussed, 
+but policy recommendations are outside the 
+scope of this work.
+Components of risk 
+management
+Risk management is an iterative process with 
+practices and methods that span the entire AI 
+development and deployment cycle, but which 
+work together coherently (969). Risk management 
+for general-purpose AI can include roles for a wide 
+range of actors including data scientists, model 
+engineers, auditors, domain experts, executives, 
+end users, impacted communities, third-party 
+suppliers, policymakers, governments, standards 
+organisations, and civil society organisations (970, 
+971, 972). Leading risk management standards are 
+often interoperable, but use different terminology 
+to describe the elements of risk management 
+(973, 974). They typically have four interconnected 
+components (Figure 3.4): identifying; analysing 
+and evaluating; mitigating; and governing risk (970, 
+973, 975, 976). The tables below provide illustrative 
+examples of relevant methods, techniques, and 
+tools. Practices continue to evolve, so the tables 
+are not exhaustive, and applicability will vary 
+across contexts.
+Risk identification
+Risk identification is the process of finding, 
+recognising, and describing risks . Comprehensive 
+risk identification typically encompasses 
+capability-driven assessments, which test 
+whether models possess specific dangerous 
+Risk mitigation
+Prioritising, evaluating,
+and implementing risk 
+reducing controls
+Risk management has four components
+Risk analysis/evaluation
+Determining the
+levels of risk relative
+to risk tolerance
+Risk identiﬁcation
+Finding, recognising,
+and describing risks
+Risk governance
+Establishing 
+accountability and 
+oversight for risk 
+management
+Figure 3.4: The four categories of methods for general-purpose AI risk management: risk identification; 
+risk analysis and evaluation; risk mitigation; and risk governance. These form an iterative and 
+cyclical process. Risk governance, shown in the centre, facilitates the success of other components. 
+Source: International AI Safety Report 2026 .
+
+[[page 107]]
+107
+International AI Safety Report 2026
+Risk management practices
+capabilities (977), as well as risk modelling (978) 
+and forecasting (715*), which are used to explore 
+existing and emerging risks. Table 3.1 provides 
+various examples of risk identification practices. 
+Risk identification also draws on engagement 
+with relevant experts and communities to 
+understand the broader context of how risks 
+emerge (979, 980). Mechanisms such as bug 
+bounty programmes can support this process 
+by incentivising the identification of previously 
+unknown vulnerabilities (981) (Table 3.1). A key 
+goal of risk identification is to account for both 
+well-known, well-understood risks and potential 
+future risks that remain uncertain or poorly 
+characterised (982). This is particularly important 
+for general-purpose AI, where many risks may not 
+yet be fully understood or observable (875).
+Risk identification 
+practice
+Explanation and examples of use in general-purpose  
+AI risk management
+Bug bounty 
+programmes
+Bug bounties or vulnerability disclosure programmes incentivise people 
+to find and report vulnerabilities in AI systems. Several developers have 
+implemented bug bounty programmes (983*, 984*).
+Expert 
+consultation
+Domain experts, users, and impacted communities provide insights into likely 
+risks. There are emerging guidelines for participatory and inclusive AI (985).
+Fishbone 
+(Ishikawa) 
+diagram
+Fishbone diagrams are well-established root cause analysis tools, and 
+researchers have proposed using them for structured analysis of AI risk 
+incidents (986).
+Forecasting Forecasting is the process of predicting future events or trends based on 
+analysis of past and present data. It has been used to compare the relative 
+likelihood of, for example, different economic outcomes due to advanced 
+AI (715*, 987).
+Risk taxonomy Risk taxonomies are a way to categorise and organise risks across multiple 
+dimensions. There are several that outline risks from general-purpose AI 
+(906, 988).
+Scenario planning Scenario planning entails developing plausible future scenarios and 
+analysing how risks materialise. This has been used to explore the risks 
+and impacts of AI models (989).
+Threat modelling Threat modelling is a process for identifying threats and vulnerabilities to 
+a system. Numerous AI developers highlight their use of threat modelling 
+to anticipate potential misuse scenarios of AI systems (990*, 991*).
+Table 3.1: Example methods for AI risk identification listed alphabetically. The methods included 
+are designed to support risk identification for many different risk types including risks from malicious 
+use, risks from malfunctions, and systemic risks. Given the nascent nature of general-purpose AI risk 
+management, not all methods will be suitable for every AI developer or deployer.
+Threat modelling and risk taxonomies are 
+prominent risk identification methods
+Two prominent methods for identifying the risks 
+from general-purpose AI are threat modelling 
+(a structured process for mapping how AI-related 
+risks may materialise) and risk taxonomies. Meta, 
+for example, uses threat modelling exercises 
+to anticipate potential misuse scenarios of its 
+AI models (990*), and Anthropic includes threat 
+
+[[page 108]]
+Risk management practices
+108
+International AI Safety Report 2026
+modelling as part of its ASL-3 Deployment 
+Standard (991*). AI risk and hazard taxonomies, 
+which list risk categories and examples, can 
+equally serve as a starting point to conceptualise, 
+identify, and specify the salient risks associated 
+with general-purpose AI in specific application 
+domains (906, 988, 992, 993).
+Risk analysis and evaluation
+Risk analysis and evaluation is the process of 
+determining the level of risk of an AI model or 
+system and comparing it against established 
+criteria to assess acceptability or the need 
+for mitigation (994, 995, 996, 997). It includes 
+practices such as measuring model performance 
+on benchmarks (998) and evaluations (176*, 715*), 
+conducting red-teaming exercises (999*), impact 
+assessments (1000), and audits (1001, 1002). See 
+Table 3.2 for examples of general-purpose AI 
+risk analysis and evaluation . The methods are 
+designed to support analysis and evaluation for 
+many different risk types simultaneously.
+Key goals of risk analysis and evaluation are 
+carrying out evaluations of model capabilities 
+and vulnerabilities (1003), leveraging robust 
+risk modelling to inform decisions about risk 
+thresholds (1004, 1005), and understanding how 
+AI systems are used in practice in order to assess 
+downstream societal impacts (869, 904*, 905*, 
+1006). Risk analysis and evaluation processes 
+are often considered to be more likely to identify 
+risks when they incorporate independent review 
+(1001, 1007), draw on cross-sector expertise 
+(1008), and include diverse perspectives from 
+multiple domains and disciplines, as well as 
+from impacted communities (1009, 1010).
+Risk analysis/ 
+eval uation practice
+Explanation and examples of use in general-purpose  
+AI risk management
+Audits Audits are formal reviews of AI models’ performance and impacts and/
+or an organisation’s compliance with standards, policies, and procedures, 
+carried out internally or by an external party. AI auditing is a growing field, and 
+numerous tools and practices exist for auditing AI models and the practices 
+of AI model developers (1001, 1011, 1012, 1013, 1014, 1015, 1016, 1017, 1018).
+Benchmarks Benchmarks are standardised, often quantitative tests or metrics used to 
+evaluate and compare the performance of AI systems on a fixed set of tasks 
+designed to represent real-world usage (177, 1003).
+Bowtie method The bowtie method is a well-known method for visualising where controls can 
+be added to mitigate risk events. It provides a clear differentiation between 
+proactive and reactive risk management (1019).
+Delphi method The Delphi method is a group decision-making technique that uses a series of 
+questionnaires to gather consensus from a panel of experts (1020, 1021). It has 
+been used to help explore possible futures with advanced AI (1022).
+Field-testing Field-testing evaluates an AI system’s performance and impact in a real-
+world, operational environment. Some research emphasises field-testing 
+as a complement to model evaluation for assessing real-world outcomes 
+and consequences (869, 1023*).
+Impact 
+assessment
+Impact assessments assess the potential impacts of a technology or project . 
+This might include quantifying, aggregating, and prioritising impacts . The EU 
+AI Act, for example, requires developers of high-risk AI systems to carry out 
+Fundamental Rights Impact Assessments (1024).
+
+[[page 109]]
+109
+International AI Safety Report 2026
+Risk management practices
+Risk analysis/ 
+eval uation practice
+Explanation and examples of use in general-purpose  
+AI risk management
+Model evaluation Model evaluations include processes and tests to assess and measure an AI 
+model’s performance on a particular task . There are numerous AI evaluations 
+to assess different capabilities and risks, including for safety, security, and 
+social impact (1025*, 1026*).
+Probabilistic risk 
+assessment
+Probabilistic risk assessment is a methodology for evaluating risks associated 
+with complex systems or processes that incorporates uncertainty . It has been 
+adapted for advanced AI systems (1027).
+Red-teaming Red-teaming is an exercise in which a group of people or automated systems 
+pretend to be an adversary and attack an organisation’s technological systems in 
+order to identify vulnerabilities. Numerous AI companies have internal practices 
+for red-teaming of AI systems (458*, 1028*). Red-teaming can also be conducted 
+by actors outside of companies. These teams face challenges such as limited 
+access, but can also surface distinct insights (689).
+Risk matrices Risk matrices are a visual tool to help prioritise risks according to their 
+likelihood of occurrence and potential impact (1027). Some AI developers 
+include basic risk matrices in their Frontier AI Safety Frameworks (1029*).
+Risk thresholds/
+risk tiers
+Risk thresholds or tiers are quantitative or qualitative limits that distinguish 
+acceptable from unacceptable risks and trigger specific risk management actions 
+when exceeded. For general-purpose AI, they are determined by a combination of 
+capabilities, impact, compute, reach, and other factors (946, 1005, 1030, 1031).
+Risk tolerance Risk tolerance refers to the level of risk that an organisation is willing to accept . 
+In AI, risk tolerances are often set implicitly through company policies and 
+practices, while some regulatory regimes explicitly define unacceptable risks 
+and attach legal consequences (1032). Some companies describe their risk 
+tolerance in terms of a new model’s marginal risk; that is, the extent to which 
+a model counterfactually increases risk beyond that already posed by existing 
+models or other technologies (1033).
+Safety cases A safety case is a structured argument, supported by evidence, that a system is 
+acceptably safe to operate in a particular context . Recent literature (1037, 1038, 
+1039) has explored safety cases for frontier AI systems and certain Frontier AI 
+Safety Frameworks reference them (1040*).
+System safety 
+analysis
+System safety analysis highlights dependencies between components and the 
+system that they are part of, in order to anticipate how system-level hazards 
+can emerge from component or process failures, or interactions between 
+subsystems, human factors, and environmental conditions . Approaches applied 
+for AI systems in the literature include systems-theoretic process analysis 
+(STPA) (683, 1034*, 1035, 1036).
+Table 3.2: Example methods for AI risk analysis/evaluation, listed alphabetically. Given the nascent nature 
+of general-purpose AI risk management, not all methods will be suitable for every AI developer or deployer.
+
+[[page 110]]
+Risk management practices
+110
+International AI Safety Report 2026
+Common risk analysis tools include 
+benchmarks and model evaluations
+Benchmarks and model evaluations are 
+standardised tests to assess general-purpose 
+AI systems’ performance on specific tasks. 
+Researchers have developed a broad range of 
+benchmarks and evaluations, including sets of 
+challenging multiple choice questions, software 
+engineering problems, and work-related tasks 
+in simulated office environments (188*, 629, 998, 
+1041, 1042, 1043, 1044*, 1045, 1046*, 1047, 1048, 
+1049). Harmful capability evaluations (715*) are 
+used to assess whether a general-purpose AI 
+model or system has particularly dangerous 
+knowledge or skills, such as the ability to aid 
+in cyberattacks (see §2.1.3. Cyberattacks).
+Highly consequential decisions by companies 
+and governments about model releases partially 
+rely on these evaluations (1050*, 1051*, 1052). 
+However, benchmarks significantly vary in 
+quality and scope (998, 1003), and it can be 
+difficult to judge their validity due to numerous 
+shortcomings in benchmarking practices (902, 
+909, 1003, 1053*). For example, benchmarks can 
+become ‘saturated’ – when many models’ scores 
+approach the top score – meaning they no longer 
+strongly distinguish between models . Models are 
+also increasingly likely to identify certain tasks 
+as evaluations and display different behaviours 
+than they would on similar tasks in deployment 
+contexts due to ‘situational awareness’ (see 
+§2.2.2. Loss of control). Finally, benchmarks and 
+evaluations have well-documented limitations: 
+notably, they fail to capture risks associated 
+with general-purpose AI use in new domains 
+and for novel tasks, as test conditions differ 
+from real-world usage to varying degrees (913) 
+(see §1.2. Current capabilities and §3.1. Technical 
+and institutional challenges).
+Red-teaming allows for more domain-
+specific assessments of risk
+Another common method for assessing risks is 
+red-teaming. A ‘red team’ is a group of evaluators 
+tasked with searching for vulnerabilities, 
+limitations, or potential for misuse . Red-teaming 
+can be domain-specific and performed by domain 
+experts, or open-ended to explore new risk 
+factors. For example, a red team might explore 
+‘jailbreaking’ attacks that subvert the model’s 
+safety restrictions (1054, 1055*, 1056, 1057, 
+1058, 1059*). In contrast to benchmarks, a key 
+advantage of red-teaming is that red teams can 
+adapt their evaluations to the specific system 
+being tested. For example, red teams can design 
+custom inputs to identify worst-case behaviours, 
+malicious use opportunities, and unexpected 
+failures. However, it can require special access to 
+models and may fail to surface important classes 
+of risks (999*, 1028*).
+Importantly, the absence of identified risks does 
+not imply that those risks are low: prior work 
+shows that bugs frequently evade detection, 
+particularly when red teams have limited access 
+or resources (1060). Research has also called 
+into question whether red-teaming can produce 
+reliable and reproducible results (1061). The 
+composition of the red team and the instructions 
+provided to red-teamers (1062*), the number of 
+attack rounds (1063*), and the model’s access to 
+tools (1064, 1065) can significantly influence the 
+outcomes, including the risk surface covered . 
+Comprehensive guidelines on red-teaming aim 
+to address some of these challenges (1066).
+Risk mitigation
+Risk mitigation is the process of prioritising, 
+evaluating, and implementing controls and 
+countermeasures to reduce identified risks. 
+Examples are access controls (991*), continuous 
+monitoring (986), and if-then commitments (700). 
+Mitigating risk raises a key question: what is the 
+acceptable level of risk? Recent frameworks and 
+company policies have begun to formalise ‘risk 
+acceptance’ criteria (965, 1040*). However, setting 
+appropriate thresholds remains challenging 
+especially for risks with wide societal impacts (986, 
+1067). No established mechanism currently exists 
+for validating risk acceptance decisions made by 
+developers prior to release (1005).
+The risk mitigation methods described in 
+Table 3.3 below are adaptable and can mitigate 
+a range of risks, including some unexpected 
+risks. The table does not include technical 
+mitigation methods such as adversarial training, 
+content filters, and chain-of-thought monitoring. 
+These are covered in §3.3. Technical safeguards 
+and monitoring, as well as throughout the 
+Report in the ‘Mitigations’ paragraphs for 
+each risk in §2. Risks.
+
+[[page 111]]
+111
+International AI Safety Report 2026
+Risk management practices
+Risk mitigation 
+practice
+Explanation and examples of use in general-purpose  
+AI risk management
+Acceptable 
+use policies
+An acceptable use policy is a set of rules and guidelines for the responsible, 
+ethical, and legal use of AI models . It is common for AI developers to publish 
+acceptable use policies, as well as prohibited use policies, with new model releases 
+(1068*, 1069*).
+Access 
+control/user 
+vetting
+Access controls include using policies and rules to restrict access to AI models, 
+data, and systems based on user roles, attributes, and other conditions to prevent 
+unauthorised use, manipulation, or data breaches. AI companies frequently disable 
+accounts found to be engaging in criminal activity (486*) and include user vetting 
+and Know-Your-Customer screenings to ensure that models are only used by 
+trusted actors (991*, 1029*, 1070).
+Behaviour/
+model 
+specification
+An AI behaviour specification is a document that defines how an AI model 
+should behave in various situations . It serves as a blueprint for AI alignment and 
+safety, guiding model development, training, evaluation, and outputs . Several AI 
+companies use model specification documents and make at least parts of them 
+public (1071*, 1072*).
+Continuous 
+monitoring
+Continuous monitoring is the ongoing, automated process of observing, analysing, 
+and controlling AI systems in use, tracking their performance and limiting their 
+behaviour to ensure reliability, efficacy, and safety. There are numerous tools 
+available for continuous monitoring (1073*) as well as techniques to support 
+AI observability (1074).
+Defence-in-
+depth
+Defence-in-depth is the idea that multiple independent and overlapping layers of 
+defence can be implemented such that if one fails, others will still be effective (1075, 
+1076). Multiple Frontier AI Safety Frameworks reference it (e.g. (1077*)).
+Ecosystem 
+monitoring
+This is the process of monitoring the broader AI ecosystem, including compute 
+and hardware tracking, model provenance, data provenance, and usage patterns . 
+The research literature discusses such monitoring in relation to risks from 
+general-purpose AI (690).
+If-then 
+commitments
+If-then commitments are a set of technical and organisational protocols and 
+commitments to manage risks as AI models become more capable . Several AI 
+developers employ these types of commitments as part of their Frontier AI Safety 
+Frameworks (991*, 1040*, 1078*).
+Red lines or 
+prohibitions
+Red lines are specific boundaries expressed as capabilities, impact, or types of use. 
+The concept appears in public statements and initiatives, as well as in regulatory 
+prohibitions (1079, 1080, 1081). The literature also notes limitations of red-line 
+approaches, including challenges around consensus and enforceability.
+Release and 
+deployment 
+strategies
+Release and deployment strategies for general-purpose AI can include using 
+staged releases or API access so that more mitigation options are available in the 
+event of misuse or unexpected harm (1050*, 1051*, 1082).
+Table 3.3: Example methods for AI risk mitigation listed alphabetically. The methods included are 
+designed to support risk mitigation for many different risk types simultaneously, including risks from 
+malicious use, risks from malfunctions, and systemic risks. Given the nascent nature of general-purpose 
+AI risk management, not all methods will be suitable for every AI developer or deployer.
+
+[[page 112]]
+Risk management practices
+112
+International AI Safety Report 2026
+Defence-in-depth and release strategies 
+are important mitigation tools
+A ‘defence-in-depth’ model can support general-
+purpose AI risk management . In this context, 
+‘defence-in-depth’ refers to a combination of 
+technical, organisational, and societal measures 
+applied across different stages of development 
+and deployment (Figure 3.5). This means creating 
+layers of independent safeguards, so that if one 
+layer fails, other layers can still prevent harm . 
+A commonly cited example of a defence-in-depth 
+model is the range of preventative measures 
+that are deployed to prevent infectious diseases . 
+Vaccines, masks, and hand-washing, among 
+other measures, can reduce the risk of infection 
+substantially in combination, even though none 
+of these methods are 100% effective on their 
+own (1083*). For general-purpose AI, defence-
+in-depth will include controls that are not on the 
+AI model itself, but on the broader ecosystem. 
+This includes (for example) controls on the 
+materials needed to execute a biological attack 
+such as reagents (1084, 1085). However, defence-
+in-depth measures primarily address risks related 
+to accidents, malfunction, and malicious use, 
+and may play less of a role in managing systemic 
+risks (see §3.5. Building societal resilience).
+A company’s release and deployment strategy 
+is an important component of risk mitigation . 
+Decisions about how models are made available 
+to users can substantially affect risk exposure 
+(1082). Different release and deployment options 
+include staged release to limited user groups, 
+access through controlled online services (such 
+as APIs), and the use of licensing agreements 
+and acceptable use policies that legally prohibit 
+certain harmful applications (176*, 1086*, 1087). 
+§3.4. Open-weight models discusses in more 
+detail how releasing model weights  affects risks.
+Risk governance
+Risk governance is the process by which risk 
+management evaluations, decisions, and actions 
+are connected to the strategy and objectives 
+of an organisation or other entity (1088, 1089). 
+Table 3.4 provides an overview of common risk 
+governance techniques. As shown in Figure 3.4, 
+risk governance can be understood as the 
+core of risk management as it facilitates the 
+Training
+interventions
+Defence-in-depth layers multiple safeguards to reduce risk
+Deployment
+interventions
+Post-deployment 
+monitoring
+Societal 
+resilience
+Harm eventThreats
+Vulnerability
+in defence
+layer
+Risk trajectory
+Figure 3.5: A ‘Swiss cheese diagram’ illustrating the defence-in-depth approach: multiple 
+layers of defences can compensate for flaws in individual layers. Current risk management 
+techniques for AI have flaws, but layering them can offer much stronger protection against risks. 
+Source: International AI Safety Report 2026 .
+
+[[page 113]]
+113
+International AI Safety Report 2026
+Risk management practices
+effective operation of other components of 
+risk management. It provides accountability, 
+transparency, and clarity that support informed 
+risk management decisions. Risk governance 
+can include practices such as incident reporting 
+(1090), risk responsibility allocation (965), and 
+whistleblower protection (1091). More broadly, risk 
+governance may include guidance, frameworks, 
+legislation, regulation, national and international 
+standards, as well as training and educational 
+initiatives. A key purpose of risk governance is to 
+establish organisational policies and mechanisms 
+that clarify how risk management responsibilities 
+are allocated across an organisation or other 
+entity, in order to support appropriate oversight 
+and accountability (965, 1092*, 1093).
+Risk governance 
+practice
+Explanation and examples of use in general-purpose  
+AI risk management
+Documentation Documentation practices help track key information about AI systems, such as 
+training data, design choices, intended uses, limitations, and risks . ‘Model cards’ 
+and ‘system cards’, which provide information about how an AI model or system 
+was trained and evaluated, are examples of prominent AI documentation best 
+practices (1094, 1095*).
+Incident 
+reporting
+Incident reporting is the process of systematically documenting and sharing 
+cases in which developing or deploying AI has caused direct or indirect harm . 
+There are several platforms that facilitate incident reporting for AI (1096, 1097), 
+and frameworks to facilitate more effective AI incident reporting (1090).
+Risk 
+management 
+frameworks
+Risk management frameworks are organisational plans to reduce gaps in risk 
+coverage, coordinate various risk management activities, and implement checks 
+and balances. Frameworks specific to general-purpose AI (986, 1098) often 
+reference the other measures mentioned in this section .
+Risk register A risk register is a repository of various risks, their prioritisation, owners, and 
+mitigation plans. These are relatively common in many industries, including 
+cybersecurity (1099), and are sometimes used to fulfil regulatory compliance 
+requirements.
+Risk 
+responsibility 
+allocation
+The allocation of roles and responsibilities for risk management within an 
+organisation can structure internal oversight of decision-making (1002, 1093). 
+Such arrangements are reflected in some governance frameworks, including 
+the EU’s General-Purpose AI Code of Practice (965).
+Transparency 
+reports
+Transparency reports describe an AI company’s risk management practices by 
+publicly disclosing certain information or by sharing documentation with industry 
+groups or government bodies. For example, numerous AI companies submit 
+Hiroshima AI Process (HAIP) transparency reports (1100).
+Whistleblower 
+protection
+Because much of AI development occurs behind closed doors, some 
+governance frameworks include whistleblower protections to enable disclosure 
+of potential risks to authorities (1091).
+Table 3.4: Example methods for AI risk governance listed alphabetically. The methods included are 
+designed to support risk governance for many different risk types simultaneously, including risks from 
+malicious use, risks from malfunctions, and systemic risks. Given the nascent nature of general-purpose 
+AI risk management, not all methods will be suitable for every AI developer or deployer.
+
+[[page 114]]
+Risk management practices
+114
+International AI Safety Report 2026
+Documentation and transparency 
+are components of risk governance
+Documentation and institutional transparency 
+mechanisms, together with information-sharing 
+practices, facilitate external scrutiny and 
+support efforts to manage risks associated with 
+general-purpose AI (1101, 1102). It has become 
+common practice to publish the results of pre-
+deployment tests in a ‘model card’ or ‘system 
+card’, along with basic details about the model 
+or system, including how it was trained and what 
+its potential limitations are (1094, 1095*). Some 
+developers also publish transparency reports 
+that include details about their risk management 
+practices more broadly (1103). Other elements 
+of documentation and transparency include 
+monitoring and incident reporting (176*, 1083*, 
+1103) and information sharing, which can be 
+facilitated by third parties such as the Frontier 
+Model Forum. Some regulatory frameworks, 
+such as the EU AI Act or California’s Transparency 
+in Frontier Artificial Intelligence Act - Senate 
+Bill No. 53 (SB 53) (1081, 1104), mandate 
+information sharing about general-purpose 
+AI risks in some cases.
+Leadership commitment and 
+incentives shape risk management 
+practices
+Organisational culture, leadership structure, 
+and incentives affect risk management efforts in 
+various ways (1105). Leadership commitment and 
+incentive structures are often relevant to how risk 
+management policies operate in practice . Some 
+developers have internal decision-making panels 
+that deliberate on how to safely and responsibly 
+design, develop, and review new AI systems . 
+Oversight and advisory committees, trusts, or AI 
+ethics boards can also serve as mechanisms for 
+risk management guidance and organisational 
+oversight (1092*, 1106, 1107, 1108). Researchers 
+have argued that challenges with voluntary 
+self-governance mean that third-party auditing, 
+verification, and standardisation could help 
+strengthen general-purpose AI risk management 
+(1001, 1011, 1109, 1110, 1111, 1112).
+†  Signatories as of December 2025 include: Accexible, AI Alignment Solutions, Aleph Alpha, Almawave, Amazon, Anthropic, 
+Bria AI, Cohere, Cyber Institute, Domyn, Dweve, EUC Inovação Portugal, Fastweb, Google, Humane Technology, IBM, Lawise, 
+LINAGORA, Microsoft, Mistral AI, Open Hippo, OpenAI, Pleias, re-inventa, ServiceNow, Virtuo Turi ng, and WRITER .
+Organisational risk 
+management, transparency, 
+and risk reporting 
+frameworks
+Several new initiatives focus on risk management 
+processes, documentation, and transparency . 
+In its current form, the EU General-Purpose 
+AI Code of Practice functions as a voluntary 
+framework to guide transparency, copyright, 
+and safety and security practices to support 
+compliance with the EU AI Act’s provisions for 
+general-purpose AI (965). As of December 2025, 
+more than two dozen companies† have signed. 
+The G7 Hiroshima AI Process (HAIP) Reporting 
+Framework (1100) is the first international 
+framework for voluntary public reporting of 
+organisational risk management practices for 
+advanced AI systems. At least 20 developers have 
+published public transparency reports covering 
+risk identification, evaluation metrics, mitigation 
+strategies, and data secu rity processes .
+AI developers have adopted voluntary 
+transparency commitments . In China, pledges 
+by 17 Chinese AI companies, coordinated by the 
+AI Industry Alliance of China, were released in 
+December 2024 (1113) and updated in 2025 (1114). 
+At the May 2024 AI Seoul Summit in South Korea, 
+16 AI developers from multiple countries signed 
+voluntary commitments to publish Frontier AI 
+Safety Frameworks for their most capable models 
+and systems, and to adopt risk management 
+practices across model development and 
+deployment stages (1052).
+Frontier AI Safety Frameworks have 
+become a prominent organisational 
+approach to AI risk management
+Since 2023, several frontier AI developers have 
+voluntarily published documents describing 
+how they plan to identify and respond to serious 
+risks from their most advanced systems . These 
+Frontier AI Safety Frameworks describe how an AI 
+developer plans to evaluate, monitor, and control 
+its most advanced AI models and systems before 
+
+[[page 115]]
+115
+International AI Safety Report 2026
+Risk management practices
+and during deployment. These frameworks 
+share many similarities, but differ in key respects 
+(1115, 1116). Most focus on risks associated with 
+chemical, biological, radiological, and nuclear 
+(CBRN) threats, advanced cyber capabilities, and 
+advanced autonomous behaviour (1115, 1117). 
+A minority of frameworks address additional risk 
+domains such as unlawful discrimination at scale 
+and child sexual exploitation.
+Several developers updated their 
+frameworks in 2025, adding new sections 
+on harmful manipulation, misalignment 
+risk, and autonomous replication and 
+adaptation (1078*, 1118*). While many 
+frameworks describe similar risk management 
+approaches – including threat modelling, 
+red-teaming, and dangerous capability 
+evaluations – they vary in their definitions 
+of risk tiers and thresholds, the frequency 
+of evaluations, buffers between evaluations 
+and thresholds, and the comprehensiveness 
+of their mitigation commitments (for example, 
+whether they include deleting model weights 
+versus just pausing development) (1115, 1119). 
+See Table 3.5 for mo re information .
+Many actions in Frontier AI Safety 
+Frameworks are based on if-then 
+commitments
+A key part of Frontier AI Safety Frameworks 
+are ‘if-then commitments’. These are conditional 
+protocols that trigger specific responses when AI 
+models and systems reach predefined capability 
+thresholds (1120). For example, an if-then 
+commitment might state that if a model is found 
+to have the ability to meaningfully assist novices 
+in creating and deploying CBRN weapons, then 
+the developer will implement enhanced security 
+measures, deployment controls, and real-time 
+monitoring (991*).
+In 2025, several AI developers announced that 
+new models triggered early warning alerts or 
+that they could not rule out the possibility that 
+further evaluation would show that models have 
+crossed capability thresholds. This prompted 
+them to apply heightened safeguards as 
+a precautionary measure (7*, 33*, 1121*). Frontier 
+AI Safety Frameworks commonly require an initial 
+capabilities evaluation prior to risk mitigation, as 
+well as a residual risk analysis or a safety case, 
+often informed by red-teaming, after mitigation. 
+See Table 3.5 for detailed information.
+AI developer Covered risks Risk tiers or equivalent and associated safeguards
+OpenAI
+Preparedness 
+Framework 2 
+(1078*)
+1.  Biological and chemical 
+capabilities
+2.  Cybersecurity 
+capabilities
+3.  AI self-improvement 
+capabilities
+High: Could amplify existing pathways to severe 
+harm (Require security controls and safeguards )
+Critical: Could introduce unprecedented new 
+pathways to severe harm (Halt further development 
+until specified safeguards and security controls 
+standards meet a Critical standard)
+Anthropic
+Responsible 
+Scaling Policy 2.2 
+(991*)
+1.  CBRN weapons
+2.  Autonomous AI 
+research and 
+development (AI R&D)
+3.  Cyber operations (under 
+assessment)
+AI Safety Levels (ASL)
+ASL-1: No significant catastrophic risk
+ASL-2: Early signs of dangerous capabilities ( Models 
+must meet the ASL-2 Deployment and Security 
+Standards)
+ASL-3: Substantially increased catastrophic misuse 
+risk (Models must meet the ASL-3 Deployment and/
+or Security Standards)
+ASL-4+: Future classifications (not yet defined)
+
+[[page 116]]
+Risk management practices
+116
+International AI Safety Report 2026
+AI developer Covered risks Risk tiers or equivalent and associated safeguards
+Google
+Frontier Safety 
+Framework 3.0 
+(1040*)
+1.  Misuse
+ a. CBRN
+ b. Cyber
+ c. Harmful manipulation
+2.  Machine learning R&D
+3.  Misalignment/
+Instrumental reasoning
+Critical Capability Levels
+Capability levels at which, absent mitigation 
+measures (safety cases for deployments and 
+security mitigations aligned with RAND security 
+levels 2, 3, or 4 (1122)), AI models or systems may 
+pose heightened risk of severe harm. The capability 
+levels include ‘early warning evaluations’, with 
+specific ‘alert thresholds’
+Meta
+Frontier AI 
+Framework 1.1 
+(990*)
+1. Cybersecurity
+2.  Chemical and 
+biological risks
+Risk Threshold Levels
+Moderate (release with appropriate security 
+measures and mitigations)
+High (do not release)
+Critical (stop development)
+Amazon
+Frontier Model 
+Safety Framework 
+(1123*)
+1.  CBRN weapons 
+proliferation
+2.  Offensive cyber 
+operations
+3.  Automated AI R&D
+Critical Capability Thresholds
+Model capabilities that have the potential to cause 
+significant harm to the public if misused. ( If the 
+thresholds are met or exceeded, the model will 
+not be publicly deployed without appropriate 
+risk mitigation measures)
+Microsoft
+Frontier 
+Governance 
+Framework (1124*)
+1.  CBRN weapons
+2.  Offensive cyber 
+operations
+3.  Advanced autonomy 
+(including AI R&D)
+Risk Levels
+Low or Medium (Deployment allowed in line with 
+Responsible AI Program requirements)
+High or Critical (Further review and mitigations 
+required)
+NVIDIA
+Frontier AI Risk 
+Assessment 
+(1029*)
+1.  Cyber offence
+2.  CBRN
+3.  Persuasion and 
+manipulation
+4.  Unlawful discrimination 
+at scale
+Risk Thresholds – model risk (MR) scores
+MR1 or MR2 (Evaluation results are documented 
+by engineering teams)
+MR3 (Risk mitigation measures and evaluation 
+results are documented by engineering teams 
+and periodically reviewed )
+MR4 (A detailed risk assessment should be completed 
+and business unit leader approval is required)
+MR5 (A detailed risk assessment should be 
+completed and approved by an independent 
+committee e.g., NVIDIA’s AI ethics committee )
+Cohere
+Secure AI Frontier 
+Model Framework 
+(1125*)
+1.  Malicious use 
+(e.g. malware, child 
+sexual exploitation)
+2.  Harm in ordinary, 
+non-malicious use, 
+e.g. outputs that result in 
+an illegal discriminatory 
+outcome or insecure 
+code generation
+Likelihood and Severity of Harm in Context
+Low
+Medium
+High
+Very High
+(Risk mitigations and security controls are in place 
+for all systems and processes; additional mitigations 
+need to be adapted to the AI system and use case 
+in which a model is deployed )
+
+[[page 117]]
+117
+International AI Safety Report 2026
+Risk management practices
+AI developer Covered risks Risk tiers or equivalent and associated safeguards
+xAI
+Risk Management 
+Framework (1126*)
+1.  Malicious use (including 
+CBRN and cyber 
+weapons)
+2.  Loss of control
+Thresholds
+Thresholds are set based on scores on public 
+benchmarks for dangerous capabilities ( Heightened 
+safeguards are applied for high-risk scenarios such 
+as large-scale violence or terrorism )
+Magic
+AGI Readiness 
+Policy  
+(1127*)
+1.  Cyber offence
+2.  Automated AI R&D
+3.  Autonomous replication 
+and adaptation
+4.  Biological weapons 
+assistance
+Critical Capability Thresholds
+Quantitative thresholds on capability benchmarks 
+(If crossed, conduct dangerous capability 
+evaluations, information security measures, and 
+deployment mitigations, or halt development )
+Naver
+AI Safety 
+Framework 
+(1128*)
+1.  Loss of control
+2.  Misuse (e.g. biochemical 
+weaponisation)
+Risk Levels
+Low risk (Deploy AI systems, but perform monitoring 
+afterwards to manage risks)
+Risk identified (Either open AI systems only to 
+authorised users to mitigate risks, or withhold 
+deployment until additional safety measures are 
+taken, depending on use case )
+High risk (Do not deploy AI systems)
+G42
+Frontier AI Safety 
+Framework (1129*)
+1.  Biological threats
+2.  Offensive cybersecurity
+3.  Autonomous operation 
+and advanced 
+manipulation
+Risk Levels
+Level 1 (Basic safeguards for minimal risks 
+and potential for open source release)
+Level 2 (Real-time monitoring, prompt filtering, 
+behavioural anomaly detection, access controls, 
+red-teaming, and adversarial simulations )
+Level 3 (Advanced safeguards including red-
+teaming, phased rollouts, adversarial testing, 
+encryption, multi-party access controls, and 
+zero-trust architecture)
+Level 4 (Maximum safety protocols for high-stakes 
+models and maximum security measures )
+Table 3.5: The first set of Frontier AI Safety Frameworks that have been released by a subset of the 
+AI developers that signed the Frontier AI Safety Commitments. The frameworks cover similar risks 
+(with slight variations) and employ different risk tiers and risk management approaches.
+The effectiveness of Frontier AI Safety 
+Frameworks is uncertain
+Frontier AI Safety Frameworks can serve as risk 
+management tools under specific conditions and 
+for certain risk categories that have a credible 
+pathway to harm (1117). At the same time, several 
+analyses discuss questions regarding their clarity 
+and scope (111, 986) and about the robustness 
+of AI capability and risk thresholds (1031, 1130). 
+Existing frameworks tend to focus on a subset 
+of risk domains. As a result, some prominent 
+risks, such as unlawful surveillance (1131, 1132) 
+and non-consensual intimate imagery (287), 
+receive less emphasis . Unlike risk management 
+approaches from other sectors, such as aviation 
+or nuclear power (1133*), Frontier AI Safety 
+
+[[page 118]]
+Risk management practices
+118
+International AI Safety Report 2026
+Frameworks typically do not use explicit 
+quantitative risk thresholds (1134).
+External assessments of developers’ compliance 
+with their Frontier AI Safety Frameworks so far 
+remain limited, in part because most frameworks 
+are recent, publicly available information is 
+scarce, and there are no standardised external 
+audits. Their effectiveness will also be shaped 
+on how well – and to what extent – commitments 
+are implemented in practice. On their own, 
+these frameworks may not ensure effective 
+risk management, since their practical impact 
+depends on how well and to what extent they are 
+implemented. To date, they do not fully align with 
+international risk management standards (1135). 
+A study on prior voluntary commitments found 
+uneven fulfilment across measures, suggesting 
+that adherence to voluntary commitments 
+is likely to vary between companies and 
+domains (1109).
+Taken together, Frontier AI Safety Frameworks 
+represent the most detailed form of voluntary 
+organisational risk management currently in use, 
+but vary substantially in scope, thresholds, and 
+enforceability.
+Regulatory and 
+governance initiatives
+Several jurisdictions have introduced 
+laws with transparency requirements
+Several early regulatory approaches introduce 
+legal requirements intended to increase 
+standardisation and transparency in risk 
+management. The EU AI Act, which entered 
+into force in 2024, establishes requirements 
+related to transparency, copyright, and safety 
+for general-purpose AI models . In 2025, the 
+EU General-Purpose AI Code of Practice was 
+published to support compliance with these 
+obligations by providing guidance on model 
+documentation and copyright, as well as – for 
+the most advanced models – risk management 
+practices such as evaluations, risk assessment 
+and mitigation, information security and serious 
+incident reporting (965).
+Other examples of new regulatory requirements 
+include South Korea’s Framework Act on the 
+Development of Artificial Intelligence and 
+Establishment of Trust, which introduces 
+requirements for ‘high-impact’ AI systems 
+in critical sectors (1136), and California’s SB 53, 
+which sets transparency requirements on 
+safety frameworks and incident reporting (1104). 
+Given how recently these requirements were 
+established, it is too early to assess in detail 
+how they will affect risk management practices 
+or actual risk outcomes.
+Broader governance initiatives 
+offer voluntary guidance
+Several regional and interregional governance 
+frameworks now articulate shared expectations 
+for managing risks from general-purpose AI by 
+providing non-binding guidance for policymakers 
+and organisations. China’s AI Safety Governance 
+Framework 2.0, published in 2025, provides 
+structured guidance on risk categorisation and 
+countermeasures across the AI development 
+and deployment process (1137). ASEAN Member 
+States published the ‘ASEAN Expanded Guide 
+on AI Governance and Ethics (Generative AI)’, 
+which provides guidance on general-purpose AI 
+governance and ethics and is intended to support 
+greater policy alignment across ASEAN Member 
+States (1138). In addition, expert-led initiatives 
+such as the Singapore Consensus, developed 
+by AI scientists from multiple countries, outline 
+research priorities for general-purpose AI 
+safety across risk assessment, development, 
+and control (690).
+Updates
+Since the publication of the last Report 
+(January 2025), the risk management landscape 
+for general-purpose AI has evolved, with the 
+publication of new resources such as the EU’s 
+General-Purpose AI Code of Practice, the 
+G7 HAIP Reporting Framework, China’s national 
+AI Safety Governance Framework 2 .0 and various 
+AI developers’ Frontier AI Safety Frameworks. 
+These initiatives describe approaches and 
+practices used by AI developers to manage 
+the risks associated with general-purpose AI 
+systems (1115). There is substantial variation 
+across the Frontier AI Safety Frameworks 
+and across HAIP transparency reports (1103), 
+reflecting differences in organisational practices, 
+risk prioritisation, and the early stage of the 
+
+[[page 119]]
+119
+International AI Safety Report 2026
+Risk management practices
+general-purpose AI risk management ecosystem . 
+A trusted ecosystem where different AI actors 
+contribute complementary risk management 
+practices across the lifecycle may contribute 
+to effective risk management (690).
+Evidence gaps
+There is a lack of evidence on: how to measure 
+the severity, prevalence, and timeframe of 
+emerging risks; the extent to which these risks 
+can be mitigated in real-world contexts; and how 
+to effectively encourage or enforce mitigation 
+adoption across diverse actors . More research 
+is needed to understand how prevalent different 
+risks are and how much they vary across different 
+regions of the world, especially for regions such 
+as Asia, Africa, and Latin America that are rapidly 
+digitising. As AI models are given increasing 
+agency and authority and the state of the 
+science of general-purpose AI risks advances, 
+risk management approaches will also need 
+to evolve (639, 1139).
+Certain risk mitigations are growing in 
+popularity (690, 956), but more research is 
+needed to understand how robust risk mitigations 
+and safeguards are in practice for different 
+communities and AI actors (including for small 
+and medium-sized enterprises). Greater access 
+to data on real-life deployment and usage of 
+models is relevant to such assessments . Further, 
+risk management efforts currently vary highly 
+across leading AI companies . It has been argued 
+that developers’ incentives are not well-aligned 
+with thorough risk assessment and management 
+(934). There is still an evidence gap around the 
+degree to which different voluntary commitments 
+are being met, what obstacles companies face in 
+adhering fully to commitments, and how they are 
+integrating Frontier AI Safety Frameworks into 
+broader AI risk management practices.
+Challenges for policymakers
+Key challenges include determining how to 
+prioritise the diverse risks posed by general-
+purpose AI, clarifying which actors are best 
+positioned to mitigate them, and understanding 
+the incentives and constraints that shape their 
+actions. Evidence indicates that policymakers 
+currently have limited access to information 
+about how AI developers and deployers are 
+testing, evaluating, and monitoring emerging 
+risks, and about the effectiveness of different 
+mitigation practices (1140). Researchers and 
+policymakers have discussed transparency 
+efforts and more systematic incident reporting 
+as possible ways to inform risk prioritisation, 
+promote trust, and incentivise responsible 
+development (957). In practice, risk management 
+involves multiple actors across the AI value 
+chain – such as data and cloud providers, model 
+developers, and model hosting platforms – 
+each with distinct opportunities to assess and 
+manage different risks (1141). Limited information 
+sharing between these actors makes it difficult 
+to determine which risks are most likely or 
+impactful, particularly when downstream 
+societal effects are considered.

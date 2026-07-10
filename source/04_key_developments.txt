@@ -1,0 +1,43 @@
+# Key developments since the 2025 Report
+# Source PDF pages: 10-10
+
+[[page 10]]
+10
+International AI Safety Report 2026
+Key developments since the 2025 Report
+Key developments 
+since the 2025 Report
+Notable developments since the publication of the first 
+International AI Safety Report in January 2025.
+ — General-purpose AI capabilities have continued to improve, especially in mathematics, 
+coding, and autonomous operation.  Leading AI systems achieved gold-medal performance 
+on International Mathematical Olympiad questions . In coding, AI agents can now reliably 
+complete some tasks that would take a human programmer about half an hour, up from 
+under 10 minutes a year ago. Performance nevertheless remains ‘jagged’, with leading 
+systems still failing at some seemingl y simple tasks.
+ — Improvements in general-purpose AI capabilities increasingly come from techniques 
+applied after a model’s initial training.  These ‘post-training’ techniques include refining 
+models for specific tasks and allowing them to use more computing power when generating 
+outputs. At the same time, using more computing power for initial training continues 
+to also improve model capabilities. 
+ — AI adoption has been rapid, though highly uneven across regions. AI has been adopted 
+faster than previous technologies like the personal computer, with at least 700 million 
+people now using leading AI systems weekly . In some countries over 50% of the population 
+uses AI, though across much of Africa, Asia, and Latin America adoption rates likely 
+remain below 10%.
+ — Advances in AI’s scientific capabilities have heightened concerns about misuse in 
+biological weapons development. Multiple AI companies chose to release new models 
+in 2025 with additional safeguards after pre-deployment testing could not rule out the 
+possibility that they could meaningfully help novices develo p such weapons.
+ — More evidence has emerged of AI systems being used in real-world cyberattacks. Security 
+analyses by AI companies indicate that malicious actors and state-associated groups are 
+using AI tools to assist in cy ber operations.
+ — Reliable pre-deployment safety testing has become harder to conduct. It has become 
+more common for models to distinguish between test settings and real-world deployment, 
+and to exploit loopholes in evaluations . This means that dangerous capabilities could go 
+undetected before deployment.
+ — Industry commitments to safety governance have expanded. In 2025, 12 companies 
+published or updated Frontier AI Safety Frameworks – documents that describe how they 
+plan to manage risks as they build more capable models . Most risk management initiatives 
+remain voluntary, but a few jurisdictions are beginning to formalise some practices as 
+legal requirements.

@@ -1,0 +1,64 @@
+# About this Report
+# Source PDF pages: 9-9
+
+[[page 9]]
+9
+International AI Safety Report 2026
+About this Report
+About this Report
+This is the second edition of the International AI Safety Report . The series was created following 
+the 2023 AI Safety Summit at Bletchley Park to support an internationally shared scientific 
+understanding of the capabilities and risks associated with advanced AI systems . A diverse group 
+of over 100 Artificial Intelligence (AI) experts guided its development, including an international Expert 
+Advisory Panel with nominees from over 30 countries and international organisations, including the 
+Organisation for Economic Co-operation and Development (OECD), the European Union (EU), and 
+the United Nations (UN).
+† Note that this focus makes the scope of this Report narrower than that of the 2025 Report, which also addressed issues 
+such as bias, environmental impacts, privacy,  and copyright .
+Scope, focus, 
+and independence
+Scope: This Report concerns ‘general-purpose 
+AI’: AI models and systems capable of performing 
+a wide variety of tasks across different contexts. 
+These models and systems perform tasks like 
+generating text, images, audio, or other forms 
+of data, and are frequently adapted to a range 
+of domain-specifi c applications.
+Focus: This Report focuses on ‘emerging risks’: 
+risks that arise at the frontier of AI capabilities . 
+The Bletchley Declaration, issued following 
+the 2023 AI Safety Summit, emphasised that 
+“particular safety risks arise at the ‘frontier’ 
+of AI”, including risks from misuse, issues of 
+control, and cybersecurity risks . The Declaration 
+also recognised broader AI impacts, including 
+on human rights, fairness, accountability, 
+and privacy. This Report aims to complement 
+assessments that consider these broader 
+concerns, including the UN’s Independent  
+International Scientific Panel on AI.†
+Independence: Under the leadership of the 
+Chair, the independent writing team jointly had 
+full discretion over its content . The Report aims 
+to synthesise scientific evidence to support 
+informed policymaking. It does not make 
+specific policy recommendations.
+Process and contributors
+The International AI Safety Report  is written 
+by a diverse team with over 30 members, led 
+by the Chair, lead writers, and chapter leads . 
+It undergoes a structured review process . 
+Early drafts are reviewed by external subject-
+matter experts before a consolidated draft 
+is reviewed by:
+ — An Expert Advisory Panel with 
+representatives nominated by over 
+30 countries and international organisations, 
+including the OECD, the EU, and the UN
+ — A group of Senior Advisers composed 
+of leading international researchers 
+ — Representatives from industry and civil 
+society organisations
+The writing team, chapter leads, lead writers, and 
+Chair consider feedback provided by reviewers 
+and incorporate it where appropriate.
