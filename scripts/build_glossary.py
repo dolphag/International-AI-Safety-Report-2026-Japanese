@@ -12,6 +12,7 @@ import sys
 from pathlib import Path
 
 from glossary_translations import TRANSLATIONS
+from glossary_supplementary import SUPPLEMENTARY
 
 ROOT = Path(__file__).resolve().parent.parent
 SRC = ROOT / "source" / "11_glossary.txt"
@@ -103,8 +104,19 @@ def main():
         row = [c.replace("|", "\\|").replace("\n", " ") for c in row]
         lines.append(f"| {row[0]} | {row[1]} | {row[2]} |\n")
 
+    lines.append("\n## 追加用語（原典Glossary未収録）\n\n")
+    lines.append(
+        "原典 Glossary 章（p.147-155）には収録されていないが、本文中で鍵括弧付き（'…'）の術語として\n"
+        "繰り返し使われている表現。翻訳作業の中で `scripts/glossary_supplementary.py` に追記し、本表に反映する。\n\n"
+    )
+    lines.append("| English Term | 日本語訳 | 定義（日本語） |\n")
+    lines.append("|---|---|---|\n")
+    for t, ja_term, ja_def in SUPPLEMENTARY:
+        row = [c.replace("|", "\\|").replace("\n", " ") for c in (t, ja_term, ja_def)]
+        lines.append(f"| {row[0]} | {row[1]} | {row[2]} |\n")
+
     OUT.write_text("".join(lines), encoding="utf-8")
-    print(f"Wrote {OUT} with {len(entries)} entries")
+    print(f"Wrote {OUT} with {len(entries)} entries + {len(SUPPLEMENTARY)} supplementary")
     return 0
 
 
