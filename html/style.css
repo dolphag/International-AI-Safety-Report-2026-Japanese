@@ -207,6 +207,20 @@ nav.chapter-pager .next { text-align: right; }
   border: 1px solid var(--border);
 }
 
+.badge.partial {
+  background: #fff3cd;
+  color: #8a6d1f;
+  border: 1px solid #e0c26e;
+}
+
+@media (prefers-color-scheme: dark) {
+  .badge.partial {
+    background: #3a301a;
+    color: #e0c26e;
+    border: 1px solid #6b5a2e;
+  }
+}
+
 .toc-list li.pending a {
   color: var(--muted);
   pointer-events: none;
