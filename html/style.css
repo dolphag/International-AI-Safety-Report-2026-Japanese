@@ -212,6 +212,11 @@ nav.chapter-pager .next { text-align: right; }
   pointer-events: none;
 }
 
+.toc-list li.sub {
+  padding-left: 1.6em;
+  border-bottom: 1px solid var(--border);
+}
+
 .notice {
   background: var(--accent-bg);
   border-radius: 8px;
