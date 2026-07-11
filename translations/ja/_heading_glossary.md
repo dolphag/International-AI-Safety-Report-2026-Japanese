@@ -31,3 +31,15 @@ Report is organised"）で先出しされた見出しの訳語は、当該章を
 | 3.4 | Open-weight models | オープンウェイトモデル |
 | 3.5 | Building societal resilience | 社会的レジリエンスの構築 |
 | — | Conclusion | 結論 |
+
+## §2.x.x / §3.x.x 節内の定型見出し
+
+Risks章・Risk management章の各節（§2.1.1〜§3.5）で繰り返し使われる定型の小見出し。
+
+| English | 日本語訳 |
+|---|---|
+| Key information | 主要情報 |
+| Updates | 更新情報 |
+| Evidence gaps | 証拠のギャップ |
+| Mitigations | 緩和策 |
+| Challenges for policymakers | 政策立案者にとっての課題 |
