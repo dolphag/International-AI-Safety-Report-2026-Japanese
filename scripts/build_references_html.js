@@ -8,9 +8,18 @@ const root = path.resolve(__dirname, '..');
 const htmlDir = path.join(root, 'html');
 const source = fs.readFileSync(path.join(root, 'source', '13_references.txt'), 'utf8');
 const entryStart = /^(\d+)(\*)?\s+(.+)$/;
+const urlPattern = /https?:\/\/[^\s<]+/g;
 
 function escapeHtml(value) {
   return value.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+}
+
+function linkifyUrls(value) {
+  return escapeHtml(value).replace(urlPattern, (url) => {
+    const target = url.replace(/[.,;]+$/, '');
+    const suffix = url.slice(target.length);
+    return `<a href="${target}" target="_blank" rel="noopener noreferrer">${target}</a>${suffix}`;
+  });
 }
 
 function parseEntries(text) {
@@ -45,7 +54,7 @@ function parseEntries(text) {
 function buildReferences(entries) {
   const items = entries.map(({ number, industry, parts }) => {
     const star = industry ? '<span class="industry" title="企業関連文献">*</span>' : '';
-    return `    <li id="ref-${number}"><span class="reference-number">${number}${star}</span> ${escapeHtml(parts.join(' '))}</li>`;
+    return `    <li id="ref-${number}"><span class="reference-number">${number}${star}</span> ${linkifyUrls(parts.join(' '))}</li>`;
   }).join('\n');
   return `<!doctype html>
 <html lang="ja">
