@@ -56,6 +56,12 @@ h1 {
   padding-bottom: 0.6rem;
 }
 
+.chapter-kicker {
+  color: var(--muted);
+  font-size: 0.85rem;
+  margin: 0 0 0.3rem;
+}
+
 h2 {
   font-size: 1.3rem;
   margin: 2.5rem 0 1rem;
@@ -84,6 +90,111 @@ ul, ol {
 li { margin-bottom: 0.9em; }
 
 strong { color: var(--accent); }
+
+/* Table/Box block titles and italic captions, kept visually distinct
+   from surrounding prose so they never read as buried inline text. */
+p.block-title {
+  font-size: 1.02rem;
+  margin: 1.8rem 0 0.8rem;
+}
+
+p.block-title strong {
+  display: inline-block;
+  padding: 0.3rem 0.8rem;
+  background: var(--accent-bg);
+  border-radius: 6px;
+}
+
+p.caption {
+  font-size: 0.88rem;
+  color: var(--muted);
+  margin: -0.6rem 0 1.5rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0 0 1.2rem;
+  font-size: 0.92rem;
+}
+
+table th, table td {
+  border: 1px solid var(--border);
+  padding: 0.6rem 0.7rem;
+  text-align: left;
+  vertical-align: top;
+}
+
+table th {
+  background: var(--accent-bg);
+  color: var(--accent);
+  font-weight: 700;
+}
+
+figure {
+  margin: 1.8rem 0;
+  text-align: center;
+}
+
+figure img {
+  max-width: 100%;
+  height: auto;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+}
+
+figcaption {
+  margin-top: 0.8rem;
+  font-size: 0.85rem;
+  color: var(--muted);
+  text-align: left;
+}
+
+blockquote {
+  margin: 0 0 1.2rem;
+  padding: 0.8rem 1rem;
+  border-left: 4px solid var(--accent);
+  background: var(--accent-bg);
+  border-radius: 0 6px 6px 0;
+  font-size: 0.92rem;
+  color: var(--fg);
+}
+
+pre {
+  background: #2a2b2d;
+  color: #e8e6e3;
+  padding: 1rem 1.2rem;
+  border-radius: 8px;
+  overflow-x: auto;
+  font-size: 0.82rem;
+  line-height: 1.6;
+  margin: 0 0 1.2rem;
+}
+
+pre code {
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+  white-space: pre;
+}
+
+.aup-note {
+  background: var(--accent-bg);
+  border: 1px solid var(--accent);
+  border-radius: 8px;
+  padding: 1rem 1.2rem;
+  margin: 0 0 1.8rem;
+  font-size: 0.92rem;
+}
+
+.aup-note p { margin: 0; }
+
+a.reference-citation {
+  text-decoration: none;
+  border-bottom: 1px dotted var(--link);
+}
+
+a.reference-citation:hover {
+  border-bottom-style: solid;
+}
 
 sup {
   font-size: 0.75em;

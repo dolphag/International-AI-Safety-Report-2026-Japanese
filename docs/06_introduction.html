@@ -1,159 +1,15 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ja">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Introduction - International AI Safety Report 2026 日本語訳</title>
-    <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.8;
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 20px;
-            color: #333;
-            background-color: #fafafa;
-        }
-        h1, h2, h3 {
-            color: #1a1a1a;
-            margin-top: 30px;
-            margin-bottom: 15px;
-        }
-        h1 {
-            border-bottom: 3px solid #007acc;
-            padding-bottom: 10px;
-            font-size: 2em;
-        }
-        h2 {
-            border-bottom: 1px solid #007acc;
-            padding-bottom: 8px;
-            font-size: 1.6em;
-        }
-        h3 {
-            font-size: 1.3em;
-        }
-        p {
-            text-align: justify;
-            margin-bottom: 15px;
-        }
-        ul {
-            margin-left: 20px;
-            margin-bottom: 15px;
-        }
-        li {
-            margin-bottom: 8px;
-        }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-bottom: 20px;
-            background-color: white;
-        }
-        table th, table td {
-            border: 1px solid #ddd;
-            padding: 12px;
-            text-align: left;
-        }
-        table th {
-            background-color: #007acc;
-            color: white;
-            font-weight: bold;
-        }
-        table tr:nth-child(even) {
-            background-color: #f5f5f5;
-        }
-        figure {
-            text-align: center;
-            margin: 30px 0;
-            background-color: white;
-            padding: 20px;
-            border-radius: 5px;
-        }
-        figure img {
-            max-width: 100%;
-            height: auto;
-            border: 1px solid #ddd;
-        }
-        figcaption {
-            margin-top: 15px;
-            font-size: 0.95em;
-            color: #555;
-            font-style: italic;
-        }
-        blockquote {
-            border-left: 4px solid #007acc;
-            padding-left: 15px;
-            margin: 15px 0;
-            color: #555;
-            background-color: #f0f5f9;
-            padding: 12px 15px;
-            border-radius: 3px;
-        }
-        pre {
-            background-color: #2d2d2d;
-            color: #e8e8e8;
-            padding: 15px 18px;
-            border-radius: 5px;
-            overflow-x: auto;
-            font-size: 0.85em;
-            line-height: 1.5;
-            margin-bottom: 15px;
-        }
-        pre code {
-            font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
-            white-space: pre;
-        }
-        strong {
-            font-weight: 600;
-        }
-        a {
-            color: #007acc;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-        .header {
-            text-align: center;
-            border-bottom: 3px solid #007acc;
-            padding-bottom: 20px;
-            margin-bottom: 40px;
-        }
-        .footer {
-            text-align: center;
-            border-top: 1px solid #ddd;
-            padding-top: 20px;
-            margin-top: 40px;
-            font-size: 0.9em;
-            color: #999;
-        }
-        .back-to-index {
-            text-align: center;
-            margin: 20px 0;
-        }
-        .back-to-index a {
-            padding: 10px 20px;
-            background-color: #007acc;
-            color: white;
-            border-radius: 5px;
-            display: inline-block;
-        }
-        .back-to-index a:hover {
-            background-color: #005a9e;
-            text-decoration: none;
-        }
-    </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>序論 — International AI Safety Report 2026 日本語訳</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="header">
-        <h1>International AI Safety Report 2026</h1>
-        <h2>Introduction</h2>
-        <p>日本語訳</p>
-    </div>
-
-    
-
-<h1>序論</h1>
+<div class="page">
+  <div class="masthead"><a href="index.html">目次</a></div>
+  <h1>序論</h1>
 
 <p>トップクラスの汎用AIシステムは今や、法律や医学分野の専門職資格試験に合格し、簡単なプロンプト（prompt）を与えられただけで機能するソフトウェアを書き、その分野の専門家と同じくらい的確に博士号レベルの科学に関する問いに答えることができる。ChatGPTが登場したわずか3年前には、これらのいずれも確実にこなすことはできなかった。この変化のペースには目覚ましいものがあり、今後の変化のペースは不確実であるものの、大半の専門家は、AIが今後も向上を続けると見込んでいる。</p>
 
@@ -187,9 +43,11 @@
 
 <p>本報告書は、3つの中心的な問いを軸に構成されている。</p>
 
-<p>1. 汎用AIは現在何ができ、その能力は今後どのように変化しうるか。第1章では、汎用AIがどのように開発されるか（§1.1. 汎用AIとは何か）、現在の能力と限界（§1.2. 現在の能力）、そして今後数年間の進展を左右する要因（§1.3. 2030年までの能力）を取り上げる。</p>
-<p>2. 汎用AIはどのような新興リスクをもたらすか。第2章では、犯罪活動へのAIシステムの利用（§2.1.1. AI生成コンテンツと犯罪活動）、操作（§2.1.2. 影響力行使と操作）、サイバー攻撃（§2.1.3. サイバー攻撃）、生物・化学兵器の開発（§2.1.4. 生物・化学リスク）を含む悪意ある利用によるリスク、運用上の失敗（§2.2.1. 信頼性に関する課題）と制御喪失（§2.2.2. 制御喪失）を含む不具合によるリスク、そして労働市場の混乱（§2.3.1. 労働市場への影響）と人間の自律性への脅威（§2.3.2. 人間の自律性へのリスク）を含むシステミックリスク<sup>†</sup>を取り上げる。</p>
-<p>3. どのようなリスク管理のアプローチが存在し、それらはどの程度効果的か。第3章では、汎用AIがもたらす特有の政策立案上の課題（§3.1. 技術的・制度的課題）、現在のリスク管理の実践（§3.2. リスク管理の実践）、AIモデルやシステムをより頑健にし悪用への耐性を高めるために開発者が用いるさまざまな技術（§3.3. 技術的安全対策とモニタリング）、オープンウェイトモデルに特有の課題（§3.4. オープンウェイトモデル）、そしてAIがもたらしうるショックや被害に対して社会をより強靭にするための取り組み（§3.5. 社会的レジリエンスの構築）を取り上げる。</p>
+<ol>
+<li>汎用AIは現在何ができ、その能力は今後どのように変化しうるか。第1章では、汎用AIがどのように開発されるか（§1.1. 汎用AIとは何か）、現在の能力と限界（§1.2. 現在の能力）、そして今後数年間の進展を左右する要因（§1.3. 2030年までの能力）を取り上げる。</li>
+<li>汎用AIはどのような新興リスクをもたらすか。第2章では、犯罪活動へのAIシステムの利用（§2.1.1. AI生成コンテンツと犯罪活動）、操作（§2.1.2. 影響力行使と操作）、サイバー攻撃（§2.1.3. サイバー攻撃）、生物・化学兵器の開発（§2.1.4. 生物・化学リスク）を含む悪意ある利用によるリスク、運用上の失敗（§2.2.1. 信頼性に関する課題）と制御喪失（§2.2.2. 制御喪失）を含む不具合によるリスク、そして労働市場の混乱（§2.3.1. 労働市場への影響）と人間の自律性への脅威（§2.3.2. 人間の自律性へのリスク）を含むシステミックリスク<sup id="fnref-auto1"><a href="#fn-auto1">†</a></sup>を取り上げる。</li>
+<li>どのようなリスク管理のアプローチが存在し、それらはどの程度効果的か。第3章では、汎用AIがもたらす特有の政策立案上の課題（§3.1. 技術的・制度的課題）、現在のリスク管理の実践（§3.2. リスク管理の実践）、AIモデルやシステムをより頑健にし悪用への耐性を高めるために開発者が用いるさまざまな技術（§3.3. 技術的安全対策とモニタリング）、オープンウェイトモデルに特有の課題（§3.4. オープンウェイトモデル）、そしてAIがもたらしうるショックや被害に対して社会をより強靭にするための取り組み（§3.5. 社会的レジリエンスの構築）を取り上げる。</li>
+</ol>
 
 <p>汎用AIが今後どのように発展していくかについては、多くの点で依然として深い不確実性が残っている。しかし、開発者、政府、コミュニティ、そして個人が今日下す決定が、その軌道を形作ることになる。本報告書は、こうした決定が、AIの能力、リスク、そしてリスク管理の選択肢について可能な限り最善の理解に基づいて下されることを確実にすることを目指している。</p>
 
@@ -197,16 +55,11 @@
 
 <p><strong>脚注</strong></p>
 
-<p>† 本報告書において、システミックリスクとは、高性能な汎用AIが社会や経済全体に広く展開されることから生じるリスクを指す。なお、EU AI Actではこの用語が異なる意味で用いられており、「大規模な被害のリスク（"risks of large-scale harm"）」をもたらす汎用AIモデルから生じるリスクを指す点に留意されたい。</p>
+<div class="footnotes"><h2>注</h2><ol><li id="fn-auto1">本報告書において、システミックリスクとは、高性能な汎用AIが社会や経済全体に広く展開されることから生じるリスクを指す。なお、EU AI Actではこの用語が異なる意味で用いられており、「大規模な被害のリスク（"risks of large-scale harm"）」をもたらす汎用AIモデルから生じるリスクを指す点に留意されたい。 <a href="#fnref-auto1" aria-label="本文に戻る">↩</a></li></ol></div>
 
-
-    <div class="back-to-index">
-        <a href="index.html">目次に戻る</a>
-    </div>
-
-    <div class="footer">
-        <p>International AI Safety Report 2026 日本語訳 | <a href="https://internationalaisafetyreport.org/publication/international-ai-safety-report-2026">原文サイト</a></p>
-    </div>
+  <nav class="toc-link"><a href="index.html">↑ 目次に戻る</a></nav>
+</div>
+<footer class="site">原文: International AI Safety Report 2026（DSIT 2026/001, 2026年2月発行）。本サイトは非公式の日本語訳である。</footer>
 <script src="citation-links.js"></script>
 </body>
 </html>
