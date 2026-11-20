@@ -5,7 +5,7 @@ const fs = require('fs');
 const path = require('path');
 
 const root = path.resolve(__dirname, '..');
-const htmlDir = path.join(root, 'html');
+const docsDir = path.join(root, 'docs');
 const source = fs.readFileSync(path.join(root, 'source', '13_references.txt'), 'utf8');
 const entryStart = /^(\d+)(\*)?\s+(.+)$/;
 const urlPattern = /https?:\/\/[^\s<]+/g;
@@ -90,9 +90,9 @@ ${items}
 
 function attachCitationScript() {
   const tag = '<script src="citation-links.js"></script>';
-  for (const name of fs.readdirSync(htmlDir)) {
+  for (const name of fs.readdirSync(docsDir)) {
     if (!name.endsWith('.html') || name === 'index.html' || name === '13_references.html') continue;
-    const file = path.join(htmlDir, name);
+    const file = path.join(docsDir, name);
     const text = fs.readFileSync(file, 'utf8');
     if (text.includes(tag)) continue;
     if (!text.includes('</body>')) throw new Error(`No closing body tag: ${name}`);
@@ -104,6 +104,6 @@ const entries = parseEntries(source);
 if (entries.length !== 1451 || entries.at(-1).number !== 1451) {
   throw new Error(`Expected 1451 reference entries; found ${entries.length}`);
 }
-fs.writeFileSync(path.join(htmlDir, '13_references.html'), buildReferences(entries), 'utf8');
+fs.writeFileSync(path.join(docsDir, '13_references.html'), buildReferences(entries), 'utf8');
 attachCitationScript();
-console.log(`Wrote html/13_references.html with ${entries.length} entries`);
+console.log(`Wrote docs/13_references.html with ${entries.length} entries`);

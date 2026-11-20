@@ -3,7 +3,10 @@
 /**
  * Converts the figure placeholders in translations/ja/*.md to embedded images.
  * Markdown files are two directories below the repository root, hence the
- * ../../html/images/ path.
+ * ../../docs/images/ path. Only the filename (fig_N_M.png) is actually read
+ * by scripts/generate_docs.py when building the HTML pages -- this path
+ * prefix is cosmetic, so it can drift without breaking the site, but keep
+ * it accurate for anyone reading the raw Markdown.
  */
 const fs = require('fs');
 const path = require('path');
@@ -20,7 +23,7 @@ for (const name of fs.readdirSync(translationsDir).filter((file) => file.endsWit
   let replacements = 0;
   const output = input.replace(figurePattern, (_, figure, caption, image, note) => {
     replacements += 1;
-    return `![${figure}: ${caption}${note}](../../html/images/${image})`;
+    return `![${figure}: ${caption}${note}](../../docs/images/${image})`;
   });
 
   if (replacements > 0) {
