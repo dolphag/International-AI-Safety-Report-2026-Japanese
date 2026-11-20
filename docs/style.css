@@ -207,6 +207,12 @@ sup a {
 
 a { color: var(--link); }
 
+hr {
+  border: none;
+  border-top: 1px solid var(--border);
+  margin: 2rem 0;
+}
+
 .footnotes {
   margin-top: 3rem;
   padding-top: 1rem;
@@ -340,6 +346,22 @@ nav.chapter-pager .next { text-align: right; }
 .toc-list li.sub {
   padding-left: 1.6em;
   border-bottom: 1px solid var(--border);
+}
+
+.toc-list li.group {
+  font-weight: 700;
+  color: var(--muted);
+  background: var(--accent-bg);
+  border-bottom: none;
+  border-radius: 6px;
+  margin-top: 0.6rem;
+  padding: 0.55rem 0.8rem;
+  cursor: default;
+}
+
+.toc-list li.group .en {
+  color: var(--muted);
+  opacity: 0.8;
 }
 
 .notice {

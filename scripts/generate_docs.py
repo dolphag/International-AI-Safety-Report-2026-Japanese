@@ -38,6 +38,8 @@ DOCS_DIR = ROOT / "docs"
 
 # (markdown stem, title used in <title> breadcrumb)
 CHAPTERS = [
+    ("00_contributors", "寄稿者"),
+    ("01_acknowledgements", "謝辞"),
     ("02_forewords", "序文"),
     ("03_about_this_report", "本報告書について"),
     ("04_key_developments", "2025年報告書からの主要な進展"),
@@ -202,6 +204,10 @@ def render_markdown(md_text, footnote_counter_start=1):
             continue
         if first_line.startswith("### "):
             html_parts.append(f"<h3>{convert_inline(block[4:].strip())}</h3>")
+            i += 1
+            continue
+        if block.strip() in ("---", "***"):
+            html_parts.append("<hr>")
             i += 1
             continue
 
