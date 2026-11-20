@@ -30,7 +30,7 @@ body {
   padding: 0;
   background: var(--bg);
   color: var(--fg);
-  font-family: "Hiragino Sans", "Yu Gothic", "Noto Sans JP", "Helvetica Neue", Arial, sans-serif;
+  font-family: "Hiragino Sans", "Noto Sans JP", "Helvetica Neue", Arial, sans-serif;
   line-height: 1.9;
   -webkit-font-smoothing: antialiased;
 }
