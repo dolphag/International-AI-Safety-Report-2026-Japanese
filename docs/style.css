@@ -78,6 +78,7 @@ h3 {
 p, li {
   font-size: 1rem;
   text-align: justify;
+  overflow-wrap: anywhere;
 }
 
 p { margin: 0 0 1.1em; }
