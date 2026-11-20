@@ -54,7 +54,13 @@ function parseEntries(text) {
 function buildReferences(entries) {
   const items = entries.map(({ number, industry, parts }) => {
     const star = industry ? '<span class="industry" title="企業関連文献">*</span>' : '';
-    return `    <li id="ref-${number}"><span class="reference-number">${number}${star}</span> ${linkifyUrls(parts.join(' '))}</li>`;
+    // The citation text (including its trailing <a> link) must be a single
+    // child element, not bare text + <a> siblings: in a CSS grid container,
+    // every direct child element becomes its own grid item (only bare text
+    // nodes get merged into an anonymous box), so an un-wrapped <a> here
+    // would land in the next grid row's first (number) column instead of
+    // flowing inline after the preceding text.
+    return `    <li id="ref-${number}"><span class="reference-number">${number}${star}</span> <span class="reference-text">${linkifyUrls(parts.join(' '))}</span></li>`;
   }).join('\n');
   return `<!doctype html>
 <html lang="ja">
