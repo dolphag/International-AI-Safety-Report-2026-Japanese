@@ -74,12 +74,24 @@ def get_visual_bbox(page, caption_rect, pad=6):
     # is the identity, so this is a no-op there.
     rot = page.rotation_matrix
     rects = []
+    frame = None  # the figure's own enclosing border, if it draws one
     for d in page.get_drawings():
         r = d["rect"] * rot
         if r.width <= 0 or r.height <= 0:
             continue
         if caption_rect is None or r.y1 <= caption_rect.y0 + 20:
             rects.append(r)
+            # A stroked rectangle spanning most of the other content's
+            # width is almost always the figure's visible outer border.
+            # Some PDF fills report a path bounding box taller than what
+            # is actually painted (the rest is masked by shapes drawn on
+            # top, invisible to get_drawings()) -- e.g. a speech-bubble
+            # background fill whose box quietly extends well past the
+            # bubble into the caption below. Remembering the real frame
+            # lets such phantom extensions be clipped back out below,
+            # instead of pulling the crop down into the caption text.
+            if d.get("type") == "s" and (frame is None or r.width * r.height > frame.width * frame.height):
+                frame = r
     for img in page.get_images(full=True):
         try:
             bbox = page.get_image_bbox(img) * rot
@@ -92,6 +104,8 @@ def get_visual_bbox(page, caption_rect, pad=6):
     x0 = max(0, min(r.x0 for r in rects) - pad)
     y0 = max(0, min(r.y0 for r in rects) - pad)
     x1 = min(page.rect.width, max(r.x1 for r in rects) + pad)
+    if frame is not None and frame.width >= 0.8 * (max(r.x1 for r in rects) - min(r.x0 for r in rects)):
+        rects = [fitz.Rect(r.x0, r.y0, r.x1, min(r.y1, frame.y1)) for r in rects]
     y1 = min(page.rect.height, max(r.y1 for r in rects) + pad)
     return fitz.Rect(x0, y0, x1, y1)
 
