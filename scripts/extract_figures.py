@@ -46,27 +46,43 @@ OUT_DIR = ROOT / "docs" / "images"
 
 
 def find_caption_rect(page, fig_number):
-    """Locate the 'Figure X.Y:' caption text on the page. A figure number
-    can also appear earlier on the page as an in-text citation (e.g.
-    "(Figure 1.5)", with no colon) -- only the colon-suffixed caption
-    itself should anchor the crop, and when it appears more than once
-    (rare), the last match is the actual caption (captions sit below the
-    artwork; any earlier match is an in-body reference)."""
+    """Locate the 'Figure X.Y:' caption text on the page, in DISPLAY
+    (rotated) coordinates -- see the note on page.rotation_matrix below.
+    A figure number can also appear earlier on the page as an in-text
+    citation (e.g. "(Figure 1.5)", with no colon) -- only the
+    colon-suffixed caption itself should anchor the crop, and when it
+    appears more than once (rare), the last match is the actual caption
+    (captions sit below the artwork; any earlier match is an in-body
+    reference)."""
     results = page.search_for(f"Figure {fig_number}:")
-    return results[-1] if results else None
+    if not results:
+        return None
+    return results[-1] * page.rotation_matrix
 
 
 def get_visual_bbox(page, caption_rect, pad=6):
+    # get_drawings()/get_images()/get_image_bbox()/search_for() all report
+    # coordinates in the page's UNROTATED space (mediabox-relative). A
+    # landscape page that is internally stored as a rotated portrait page
+    # (page.rotation != 0) therefore needs every rect transformed through
+    # page.rotation_matrix into DISPLAY space before it's compared against
+    # the caption position or unioned into a crop box -- otherwise the
+    # "above the caption" test and the final clip (which get_pixmap expects
+    # in display space, matching page.rect) silently operate on mismatched
+    # coordinate systems and the crop comes out wrong (e.g. truncated on
+    # one side) on any rotated page. On an unrotated page rotation_matrix
+    # is the identity, so this is a no-op there.
+    rot = page.rotation_matrix
     rects = []
     for d in page.get_drawings():
-        r = d["rect"]
+        r = d["rect"] * rot
         if r.width <= 0 or r.height <= 0:
             continue
         if caption_rect is None or r.y1 <= caption_rect.y0 + 20:
             rects.append(r)
     for img in page.get_images(full=True):
         try:
-            bbox = page.get_image_bbox(img)
+            bbox = page.get_image_bbox(img) * rot
             if caption_rect is None or bbox.y1 <= caption_rect.y0 + 20:
                 rects.append(bbox)
         except Exception:
